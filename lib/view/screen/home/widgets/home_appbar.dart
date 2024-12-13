@@ -16,6 +16,8 @@ AppBar homeAppbar() => AppBar(
             fillColor: const Color(0xffEEEEEE),
             prefixIcon: const Icon(Icons.search_sharp),
             hintText: AppString.searchEvent,
+            hintStyle:
+                const TextStyle(color: const Color.fromRGBO(144, 144, 144, 1)),
             suffixIcon: Container(
               width: 70,
               margin: const EdgeInsets.only(top: 8, bottom: 8, right: 10),
@@ -32,14 +34,12 @@ AppBar homeAppbar() => AppBar(
             border: OutlineInputBorder(
                 borderRadius: BorderRadius.circular(10),
                 borderSide: const BorderSide(color: AppColors.transparent)),
-             disabledBorder: OutlineInputBorder(
+            disabledBorder: OutlineInputBorder(
                 borderRadius: BorderRadius.circular(10),
                 borderSide: const BorderSide(color: AppColors.transparent)),
-             enabledBorder: OutlineInputBorder(
+            enabledBorder: OutlineInputBorder(
                 borderRadius: BorderRadius.circular(10),
                 borderSide: const BorderSide(color: AppColors.transparent)),
-
-
             focusedBorder: OutlineInputBorder(
                 borderRadius: BorderRadius.circular(10),
                 borderSide: const BorderSide(color: AppColors.transparent))),

@@ -52,7 +52,9 @@ class SignInScreen extends StatelessWidget {
                     ).center,
                     const CommonText(
                       text: AppString.phoneNumber,
-                      bottom: 8,
+                      fontSize: 12,
+                      fontWeight: FontWeight.w700,
+                      bottom: 0,
                     ),
                     CommonPhoneNumberTextFiled(
                       controller: controller.numberController,
@@ -68,7 +70,7 @@ class SignInScreen extends StatelessWidget {
                         }
                       },
                     ),
-                    30.height,
+                    90.height,
                     const CommonText(
                       text: AppString.doNotHaveAccountYet,
                       fontWeight: FontWeight.w400,
