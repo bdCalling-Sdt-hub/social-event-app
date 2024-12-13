@@ -24,7 +24,7 @@ Widget searchLocation() {
             filled: true,
             fillColor: const Color(0xffEEEEEE),
             prefixIcon: const Icon(Icons.search_sharp),
-            hintText: AppString.searchLocation,
+            hintText: "Search location".tr,
             hintStyle: const TextStyle(color: Color(0xff909090)),
             suffixIcon: Padding(
               padding: const EdgeInsets.all(6.0),

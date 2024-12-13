@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 
 import 'package:social_event/helpers/my_extension.dart';
 
@@ -17,8 +18,8 @@ class ScarchNotification extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         backgroundColor: AppColors.primaryColor,
-        title: const CommonText(
-          text: AppString.notifications,
+        title:  CommonText(
+          text: "Notifications".tr,
           fontSize: 24,
           fontWeight: FontWeight.bold,
           color: AppColors.white,
@@ -26,8 +27,8 @@ class ScarchNotification extends StatelessWidget {
       ),
       body: Column(
         children: [
-          const CommonText(
-            text: "today",
+           CommonText(
+            text: "today".tr,
             fontWeight: FontWeight.bold,
             left: 20,
           ).start,
@@ -37,18 +38,18 @@ class ScarchNotification extends StatelessWidget {
               item: NotificationModel(
                   id: "dfdf",
                   createdAt: DateTime.now(),
-                  message: "fjdsfjds",
+                  message: "Welcome to the app",
                   linkId: "fhdsfjdsf",
                   receiver: "dfjdsfjl",
                   role: "user",
-                  type: "notification",
+                  type: "Notifications".tr,
                   updatedAt: DateTime.now(),
                   v: 1),
               unRead: true,
             ),
           ),
-          const CommonText(
-            text: "Yesterday",
+           CommonText(
+            text: "Yesterday".tr,
             fontWeight: FontWeight.bold,
             left: 20,
           ).start,
@@ -62,11 +63,11 @@ class ScarchNotification extends StatelessWidget {
                   item: NotificationModel(
                       id: "dfdf",
                       createdAt: DateTime.now(),
-                      message: "fjdsfjds",
+                      message: "Welcome to the app",
                       linkId: "fhdsfjdsf",
                       receiver: "dfjdsfjl",
                       role: "user",
-                      type: "notification",
+                      type: "Notifications".tr,
                       updatedAt: DateTime.now(),
                       v: 1),
                   unRead: false,

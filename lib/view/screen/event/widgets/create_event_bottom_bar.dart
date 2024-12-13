@@ -29,13 +29,13 @@ void showBottomSheetModel(BuildContext context, bool isEdit) {
             ),
             16.height,
             CommonText(
-              text: isEdit ? AppString.eventUpdated : AppString.eventCreated,
+              text: isEdit ? "Event Updated".tr : "Event created".tr,
               fontSize: 20,
               fontWeight: FontWeight.bold,
             ),
             16.height,
             CommonButton(
-              titleText: AppString.done,
+              titleText: "Done".tr,
               onTap: () => Get.back(),
             ),
           ],

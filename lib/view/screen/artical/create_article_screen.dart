@@ -27,12 +27,12 @@ class _CreateArticleScreenState extends State<CreateArticleScreen> {
     return Scaffold(
       appBar: AppBar(
         backgroundColor: AppColors.primaryColor,
-        title: const CommonText(
+        title:  CommonText(
             fontSize: 24,
             color: AppColors.white,
             maxLines: 2,
             fontWeight: FontWeight.w700,
-            text: AppString.sharePost),
+            text: "Share Post".tr),
       ),
       body: GetBuilder<CreateArticleController>(
         builder: (controller) => Padding(
@@ -40,19 +40,19 @@ class _CreateArticleScreenState extends State<CreateArticleScreen> {
           child: Column(
             children: [
               CommonTextField(
-                hintText: AppString.writeSomething,
+                hintText: "Write something".tr,
                 hintTextColor: AppColors.black.withOpacity(0.5),
                 maxLines: 3,
                 keyboardType: TextInputType.multiline,
               ),
-              const CommonText(
-                text: AppString.connectEvent,
+               CommonText(
+                text: "Connect Event".tr,
                 fontSize: 13,
                 top: 10,
                 fontWeight: FontWeight.bold,
               ).start,
               CommonTextField(
-                hintText: AppString.connectEventDetails,
+                hintText: "Enter event title or search".tr,
                 hintTextColor: AppColors.black.withOpacity(0.5),
                 suffixIcon: const Icon(Icons.search),
                 paddingVertical: 8,
@@ -144,7 +144,7 @@ class _CreateArticleScreenState extends State<CreateArticleScreen> {
       bottomNavigationBar: Padding(
         padding: const EdgeInsets.all(20.0),
         child: CommonButton(
-          titleText: AppString.previewPost,
+          titleText: "Preview Post".tr,
           onTap: () => Get.toNamed(AppRoutes.reviewPost),
         ),
       ),

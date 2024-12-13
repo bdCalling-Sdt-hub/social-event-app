@@ -42,16 +42,16 @@ class SignUpScreen extends StatelessWidget {
                       imageColor: AppColors.primaryColor,
                       imageType: ImageType.svg,
                     )),
-                    const CommonText(
-                      text: AppString.createAnAccount,
+                     CommonText(
+                      text: "Create an account".tr,
                       fontSize: 24,
                       fontWeight: FontWeight.w700,
                       color: AppColors.primaryColor,
                       top: 50,
                       bottom: 50,
                     ).center,
-                    const CommonText(
-                      text: AppString.phoneNumber,
+                     CommonText(
+                      text: "Phone Number".tr,
                       bottom: 8,
                     ),
                     CommonPhoneNumberTextFiled(
@@ -75,7 +75,7 @@ class SignUpScreen extends StatelessWidget {
                     ),
                     30.height,
                     CommonButton(
-                      titleText: AppString.continues,
+                      titleText: "Continue".tr,
                       isLoading: controller.isLoading,
                       onTap: () {
                         if (formKey.currentState!.validate()) {

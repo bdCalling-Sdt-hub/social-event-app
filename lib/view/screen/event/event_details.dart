@@ -24,8 +24,8 @@ class EventDetails extends StatelessWidget {
       appBar: AppBar(
         leading: back(),
         centerTitle: true,
-        title: const CommonText(
-          text: AppString.eventInformation,
+        title:  CommonText(
+          text: "Event Information".tr,
           fontSize: 24,
           fontWeight: FontWeight.bold,
         ),
@@ -140,16 +140,16 @@ class EventDetails extends StatelessWidget {
                     child: Row(
                       mainAxisAlignment: MainAxisAlignment.spaceAround,
                       children: [
-                        const CommonText(
-                          text: "Fee: ¥ 100",
+                         CommonText(
+                          text: "${"Fee".tr}: ¥ 100",
                           fontSize: 14,
                           fontWeight: FontWeight.w700,
                           color: AppColors.primaryColor,
                         ),
                         InkWell(
                           onTap: () => Get.toNamed(AppRoutes.buyTicket),
-                          child: const CommonButton(
-                            titleText: AppString.buyTicket,
+                          child:  CommonButton(
+                            titleText:"Buy Ticket".tr,
                             buttonWidth: 150,
                             buttonHeight: 42,
                           ),
@@ -157,8 +157,8 @@ class EventDetails extends StatelessWidget {
                       ],
                     ),
                   ),
-                  const CommonText(
-                    text: AppString.description,
+                   CommonText(
+                    text: "Description".tr,
                     fontWeight: FontWeight.w700,
                     top: 20,
                     bottom: 10,
@@ -170,8 +170,8 @@ class EventDetails extends StatelessWidget {
                     color: AppColors.black.withOpacity(0.5),
                     fontWeight: FontWeight.w400,
                   ),
-                  const CommonText(
-                    text: AppString.eventOrganizers,
+                   CommonText(
+                    text: "Event Organizers".tr,
                     fontWeight: FontWeight.bold,
                     top: 20,
                     bottom: 10,
@@ -189,7 +189,7 @@ class EventDetails extends StatelessWidget {
                   ),
                   20.height,
                   CommonButton(
-                    titleText: AppString.joinEvent,
+                    titleText: "Join Event".tr,
                     onTap: () => Get.toNamed(AppRoutes.eventPage),
                   ),
                   30.height

@@ -1,8 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:social_event/helpers/my_extension.dart';
+import 'package:social_event/utils/app_colors.dart';
 import 'package:social_event/utils/app_string.dart';
 import 'package:social_event/view/component/bottom_nav_bar/common_bottom_bar.dart';
+import 'package:social_event/view/component/other_widgets/back.dart';
 import 'package:social_event/view/screen/event/widgets/event_all_filed.dart';
 import '../../../controllers/event/create_event_controller.dart';
 import '../../../utils/app_images.dart';
@@ -29,7 +31,12 @@ class _CreateEventScreenState extends State<CreateEventScreen> {
   Widget build(BuildContext context) {
     print("=============> $isEdit");
     return Scaffold(
-      appBar: AppBar(),
+      appBar: AppBar(
+        backgroundColor: Color(0xffD9D9D9),
+
+        leading: back(),
+
+      ),
       body: GetBuilder<CreateEventController>(
         builder: (controller) => SingleChildScrollView(
           child: Column(
@@ -59,8 +66,8 @@ class _CreateEventScreenState extends State<CreateEventScreen> {
                         const Icon(Icons.videocam_outlined),
                       ],
                     ),
-                    const CommonText(
-                      text: AppString.addImageDetails,
+                     CommonText(
+                      text: "Add up to 6 images and 1 video".tr,
                       color: Color(0xff909090),
                       fontSize: 12,
                       top: 12,

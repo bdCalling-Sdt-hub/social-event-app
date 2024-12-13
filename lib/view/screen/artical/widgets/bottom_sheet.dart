@@ -21,11 +21,11 @@ void moreBottomSheet() {
           mainAxisSize: MainAxisSize.min,
           children: [
             20.height,
-            const Row(
+             Row(
               children: [
                 Icon(Icons.arrow_circle_up),
                 CommonText(
-                  text: AppString.seeMorePostsLikeThis,
+                  text: "See More Posts Like This".tr,
                   fontSize: 15,
                   fontWeight: FontWeight.w400,
                 )
@@ -34,11 +34,11 @@ void moreBottomSheet() {
             6.height,
             const Divider(),
             6.height,
-            const Row(
+             Row(
               children: [
                 Icon(Icons.arrow_circle_down),
                 CommonText(
-                  text: AppString.seeLessPostsLikeThis,
+                  text: "See Less Posts Like This".tr,
                   fontSize: 15,
                   fontWeight: FontWeight.w400,
                 )
@@ -52,14 +52,14 @@ void moreBottomSheet() {
                 Get.back();
                 blockUserBottomSheet();
               },
-              child: const Row(
+              child:  Row(
                 children: [
                   Icon(
                     Icons.block,
                     color: AppColors.primaryColor,
                   ),
                   CommonText(
-                    text: AppString.blockUser,
+                    text: "${"Block".tr} Jon Doe",
                     fontSize: 15,
                     color: AppColors.primaryColor,
                     fontWeight: FontWeight.w400,
@@ -101,8 +101,8 @@ void blockUserBottomSheet() {
                 size: 60,
               ),
             ),
-            const CommonText(
-              text: AppString.blockUserDetails,
+             CommonText(
+              text: "Are you sure you want to block John Doe?".tr,
               fontSize: 24,
               top: 30,
               fontWeight: FontWeight.bold,
@@ -113,7 +113,7 @@ void blockUserBottomSheet() {
               children: [
                 Expanded(
                     child: CommonButton(
-                  titleText: AppString.cancel,
+                  titleText: "Cancel".tr,
                   buttonColor: AppColors.transparent,
                   titleColor: AppColors.primaryColor,
                   onTap: () => Get.back(),
@@ -121,7 +121,7 @@ void blockUserBottomSheet() {
                 20.width,
                 Expanded(
                     child: CommonButton(
-                  titleText: AppString.block,
+                  titleText: "Block".tr,
                   onTap: () => Get.back(),
                 )),
               ],

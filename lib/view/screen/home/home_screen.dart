@@ -30,8 +30,8 @@ class HomeScreen extends StatelessWidget {
                 children: [
                   Row(
                     children: [
-                      const CommonText(
-                        text: AppString.joinList,
+                       CommonText(
+                        text: "Join List".tr,
                         fontSize: 20,
                         fontWeight: FontWeight.w700,
                       ),
@@ -63,8 +63,8 @@ class HomeScreen extends StatelessWidget {
                           child: const Icon(Icons.keyboard_arrow_down))
                     ],
                   ),
-                  const CommonText(
-                    text: "Monday, 23 October, 2023",
+                   CommonText(
+                    text: "Monday, 23 October, 2023".tr,
                     fontSize: 12,
                     fontWeight: FontWeight.w400,
                     top: 8,
@@ -87,8 +87,8 @@ class HomeScreen extends StatelessWidget {
                 children: [
                   Row(
                     children: [
-                      const CommonText(
-                        text: AppString.favoriteList,
+                       CommonText(
+                        text:"Favorite List".tr,
                         fontSize: 20,
                         fontWeight: FontWeight.w700,
                       ),

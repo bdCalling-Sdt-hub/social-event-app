@@ -45,8 +45,8 @@ class OtpVerification extends StatelessWidget {
                       imageColor: AppColors.primaryColor,
                       imageType: ImageType.svg,
                     )),
-                    const CommonText(
-                      text: AppString.otpDetails,
+                     CommonText(
+                      text: "Enter the OTC sent to your phone number".tr,
                       maxLines: 2,
                       fontWeight: FontWeight.w700,
                       color: AppColors.primaryColor,
@@ -89,7 +89,7 @@ class OtpVerification extends StatelessWidget {
                     ),
                     20.height,
                     CommonButton(
-                      titleText: AppString.login,
+                      titleText: "Login".tr,
                       isLoading: controller.isLoading,
                       onTap: () {
                         if (formKey.currentState!.validate()) {
@@ -98,16 +98,16 @@ class OtpVerification extends StatelessWidget {
                       },
                     ),
                     60.height,
-                    const CommonText(
-                      text: AppString.didNotReceivedTheCodeYet,
+                     CommonText(
+                      text: "Didn’t received the code yet?".tr,
                       fontWeight: FontWeight.w400,
                       color: AppColors.black,
                       bottom: 10,
                     ).center,
                     InkWell(
                       onTap: showBottomSheetModel,
-                      child: const CommonText(
-                        text: AppString.resend,
+                      child:  CommonText(
+                        text: "Resend".tr,
                         color: AppColors.primaryColor,
                       ).center,
                     )

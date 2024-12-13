@@ -20,8 +20,8 @@ class CompleteProfile extends StatelessWidget {
       appBar: AppBar(
         automaticallyImplyLeading: false,
         centerTitle: true,
-        title: const CommonText(
-          text: AppString.completeYourProfile,
+        title:  CommonText(
+          text: "Complete Your Profile".tr,
           fontSize: 24,
           fontWeight: FontWeight.bold,
           color: AppColors.primaryColor,
@@ -38,7 +38,7 @@ class CompleteProfile extends StatelessWidget {
               const CompleteProfileAllFiled(),
               30.height,
               CommonButton(
-                titleText: AppString.signUp,
+                titleText: "Register".tr,
                 onTap: () => Get.toNamed(AppRoutes.locationAccess),
               ),
               30.height,

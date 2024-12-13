@@ -26,9 +26,9 @@ class CompleteProfileAllFiled extends StatelessWidget {
                   mainAxisAlignment: MainAxisAlignment.start,
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
-                    const CommonText(text: AppString.firstName),
+                     CommonText(text: "First Name".tr),
                     CommonTextField(
-                      hintText: AppString.firstName,
+                      hintText: "John",
                     )
                   ],
                 ),
@@ -39,21 +39,21 @@ class CompleteProfileAllFiled extends StatelessWidget {
                   mainAxisAlignment: MainAxisAlignment.start,
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
-                    const CommonText(text: AppString.firstName),
+                     CommonText(text: "Last Name".tr),
                     CommonTextField(
-                      hintText: AppString.firstName,
+                      hintText: "Doe",
                     )
                   ],
                 ),
               ),
             ],
           ),
-          const CommonText(
-            text: AppString.gender,
+           CommonText(
+            text: "Gender".tr,
             top: 12,
           ),
           CommonTextField(
-            hintText: AppString.gender,
+            hintText: "Select".tr,
             controller: controller.genderController,
             onTap: () {
               PopUpMenu(
@@ -68,8 +68,8 @@ class CompleteProfileAllFiled extends StatelessWidget {
               selectedItem: [controller.genderController.text],
             ),
           ),
-          const CommonText(
-            text: AppString.ageGroup,
+           CommonText(
+            text: "Age Group".tr,
             fontWeight: FontWeight.w700,
             bottom: 10,
             top: 30,
@@ -109,8 +109,8 @@ class CompleteProfileAllFiled extends StatelessWidget {
               );
             },
           ),
-          const CommonText(
-            text: AppString.categories,
+           CommonText(
+            text: "Categories".tr,
             fontWeight: FontWeight.w700,
             bottom: 10,
             top: 30,
