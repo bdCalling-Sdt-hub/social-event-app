@@ -23,7 +23,7 @@ class PrivacyPolicy extends StatelessWidget {
           TextSpan(
             children: [
               TextSpan(
-                text: "I accept".tr,
+                text: "I accept  ".tr,
                 style: GoogleFonts.plusJakartaSans(
                   color: AppColors.black,
                   fontSize: 12,
@@ -31,7 +31,7 @@ class PrivacyPolicy extends StatelessWidget {
                 ),
               ),
               TextSpan(
-                text: "Terms of Service".tr,
+                text: "Terms of Service  ".tr,
                 recognizer: TapGestureRecognizer()
                   ..onTap = () {
                     Get.toNamed(AppRoutes.termsOfServices);
@@ -43,7 +43,7 @@ class PrivacyPolicy extends StatelessWidget {
                 ),
               ),
               TextSpan(
-                text: "and".tr,
+                text: "and  ".tr,
                 style: GoogleFonts.plusJakartaSans(
                   color: AppColors.black,
                   fontSize: 12,

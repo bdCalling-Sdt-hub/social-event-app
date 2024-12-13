@@ -42,7 +42,7 @@ class SignInScreen extends StatelessWidget {
                       imageColor: AppColors.primaryColor,
                       imageType: ImageType.svg,
                     )),
-                     CommonText(
+                    CommonText(
                       text: "Log in to your account".tr,
                       fontSize: 24,
                       fontWeight: FontWeight.w700,
@@ -50,9 +50,11 @@ class SignInScreen extends StatelessWidget {
                       top: 30,
                       bottom: 50,
                     ).center,
-                     CommonText(
+                    CommonText(
                       text: "Phone Number".tr,
-                      bottom: 8,
+                      bottom: 0,
+                      fontWeight: FontWeight.w700,
+                      fontSize: 12,
                     ),
                     CommonPhoneNumberTextFiled(
                       controller: controller.numberController,
@@ -60,7 +62,7 @@ class SignInScreen extends StatelessWidget {
                     ),
                     20.height,
                     CommonButton(
-                      titleText:"Continue".tr,
+                      titleText: "Continue".tr,
                       isLoading: controller.isLoading,
                       onTap: () {
                         if (formKey.currentState!.validate()) {
@@ -68,8 +70,8 @@ class SignInScreen extends StatelessWidget {
                         }
                       },
                     ),
-                    30.height,
-                     CommonText(
+                    90.height,
+                    CommonText(
                       text: "Don't have an account yet?".tr,
                       fontWeight: FontWeight.w400,
                       color: AppColors.primaryColor,

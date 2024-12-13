@@ -20,7 +20,7 @@ class CompleteProfile extends StatelessWidget {
       appBar: AppBar(
         automaticallyImplyLeading: false,
         centerTitle: true,
-        title:  CommonText(
+        title: CommonText(
           text: "Complete Your Profile".tr,
           fontSize: 24,
           fontWeight: FontWeight.bold,
@@ -32,6 +32,7 @@ class CompleteProfile extends StatelessWidget {
           padding: const EdgeInsets.symmetric(horizontal: 20),
           child: Column(
             children: [
+              30.height,
               const ProfileImage(
                 takeImage: true,
               ).center,

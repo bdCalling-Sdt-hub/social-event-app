@@ -42,7 +42,7 @@ class SignUpScreen extends StatelessWidget {
                       imageColor: AppColors.primaryColor,
                       imageType: ImageType.svg,
                     )),
-                     CommonText(
+                    CommonText(
                       text: "Create an account".tr,
                       fontSize: 24,
                       fontWeight: FontWeight.w700,
@@ -50,9 +50,11 @@ class SignUpScreen extends StatelessWidget {
                       top: 50,
                       bottom: 50,
                     ).center,
-                     CommonText(
+                    CommonText(
                       text: "Phone Number".tr,
-                      bottom: 8,
+                      bottom: 0,
+                      fontSize: 12,
+                      fontWeight: FontWeight.w700,
                     ),
                     CommonPhoneNumberTextFiled(
                       controller: controller.numberController,
@@ -65,7 +67,9 @@ class SignUpScreen extends StatelessWidget {
                           height: 20,
                           width: 20,
                           child: Checkbox(
-                              side: const BorderSide(color: AppColors.primaryColor, ),
+                              side: const BorderSide(
+                                color: AppColors.primaryColor,
+                              ),
                               value: controller.isAccept,
                               onChanged: controller.changeAccept),
                         ),

@@ -16,6 +16,9 @@ AppBar homeAppbar() => AppBar(
             fillColor: const Color(0xffEEEEEE),
             prefixIcon: const Icon(Icons.search_sharp),
             hintText: "Search event".tr,
+            hintStyle: const TextStyle(
+                color: Color.fromRGBO(144, 144, 144, 1),
+                fontWeight: FontWeight.normal),
             suffixIcon: Container(
               width: 70,
               margin: const EdgeInsets.only(top: 8, bottom: 8, right: 10),
@@ -24,8 +27,10 @@ AppBar homeAppbar() => AppBar(
                   borderRadius: BorderRadius.circular(30)),
               child: Align(
                   alignment: Alignment.centerRight,
-                  child:  CommonText(
-                    text:"Search".tr,
+                  child: CommonText(
+                    text: "Search".tr,
+                    fontSize: 15,
+                    fontWeight: FontWeight.normal,
                     color: AppColors.white,
                   ).center),
             ),
@@ -51,7 +56,7 @@ AppBar homeAppbar() => AppBar(
             decoration: const BoxDecoration(
                 shape: BoxShape.circle, color: AppColors.primaryColor),
             child: const Icon(
-              Icons.settings,
+              Icons.settings_outlined,
               color: AppColors.white,
             ),
           ),

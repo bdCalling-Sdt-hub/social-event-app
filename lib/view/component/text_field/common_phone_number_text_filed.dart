@@ -17,7 +17,6 @@ class CommonPhoneNumberTextFiled extends StatelessWidget {
   Widget build(BuildContext context) {
     return IntlPhoneField(
       controller: controller,
-      
       onCountryChanged: countryChange,
       initialCountryCode: "BD",
       disableLengthCheck: true,

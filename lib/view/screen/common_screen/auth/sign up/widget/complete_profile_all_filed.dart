@@ -26,9 +26,14 @@ class CompleteProfileAllFiled extends StatelessWidget {
                   mainAxisAlignment: MainAxisAlignment.start,
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
-                     CommonText(text: "First Name".tr),
+                    CommonText(
+                      text: "First Name".tr,
+                      fontWeight: FontWeight.w700,
+                      fontSize: 13,
+                    ),
                     CommonTextField(
                       hintText: "John",
+                      paddingHorizontal: 1,
                     )
                   ],
                 ),
@@ -39,21 +44,29 @@ class CompleteProfileAllFiled extends StatelessWidget {
                   mainAxisAlignment: MainAxisAlignment.start,
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
-                     CommonText(text: "Last Name".tr),
+                    CommonText(
+                      text: "Last Name".tr,
+                      fontWeight: FontWeight.w700,
+                      fontSize: 13,
+                    ),
                     CommonTextField(
                       hintText: "Doe",
+                      paddingHorizontal: 1,
                     )
                   ],
                 ),
               ),
             ],
           ),
-           CommonText(
+          CommonText(
             text: "Gender".tr,
+            fontWeight: FontWeight.w700,
             top: 12,
+            fontSize: 13,
           ),
           CommonTextField(
             hintText: "Select".tr,
+            paddingHorizontal: 1,
             controller: controller.genderController,
             onTap: () {
               PopUpMenu(
@@ -68,11 +81,12 @@ class CompleteProfileAllFiled extends StatelessWidget {
               selectedItem: [controller.genderController.text],
             ),
           ),
-           CommonText(
+          CommonText(
             text: "Age Group".tr,
             fontWeight: FontWeight.w700,
             bottom: 10,
             top: 30,
+            fontSize: 13,
           ),
           GridView.builder(
             physics: const NeverScrollableScrollPhysics(),
@@ -109,11 +123,12 @@ class CompleteProfileAllFiled extends StatelessWidget {
               );
             },
           ),
-           CommonText(
+          CommonText(
             text: "Categories".tr,
             fontWeight: FontWeight.w700,
             bottom: 10,
             top: 30,
+            fontSize: 13,
           ),
           GridView.builder(
             physics: const NeverScrollableScrollPhysics(),
