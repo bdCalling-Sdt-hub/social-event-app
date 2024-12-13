@@ -24,20 +24,20 @@ class _MarketingScreenState extends State<MarketingScreen> {
     {
       "image": AppImages.welcome,
       "bg": AppImages.onboardingBg1,
-      "title": "Welcome to Baole Bei",
-      "subtitle": "Explore new social worlds"
+      "title": "Welcome to Baole Bei".tr,
+      "subtitle": "Explore new social worlds".tr
     },
     {
       "image": AppImages.discover,
       "bg": AppImages.onboardingBg2,
-      "title": "Discover exciting activities",
-      "subtitle": "Find the best activity near you"
+      "title": "Discover exciting activities".tr,
+      "subtitle": "Find the best activity near you".tr
     },
     {
       "image": AppImages.create,
       "bg": AppImages.onboardingBg3,
-      "title": "Create your event",
-      "subtitle": "Interact with friends near you"
+      "title": "Create your event".tr,
+      "subtitle": "Interact with friends near you".tr
     },
   ];
 

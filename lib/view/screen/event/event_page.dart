@@ -30,8 +30,8 @@ class EventPage extends StatelessWidget {
         appBar: AppBar(
           centerTitle: false,
           leading: back(),
-          title: const CommonText(
-            text: AppString.eventNameHere,
+          title:  CommonText(
+            text: "Event Name Here".tr,
             fontSize: 24,
             fontWeight: FontWeight.bold,
           ),
@@ -90,7 +90,7 @@ class EventPage extends StatelessWidget {
                                   ? AppColors.primaryColor
                                   : AppColors.transparent),
                           child: CommonText(
-                            text: AppString.eventInfo,
+                            text: "Event Info".tr,
                             color: controller.index == 0
                                 ? AppColors.white
                                 : AppColors.black,
@@ -108,7 +108,7 @@ class EventPage extends StatelessWidget {
                                   ? AppColors.primaryColor
                                   : AppColors.transparent),
                           child: CommonText(
-                            text: AppString.discussion,
+                            text: "Discussion".tr,
                             color: controller.index == 1
                                 ? AppColors.white
                                 : AppColors.black,
@@ -233,8 +233,8 @@ class EventPage extends StatelessWidget {
                                 mainAxisAlignment:
                                     MainAxisAlignment.spaceAround,
                                 children: [
-                                  const CommonText(
-                                    text: "Fee: ¥ 100",
+                                   CommonText(
+                                    text: "${"Fee".tr}: ¥ 100",
                                     fontSize: 14,
                                     fontWeight: FontWeight.w700,
                                     color: AppColors.primaryColor,
@@ -242,8 +242,8 @@ class EventPage extends StatelessWidget {
                                   InkWell(
                                     onTap: () =>
                                         Get.toNamed(AppRoutes.buyTicket),
-                                    child: const CommonButton(
-                                      titleText: AppString.buyTicket,
+                                    child:  CommonButton(
+                                      titleText: "Buy Ticket".tr,
                                       buttonWidth: 150,
                                       buttonHeight: 42,
                                     ),
@@ -277,8 +277,8 @@ class EventPage extends StatelessWidget {
                               ),
                             ),
                             20.height,
-                            const CommonText(
-                              text: AppString.ageGroup,
+                            CommonText(
+                              text: "Age Group".tr,
                               fontWeight: FontWeight.w700,
                               fontSize: 12,
                             ).start,
@@ -288,8 +288,8 @@ class EventPage extends StatelessWidget {
                               top: 10,
                               color: AppColors.black.withOpacity(0.5),
                             ).start,
-                            const CommonText(
-                              text: AppString.category,
+                            CommonText(
+                              text:"Category".tr,
                               top: 20,
                               fontWeight: FontWeight.w700,
                               fontSize: 12,
@@ -300,8 +300,8 @@ class EventPage extends StatelessWidget {
                               top: 10,
                               color: AppColors.black.withOpacity(0.5),
                             ).start,
-                            const CommonText(
-                              text: AppString.description,
+                            CommonText(
+                              text: "Description".tr,
                               fontWeight: FontWeight.w700,
                               top: 20,
                               bottom: 10,
@@ -313,8 +313,8 @@ class EventPage extends StatelessWidget {
                               color: AppColors.black.withOpacity(0.5),
                               fontWeight: FontWeight.w400,
                             ),
-                            const CommonText(
-                              text: AppString.eventOrganizers,
+                            CommonText(
+                              text: "Event Organizers".tr,
                               fontWeight: FontWeight.bold,
                               top: 20,
                               bottom: 10,
@@ -328,7 +328,7 @@ class EventPage extends StatelessWidget {
                                     image: AppImages.image3,
                                     name: "Bác. Lỡ Lĩnh ",
                                     title:
-                                        index == 0 ? "Creator" : "Organizer"),
+                                    index == 0 ? "Creator" : "Organizer"),
                               ),
                             ),
                             30.height,

@@ -29,14 +29,14 @@ void showBottomSheetModel() {
               color: Colors.teal,
             ),
             16.height,
-            const CommonText(
-              text: AppString.codeSent,
+             CommonText(
+              text: "Code Sent".tr,
               fontSize: 20,
               fontWeight: FontWeight.bold,
             ),
             16.height,
             CommonButton(
-              titleText: AppString.done,
+              titleText: "Done".tr,
               onTap: () => Get.back(),
             ),
           ],

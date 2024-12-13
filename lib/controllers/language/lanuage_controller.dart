@@ -5,20 +5,15 @@ import 'package:get/get.dart';
 import '../../helpers/prefs_helper.dart';
 
 class LanguageController extends GetxController {
-  static LanguageController get instance => Get.put(LanguageController());
-
-  RxBool selectedCountry = false.obs;
 
 
+  void changeLanguage(String languageCode, String countryCode) {
 
 
-  languageTap() async{
-    selectedCountry.value = !selectedCountry.value;
-
-
-    update();
+    PrefsHelper.localizationCountryCode = countryCode;
+    PrefsHelper.localizationLanguageCode = languageCode;
+    Get.updateLocale(Locale(languageCode, countryCode));
+    PrefsHelper.setString("localizationLanguageCode", languageCode);
+    PrefsHelper.setString("localizationCountryCode", countryCode);
   }
-
-  RxString titleText = PrefsHelper.localizationCountryCode.obs;
-  String languageCode = 'en';
 }

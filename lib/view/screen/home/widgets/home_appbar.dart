@@ -15,7 +15,7 @@ AppBar homeAppbar() => AppBar(
             filled: true,
             fillColor: const Color(0xffEEEEEE),
             prefixIcon: const Icon(Icons.search_sharp),
-            hintText: AppString.searchEvent,
+            hintText: "Search event".tr,
             suffixIcon: Container(
               width: 70,
               margin: const EdgeInsets.only(top: 8, bottom: 8, right: 10),
@@ -24,8 +24,8 @@ AppBar homeAppbar() => AppBar(
                   borderRadius: BorderRadius.circular(30)),
               child: Align(
                   alignment: Alignment.centerRight,
-                  child: const CommonText(
-                    text: AppString.search,
+                  child:  CommonText(
+                    text:"Search".tr,
                     color: AppColors.white,
                   ).center),
             ),

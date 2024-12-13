@@ -75,15 +75,15 @@ class SearchScreen extends StatelessWidget {
                         Row(
                           mainAxisAlignment: MainAxisAlignment.spaceBetween,
                           children: [
-                            const CommonText(
-                              text: AppString.eventsNearYou,
+                             CommonText(
+                              text: "Events near you".tr,
                               fontWeight: FontWeight.w700,
                               fontSize: 20,
                             ),
                             InkWell(
                               onTap: () => Get.toNamed(AppRoutes.eventNear),
-                              child: const CommonText(
-                                text: AppString.viewAll,
+                              child:  CommonText(
+                                text: "View All".tr,
                                 fontWeight: FontWeight.w400,
                                 fontSize: 10,
                                 color: AppColors.primaryColor,
@@ -109,16 +109,16 @@ class SearchScreen extends StatelessWidget {
                         Row(
                           mainAxisAlignment: MainAxisAlignment.spaceBetween,
                           children: [
-                            const CommonText(
-                              text: AppString.featuredActivities,
+                             CommonText(
+                              text: "Featured activities".tr,
                               fontWeight: FontWeight.w700,
                               fontSize: 20,
                             ),
                             InkWell(
                               onTap: () =>
                                   Get.toNamed(AppRoutes.featuredActivities),
-                              child: const CommonText(
-                                text: AppString.viewAll,
+                              child:  CommonText(
+                                text:  "View All".tr,
                                 fontWeight: FontWeight.w400,
                                 fontSize: 10,
                                 color: AppColors.primaryColor,

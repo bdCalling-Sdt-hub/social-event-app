@@ -26,8 +26,8 @@ Widget postArticle() {
               height: 48,
               width: 50,
             ),
-            const CommonText(
-              text: AppString.sharePost,
+             CommonText(
+              text: "Share Post".tr,
               fontSize: 15,
               left: 10,
               fontWeight: FontWeight.w400,
@@ -46,12 +46,12 @@ Widget postArticle() {
                   decoration: BoxDecoration(
                       color: AppColors.white,
                       borderRadius: BorderRadius.circular(16)),
-                  child: const Row(
+                  child:  Row(
                     crossAxisAlignment: CrossAxisAlignment.center,
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
                       Icon(Icons.image_outlined),
-                      CommonText(text: AppString.photo)
+                      CommonText(text: "photo".tr)
                     ],
                   ),
                 ),
@@ -66,12 +66,12 @@ Widget postArticle() {
                   decoration: BoxDecoration(
                       color: AppColors.white,
                       borderRadius: BorderRadius.circular(16)),
-                  child: const Row(
+                  child:  Row(
                     crossAxisAlignment: CrossAxisAlignment.center,
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
                       Icon(Icons.videocam_outlined),
-                      CommonText(text: AppString.video)
+                      CommonText(text: "video".tr)
                     ],
                   ),
                 ),

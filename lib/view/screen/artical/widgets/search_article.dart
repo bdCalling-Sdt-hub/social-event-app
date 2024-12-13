@@ -31,18 +31,18 @@ Widget searchArticle() {
                   filled: true,
                   fillColor: const Color(0xffEEEEEE),
                   prefixIcon: const Icon(Icons.search_sharp),
-                  hintText: AppString.searchLocation,
+                  hintText: "Search location".tr,
                   hintStyle: const TextStyle(color: Color(0xff909090)),
                   suffixIcon: Container(
                     width: 70,
-                    margin: const EdgeInsets.only(top: 8, bottom: 8, right: 10),
+                    margin:  EdgeInsets.only(top: 8, bottom: 8, right: 10),
                     decoration: BoxDecoration(
                         color: AppColors.primaryColor,
                         borderRadius: BorderRadius.circular(30)),
                     child: Align(
                         alignment: Alignment.centerRight,
-                        child: const CommonText(
-                          text: AppString.search,
+                        child:  CommonText(
+                          text: "Search".tr,
                           color: AppColors.white,
                         ).center),
                   ),

@@ -92,16 +92,7 @@ class _OnboardingScreenState extends State<OnboardingScreen>
                     children: [
                       GestureDetector(
                         onTap: () {
-
-
-                          LanguageController.instance.titleText.value ="US";
-                          LanguageController.instance.languageCode = 'en';
-
-                          PrefsHelper.localizationCountryCode = "US";
-                          PrefsHelper.localizationLanguageCode ='en';
-                          Get.updateLocale( Locale("en", "US"));
-                          PrefsHelper.setString("localizationLanguageCode", PrefsHelper.localizationLanguageCode);
-                          PrefsHelper.setString("localizationCountryCode", PrefsHelper.localizationCountryCode);
+                          languageController.changeLanguage("en", "US");
 
                         },
                         child: Container(
@@ -134,16 +125,7 @@ class _OnboardingScreenState extends State<OnboardingScreen>
                       ),
                       GestureDetector(
                         onTap: () {
-
-                          LanguageController.instance.titleText.value ="CN";
-                          LanguageController.instance.languageCode = 'zh-cn';
-
-                          PrefsHelper.localizationCountryCode = "CN";
-                          PrefsHelper.localizationLanguageCode ='zh-cn';
-                          Get.updateLocale(  Locale("zh-cn", "CN"));
-                          PrefsHelper.setString("localizationLanguageCode", PrefsHelper.localizationLanguageCode);
-                          PrefsHelper.setString("localizationCountryCode", PrefsHelper.localizationCountryCode);
-
+                          languageController.changeLanguage("zh-cn", "CN");
                         },
                         child: Container(
                           padding: const EdgeInsets.all(6),
