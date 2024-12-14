@@ -69,7 +69,7 @@ class _FiltersState extends State<Filters> {
     setState(() {});
   }
 
-  selectedDistance( item) {
+  selectedDistance(item) {
     seletedDistance = item;
     setState(() {});
   }
@@ -120,6 +120,7 @@ class _FiltersState extends State<Filters> {
                   child: InkWell(
                     onTap: () => selectedAge(index),
                     child: CommonText(
+                      fontSize: 12,
                       text: age[index],
                       color: seletedAge == item
                           ? AppColors.white
@@ -159,6 +160,7 @@ class _FiltersState extends State<Filters> {
                   child: InkWell(
                     onTap: () => selectingCategories(item),
                     child: CommonText(
+                      fontSize: 12,
                       text: item,
                       color: seletedCategories.contains(item)
                           ? AppColors.white
@@ -217,6 +219,7 @@ class _FiltersState extends State<Filters> {
                   child: InkWell(
                     onTap: () => selectedDistance(item),
                     child: CommonText(
+                      fontSize: 12,
                       text: item,
                       color: seletedDistance == item
                           ? AppColors.white
@@ -234,6 +237,7 @@ class _FiltersState extends State<Filters> {
                     onTap: () => Get.back(),
                     titleText: AppString.clearFilters,
                     buttonHeight: 50,
+                    titleSize: 15,
                     buttonColor: AppColors.transparent,
                     titleColor: AppColors.primaryColor,
                   ),
@@ -244,6 +248,7 @@ class _FiltersState extends State<Filters> {
                     onTap: () => Get.back(),
                     titleText: AppString.applyFilters,
                     buttonHeight: 50,
+                    titleSize: 15,
                   ),
                 ),
               ],

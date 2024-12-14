@@ -102,14 +102,10 @@ class _EventItemState extends State<EventItem> {
                   ],
                 ),
               ),
-              Switch(
-                value: value,
-                activeTrackColor: AppColors.white,
-                trackOutlineColor:
-                    WidgetStateProperty.all(AppColors.primaryColor),
-                thumbColor: WidgetStateProperty.all(AppColors.primaryColor),
-                onChanged: (v) {
-                  value = v;
+              commonSwitch(
+                value,
+                () {
+                  value = !value;
                   setState(() {});
                 },
               )
@@ -195,4 +191,37 @@ class _EventItemState extends State<EventItem> {
       ),
     );
   }
+}
+
+Widget commonSwitch(bool value, VoidCallback? onTap) {
+  return GestureDetector(
+    onTap: onTap,
+    child: AnimatedContainer(
+
+      duration: const Duration(seconds: 1),
+      height: 28,
+      width: 50,
+      decoration: BoxDecoration(
+        color: AppColors.white,
+        borderRadius: BorderRadius.circular(30),
+        border: Border.all(
+          color: value ? AppColors.primaryColor : const Color(0xff909090),
+        ),
+      ),
+      child: AnimatedAlign(
+        duration: const Duration(milliseconds: 300),
+        alignment: value ? Alignment.centerRight : Alignment.centerLeft,
+        child: Container(
+          margin: const EdgeInsets.all(3),
+          height: 22,
+          width: 22,
+          decoration: BoxDecoration(
+            color:
+                value ? AppColors.primaryColor : CupertinoColors.inactiveGray,
+            shape: BoxShape.circle,
+          ),
+        ),
+      ),
+    ),
+  );
 }

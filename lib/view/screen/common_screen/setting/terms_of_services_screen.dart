@@ -4,6 +4,7 @@ import 'package:flutter_html/flutter_html.dart';
 import 'package:get/get.dart';
 import '../../../../controllers/common_controller/setting/terms_of_services_controller.dart';
 import '../../../../models/api_response_model.dart';
+import '../../../../utils/app_colors.dart';
 import '../../../../utils/app_string.dart';
 import '../../../component/other_widgets/common_loader.dart';
 import '../../../component/screen/error_screen.dart';
@@ -16,6 +17,7 @@ class TermsOfServicesScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
         appBar: AppBar(
+          backgroundColor: AppColors.primaryColor,
           centerTitle: true,
           title: const CommonText(
             text: AppString.termsOfServices,

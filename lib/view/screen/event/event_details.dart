@@ -42,158 +42,162 @@ class EventDetails extends StatelessWidget {
             ),
             Padding(
               padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 20),
-              child: Column(
-                children: [
-                  Row(
-                    children: [
-                      const Icon(Icons.location_on_outlined),
-                      Container(
-                        height: 15,
-                        width: 1,
-                        margin: const EdgeInsets.only(left: 10, right: 10),
-                        color: const Color(0xff0000004d).withOpacity(0.30),
-                      ),
-                      const Flexible(
-                        child: CommonText(
-                            fontSize: 12,
-                            fontWeight: FontWeight.w400,
-                            text:
-                                "105 Yandang Road Huangpu District, Shanghai"),
-                      )
-                    ],
-                  ),
-                  16.height,
-                  Row(
-                    children: [
-                      const Icon(Icons.date_range),
-                      Container(
-                        height: 15,
-                        width: 1,
-                        margin: const EdgeInsets.only(left: 10, right: 10),
-                        color: const Color(0xff0000004d).withOpacity(0.30),
-                      ),
-                      const CommonText(
-                        text: "September 30, 2023",
-                        fontSize: 12,
-                        fontWeight: FontWeight.w400,
-                      ),
-                      20.width,
-                      const Row(
-                        children: [
-                          Icon(Icons.access_time),
-                          CommonText(
-                            text: "09:00 AM",
-                            fontSize: 12,
-                            left: 10,
-                            fontWeight: FontWeight.w400,
-                          )
-                        ],
-                      ),
-                    ],
-                  ),
-                  16.height,
-                  Row(
-                    children: [
-                      const Icon(
-                        Icons.circle,
-                        size: 8,
-                      ),
-                      const CommonText(
-                        text: AppString.ageGroup,
-                        fontSize: 13,
-                        right: 70,
-                      ),
-                      CommonText(
-                        text: AppString.allAges,
-                        fontSize: 15,
-                        textAlign: TextAlign.start,
-                        color: AppColors.black.withOpacity(0.5),
-                      ),
-                    ],
-                  ),
-                  16.height,
-                  Row(
-                    children: [
-                      const Icon(
-                        Icons.circle,
-                        size: 8,
-                      ),
-                      const CommonText(
-                        text: AppString.category,
-                        fontSize: 13,
-                        right: 80,
-                      ),
-                      CommonText(
-                        text: AppString.entertain,
-                        fontSize: 15,
-                        color: AppColors.black.withOpacity(0.5),
-                      ),
-                    ],
-                  ),
-                  25.height,
-                  Container(
-                    width: double.infinity,
-                    height: 56,
-                    decoration: BoxDecoration(
-                        color: const Color(0xffE4F7F3),
-                        borderRadius: BorderRadius.circular(12)),
-                    child: Row(
-                      mainAxisAlignment: MainAxisAlignment.spaceAround,
+              child: Expanded(
+                child: Column(
+                  children: [
+                    Row(
                       children: [
-                        const CommonText(
-                          text: "Fee: ¥ 100",
-                          fontSize: 14,
-                          fontWeight: FontWeight.w700,
-                          color: AppColors.primaryColor,
+                        const Icon(Icons.location_on_outlined),
+                        Container(
+                          height: 15,
+                          width: 1,
+                          margin: const EdgeInsets.only(left: 10, right: 10),
+                          color: const Color(0xff0000004d).withOpacity(0.30),
                         ),
-                        InkWell(
-                          onTap: () => Get.toNamed(AppRoutes.buyTicket),
-                          child: const CommonButton(
-                            titleText: AppString.buyTicket,
-                            buttonWidth: 150,
-                            buttonHeight: 42,
-                          ),
+                        const Flexible(
+                          child: CommonText(
+                              fontSize: 12,
+                              fontWeight: FontWeight.w400,
+                              text:
+                                  "105 Yandang Road Huangpu District, Shanghai"),
                         )
                       ],
                     ),
-                  ),
-                  const CommonText(
-                    text: AppString.description,
-                    fontWeight: FontWeight.w700,
-                    top: 20,
-                    bottom: 10,
-                  ).start,
-                  CommonText(
-                    text: value,
-                    maxLines: 100,
-                    textAlign: TextAlign.start,
-                    color: AppColors.black.withOpacity(0.5),
-                    fontWeight: FontWeight.w400,
-                  ),
-                  const CommonText(
-                    text: AppString.eventOrganizers,
-                    fontWeight: FontWeight.bold,
-                    top: 20,
-                    bottom: 10,
-                  ).start,
-                  SizedBox(
-                    height: 130,
-                    child: ListView.builder(
-                      scrollDirection: Axis.horizontal,
-                      itemCount: 2,
-                      itemBuilder: (context, index) => Organizer(
-                          image: AppImages.image3,
-                          name: "Bác. Lỡ Lĩnh ",
-                          title: index == 0 ? "Creator" : "Organizer"),
+                    16.height,
+                    Row(
+                      children: [
+                        const Icon(Icons.date_range),
+                        Container(
+                          height: 15,
+                          width: 1,
+                          margin: const EdgeInsets.only(left: 10, right: 10),
+                          color: const Color(0xff0000004d).withOpacity(0.30),
+                        ),
+                        const CommonText(
+                          text: "September 30, 2023",
+                          fontSize: 12,
+                          fontWeight: FontWeight.w400,
+                        ),
+                        20.width,
+                        const Row(
+                          children: [
+                            Icon(Icons.access_time),
+                            CommonText(
+                              text: "09:00 AM",
+                              fontSize: 12,
+                              left: 10,
+                              fontWeight: FontWeight.w400,
+                            )
+                          ],
+                        ),
+                      ],
                     ),
-                  ),
-                  20.height,
-                  CommonButton(
-                    titleText: AppString.joinEvent,
-                    onTap: () => Get.toNamed(AppRoutes.eventPage),
-                  ),
-                  30.height
-                ],
+                    16.height,
+                    Row(
+                      children: [
+                        const Icon(
+                          Icons.circle,
+                          size: 8,
+                        ),
+                        const CommonText(
+                          text: AppString.ageGroup,
+                          fontSize: 13,
+                          right: 70,
+                        ),
+                        CommonText(
+                          text: AppString.allAges,
+                          fontSize: 15,
+                          textAlign: TextAlign.start,
+                          color: AppColors.black.withOpacity(0.5),
+                        ),
+                      ],
+                    ),
+                    16.height,
+                    Row(
+                      children: [
+                        const Icon(
+                          Icons.circle,
+                          size: 8,
+                        ),
+                        const CommonText(
+                          text: AppString.category,
+                          fontSize: 13,
+                          right: 80,
+                        ),
+                        CommonText(
+                          text: AppString.entertain,
+                          fontSize: 15,
+                          color: AppColors.black.withOpacity(0.5),
+                        ),
+                      ],
+                    ),
+                    25.height,
+                    Container(
+                      width: double.infinity,
+                      height: 56,
+                      decoration: BoxDecoration(
+                          color: const Color(0xffE4F7F3),
+                          borderRadius: BorderRadius.circular(12)),
+                      child: Row(
+                        mainAxisAlignment: MainAxisAlignment.spaceAround,
+                        children: [
+                          const CommonText(
+                            text: "Fee: ¥ 100",
+                            fontSize: 14,
+                            fontWeight: FontWeight.w700,
+                            color: AppColors.primaryColor,
+                          ),
+                          InkWell(
+                            onTap: () => Get.toNamed(AppRoutes.buyTicket),
+                            child: const CommonButton(
+                              titleText: AppString.buyTicket,
+                              buttonWidth: 150,
+                              buttonHeight: 42,
+                            ),
+                          )
+                        ],
+                      ),
+                    ),
+                    const CommonText(
+                      text: AppString.description,
+                      fontWeight: FontWeight.w700,
+                      top: 20,
+                      bottom: 10,
+                    ).start,
+                    CommonText(
+                      text: value,
+                      maxLines: 100,
+                      textAlign: TextAlign.start,
+                      color: AppColors.black.withOpacity(0.5),
+                      fontWeight: FontWeight.w400,
+                    ),
+                    const CommonText(
+                      text: AppString.eventOrganizers,
+                      fontWeight: FontWeight.bold,
+                      top: 20,
+                      bottom: 10,
+                    ).start,
+                    GridView.builder(
+                      physics: const NeverScrollableScrollPhysics(),
+                      shrinkWrap: true,
+                      gridDelegate:
+                          const SliverGridDelegateWithFixedCrossAxisCount(
+                              crossAxisCount: 3),
+                      itemBuilder: (context, index) {
+                        return Organizer(
+                            image: AppImages.image3,
+                            name: "Bác. Lỡ Lĩnh ",
+                            title: index == 0 ? "Creator" : "Organizer");
+                      },
+                    ),
+                    20.height,
+                    CommonButton(
+                      titleText: AppString.joinEvent,
+                      onTap: () => Get.toNamed(AppRoutes.eventPage),
+                    ),
+                    30.height
+                  ],
+                ),
               ),
             )
           ],

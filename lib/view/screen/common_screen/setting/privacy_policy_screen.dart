@@ -2,6 +2,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_html/flutter_html.dart';
 import 'package:get/get.dart';
+import 'package:social_event/utils/app_colors.dart';
 import '../../../../controllers/common_controller/setting/privacy_policy_controller.dart';
 import '../../../../models/api_response_model.dart';
 import '../../../../utils/app_string.dart';
@@ -17,6 +18,7 @@ class PrivacyPolicyScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
         appBar: AppBar(
+          backgroundColor: AppColors.primaryColor,
           centerTitle: true,
           title: const CommonText(
             text: AppString.privacyPolicy,
