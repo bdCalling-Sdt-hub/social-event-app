@@ -31,7 +31,7 @@ class ReviewPostScreen extends StatelessWidget {
       bottomNavigationBar: Padding(
         padding: const EdgeInsets.all(20.0),
         child: CommonButton(
-          titleText: AppString.post,
+          titleText: "Post".tr,
           onTap: () => Get.toNamed(AppRoutes.home),
         ),
       ),

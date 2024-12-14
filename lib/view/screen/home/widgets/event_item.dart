@@ -2,6 +2,7 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:social_event/helpers/app_routes.dart';
+import 'package:social_event/helpers/my_extension.dart';
 import 'package:social_event/utils/app_images.dart';
 import 'package:social_event/view/component/text/common_text.dart';
 
@@ -29,7 +30,7 @@ class _EventItemState extends State<EventItem> {
   @override
   Widget build(BuildContext context) {
     return Container(
-      height: 140,
+      height: 150,
       width: double.infinity,
       margin: const EdgeInsets.only(top: 12),
       padding: const EdgeInsets.all(12),
@@ -42,63 +43,74 @@ class _EventItemState extends State<EventItem> {
           Row(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              const Expanded(
+              Expanded(
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
-                    CommonText(
+                    const CommonText(
                       text: "Event Name",
-                      fontSize: 14,
+                      fontSize: 13,
                       fontWeight: FontWeight.w700,
+                      color: AppColors.black,
                     ),
-                    Row(
+                    5.height,
+                    const Row(
                       children: [
                         Icon(
                           Icons.location_on_outlined,
                           size: 16,
+                          color: AppColors.black,
                         ),
                         Flexible(
                           child: CommonText(
-                              fontSize: 12,
-                              fontWeight: FontWeight.w400,
-                              left: 3,
-                              text:
-                                  "105 Yandang Road, Huangpu District, Shanghai"),
+                            fontSize: 10,
+                            fontWeight: FontWeight.w400,
+                            left: 3,
+                            text: "105 Yandang Road.....",
+                            color: AppColors.black,
+                          ),
                         ),
                       ],
                     ),
-                    Row(
+                    5.height,
+                    const Row(
                       children: [
                         Icon(
                           Icons.access_time,
                           size: 16,
+                          color: AppColors.black,
                         ),
                         Flexible(
                           child: CommonText(
                             text: "09:00 AM",
-                            fontSize: 12,
+                            fontSize: 10,
                             fontWeight: FontWeight.w400,
                             left: 6,
+                            color: AppColors.black,
                           ),
                         ),
                       ],
                     ),
-                    Row(
+                    5.height,
+                    const Row(
                       children: [
                         Icon(
                           Icons.access_time,
                           size: 16,
+                          color: AppColors.black,
                         ),
                         Flexible(
                           child: CommonText(
                             text: "Attendee no(15)",
-                            fontSize: 12,
+                            fontSize: 10,
                             fontWeight: FontWeight.w400,
                             left: 6,
+                            color: AppColors.black,
                           ),
                         ),
                       ],
                     ),
+                    10.height,
                   ],
                 ),
               ),
@@ -128,23 +140,32 @@ class _EventItemState extends State<EventItem> {
                     ...List.generate(list.length, (index) {
                       return Positioned(
                         left: index * 16.0, // Adjust spacing for overlap
-                        child: CircleAvatar(
-                          radius: 16,
-                          backgroundImage: AssetImage(
-                              list[index]), // Replace with image URLs
+                        child: SizedBox(
+                          height: 24,
+                          width: 24,
+                          child: CircleAvatar(
+                            radius: 16,
+                            backgroundImage: AssetImage(
+                                list[index]), // Replace with image URLs
+                          ),
                         ),
                       );
                     }),
                     // "+15" Circle
                     Positioned(
                       left: list.length * 16.0, // Position for "+15" indicator
-                      child: const CircleAvatar(
-                        radius: 16,
-                        backgroundColor: AppColors.primaryColor,
-                        child: CommonText(
-                          text: '+15',
-                          color: AppColors.white,
-                          fontWeight: FontWeight.bold,
+                      child: const SizedBox(
+                        height: 24,
+                        width: 24,
+                        child: CircleAvatar(
+                          radius: 16,
+                          backgroundColor: AppColors.primaryColor,
+                          child: CommonText(
+                            text: '+15',
+                            fontSize: 10,
+                            color: AppColors.white,
+                            fontWeight: FontWeight.normal,
+                          ),
                         ),
                       ),
                     ),
@@ -153,19 +174,26 @@ class _EventItemState extends State<EventItem> {
               ),
               const Spacer(),
               Container(
+                height: 32,
+                width: 32,
                 padding: const EdgeInsets.all(6),
                 margin: const EdgeInsets.only(right: 10),
                 decoration: const BoxDecoration(
                     shape: BoxShape.circle, color: AppColors.primaryColor),
-                child: const Icon(
-                  CupertinoIcons.chat_bubble,
-                  color: AppColors.white,
+                child: Center(
+                  child: const Icon(
+                    CupertinoIcons.chat_bubble,
+                    color: AppColors.white,
+                    size: 20,
+                  ),
                 ),
               ),
               InkWell(
                 onTap: () => Get.toNamed(AppRoutes.createEvent,
                     parameters: {"isEdit": "edit"}),
                 child: Container(
+                   height: 32,
+                width: 32,
                   padding: const EdgeInsets.all(6),
                   margin: const EdgeInsets.only(right: 10),
                   decoration: const BoxDecoration(
@@ -173,12 +201,15 @@ class _EventItemState extends State<EventItem> {
                   child: const Icon(
                     Icons.edit,
                     color: AppColors.white,
+                     size: 20,
                   ),
                 ),
               ),
               InkWell(
                 onTap: () => notificationBottomSheet(),
                 child: Container(
+                   height: 32,
+                width: 32,
                   padding: const EdgeInsets.all(6),
                   margin: const EdgeInsets.only(right: 10),
                   decoration: const BoxDecoration(
@@ -186,6 +217,7 @@ class _EventItemState extends State<EventItem> {
                   child: const Icon(
                     Icons.notifications_outlined,
                     color: AppColors.white,
+                     size: 20,
                   ),
                 ),
               ),

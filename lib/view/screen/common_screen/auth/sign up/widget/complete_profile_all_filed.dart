@@ -26,9 +26,14 @@ class CompleteProfileAllFiled extends StatelessWidget {
                   mainAxisAlignment: MainAxisAlignment.start,
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
-                    const CommonText(text: AppString.firstName),
+                    CommonText(
+                      text: "First Name".tr,
+                      fontWeight: FontWeight.w700,
+                      fontSize: 13,
+                    ),
                     CommonTextField(
-                      hintText: AppString.firstName,
+                      hintText: "John",
+                      paddingHorizontal: 1,
                     )
                   ],
                 ),
@@ -39,21 +44,29 @@ class CompleteProfileAllFiled extends StatelessWidget {
                   mainAxisAlignment: MainAxisAlignment.start,
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
-                    const CommonText(text: AppString.firstName),
+                    CommonText(
+                      text: "Last Name".tr,
+                      fontWeight: FontWeight.w700,
+                      fontSize: 13,
+                    ),
                     CommonTextField(
-                      hintText: AppString.firstName,
+                      hintText: "Doe",
+                      paddingHorizontal: 1,
                     )
                   ],
                 ),
               ),
             ],
           ),
-          const CommonText(
-            text: AppString.gender,
+          CommonText(
+            text: "Gender".tr,
+            fontWeight: FontWeight.w700,
             top: 12,
+            fontSize: 13,
           ),
           CommonTextField(
-            hintText: AppString.gender,
+            hintText: "Select".tr,
+            paddingHorizontal: 1,
             controller: controller.genderController,
             onTap: () {
               PopUpMenu(
@@ -68,11 +81,12 @@ class CompleteProfileAllFiled extends StatelessWidget {
               selectedItem: [controller.genderController.text],
             ),
           ),
-          const CommonText(
-            text: AppString.ageGroup,
+          CommonText(
+            text: "Age Group".tr,
             fontWeight: FontWeight.w700,
             bottom: 10,
             top: 30,
+            fontSize: 13,
           ),
           GridView.builder(
             physics: const NeverScrollableScrollPhysics(),
@@ -109,11 +123,12 @@ class CompleteProfileAllFiled extends StatelessWidget {
               );
             },
           ),
-          const CommonText(
-            text: AppString.categories,
+          CommonText(
+            text: "Categories".tr,
             fontWeight: FontWeight.w700,
             bottom: 10,
             top: 30,
+            fontSize: 13,
           ),
           GridView.builder(
             physics: const NeverScrollableScrollPhysics(),

@@ -26,15 +26,15 @@ class LocationAccessScreen extends StatelessWidget {
               width: 220,
               height: 220,
             ).center,
-            const CommonText(
-              text: AppString.findNearbyActivities,
+             CommonText(
+              text:"Find nearby activities".tr,
               fontSize: 24,
               fontWeight: FontWeight.w700,
               color: AppColors.primaryColor,
               top: 50,
             ),
-            const CommonText(
-              text: AppString.locationDetails,
+             CommonText(
+              text: "We will access your location to showcase the ongoing events in your area".tr,
               fontWeight: FontWeight.w400,
               top: 50,
               maxLines: 2,
@@ -44,7 +44,7 @@ class LocationAccessScreen extends StatelessWidget {
               children: [
                 Expanded(
                     child: CommonButton(
-                  titleText: AppString.skipForNow,
+                  titleText: "Skip for now".tr,
                   buttonColor: AppColors.transparent,
                   titleColor: AppColors.primaryColor,
                   onTap: () => Get.toNamed(AppRoutes.home),
@@ -52,7 +52,7 @@ class LocationAccessScreen extends StatelessWidget {
                 20.width,
                 Expanded(
                     child: CommonButton(
-                  titleText: AppString.allowAccess,
+                  titleText: "Allow Access".tr,
                   onTap: () => Get.toNamed(AppRoutes.home),
                 )),
               ],

@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 import 'package:social_event/helpers/my_extension.dart';
 import 'package:social_event/utils/app_colors.dart';
 import 'package:social_event/utils/app_images.dart';
@@ -47,14 +48,14 @@ class _PostItemState extends State<PostItem> {
                     color: AppColors.black,
                   ),
                   CommonText(
-                    text: "Venue Name • Oct 10, 2023 • 09:00 AM",
+                    text: "${"Venue Name".tr} • Oct 10, 2023 • 09:00 AM",
                     fontSize: 10,
                     bottom: 4,
                     fontWeight: FontWeight.w400,
                     color: AppColors.black.withOpacity(0.5),
                   ),
                   CommonText(
-                    text: "Age group: 4-6 • Category: Entertain",
+                    text: "${"Age Group".tr}: 4-6 •  ${"Category".tr}: Entertain",
                     fontSize: 10,
                     color: AppColors.black.withOpacity(0.5),
                     fontWeight: FontWeight.w400,
@@ -134,7 +135,7 @@ class _PostItemState extends State<PostItem> {
           Row(
             children: [
               CommonText(
-                text: "Liked by Wu Siyu and 12 others",
+                text: "${"Liked by".tr} Wu Siyu ${"and".tr} 12 ${"others"}",
                 color: AppColors.black.withOpacity(0.5),
                 fontSize: 10,
                 left: 10,
@@ -142,14 +143,14 @@ class _PostItemState extends State<PostItem> {
               ),
               const Spacer(),
               CommonText(
-                text: "12 comments",
+                text: "12 ${"Comment".tr}",
                 color: AppColors.black.withOpacity(0.5),
                 fontSize: 10,
                 right: 4,
                 fontWeight: FontWeight.w400,
               ),
               CommonText(
-                text: "• 4 shares",
+                text: "• 4 ${"Share".tr}",
                 color: AppColors.black.withOpacity(0.5),
                 fontSize: 10,
                 right: 10,
@@ -174,7 +175,7 @@ class _PostItemState extends State<PostItem> {
                                 : Icons.thumb_up_alt_outlined,
                             color: isLike ? Colors.blue : Colors.grey)),
                     CommonText(
-                      text: AppString.like,
+                      text: "Like".tr,
                       fontSize: 10,
                       fontWeight: FontWeight.bold,
                       color: AppColors.black.withOpacity(0.5),
@@ -188,7 +189,7 @@ class _PostItemState extends State<PostItem> {
                         onPressed: () {},
                         icon: const Icon(Icons.messenger_outline)),
                     CommonText(
-                      text: AppString.comment,
+                      text: "Comment".tr,
                       fontSize: 10,
                       fontWeight: FontWeight.bold,
                       color: AppColors.black.withOpacity(0.5),
@@ -202,7 +203,7 @@ class _PostItemState extends State<PostItem> {
                         onPressed: () {},
                         icon: const Icon(Icons.ios_share_outlined)),
                     CommonText(
-                      text: AppString.share,
+                      text: "Share".tr,
                       fontSize: 10,
                       fontWeight: FontWeight.bold,
                       color: AppColors.black.withOpacity(0.5),

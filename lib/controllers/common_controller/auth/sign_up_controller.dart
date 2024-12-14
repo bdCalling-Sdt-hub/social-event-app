@@ -23,7 +23,7 @@ class SignUpController extends GetxController {
   List seletedAge = [];
   List seletedCategories = [];
 
-  List age = const [
+  List age =  [
     "1-3",
     "4-6",
     "7-12",
@@ -31,17 +31,17 @@ class SignUpController extends GetxController {
     "18-35",
     "36-55",
     "56-70",
-    "All Ages",
+    "All Ages".tr,
   ];
-  List categories = const [
-    "Social ",
-    "Education",
-    "Entertain",
-    "Sports",
-    "Tech",
-    "Expo",
-    "Leisure",
-    "Brands",
+  List categories =  [
+    "Social".tr,
+    "Education".tr,
+    "Entertain".tr,
+    "Sports".tr,
+    "Tech".tr,
+    "Expo".tr,
+    "Leisure".tr,
+    "Brands".tr,
   ];
 
   changeAccept(value) {

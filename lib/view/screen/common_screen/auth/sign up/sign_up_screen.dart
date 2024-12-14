@@ -42,17 +42,19 @@ class SignUpScreen extends StatelessWidget {
                       imageColor: AppColors.primaryColor,
                       imageType: ImageType.svg,
                     )),
-                    const CommonText(
-                      text: AppString.createAnAccount,
+                    CommonText(
+                      text: "Create an account".tr,
                       fontSize: 24,
                       fontWeight: FontWeight.w700,
                       color: AppColors.primaryColor,
                       top: 50,
                       bottom: 50,
                     ).center,
-                    const CommonText(
-                      text: AppString.phoneNumber,
-                      bottom: 8,
+                    CommonText(
+                      text: "Phone Number".tr,
+                      bottom: 0,
+                      fontSize: 12,
+                      fontWeight: FontWeight.w700,
                     ),
                     CommonPhoneNumberTextFiled(
                       controller: controller.numberController,
@@ -65,7 +67,9 @@ class SignUpScreen extends StatelessWidget {
                           height: 20,
                           width: 20,
                           child: Checkbox(
-                              side: const BorderSide(color: AppColors.primaryColor, ),
+                              side: const BorderSide(
+                                color: AppColors.primaryColor,
+                              ),
                               value: controller.isAccept,
                               onChanged: controller.changeAccept),
                         ),
@@ -75,7 +79,7 @@ class SignUpScreen extends StatelessWidget {
                     ),
                     30.height,
                     CommonButton(
-                      titleText: AppString.continues,
+                      titleText: "Continue".tr,
                       isLoading: controller.isLoading,
                       onTap: () {
                         if (formKey.currentState!.validate()) {

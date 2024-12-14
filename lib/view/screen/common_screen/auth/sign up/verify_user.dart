@@ -56,8 +56,8 @@ class _VerifyUserState extends State<VerifyUser> {
                     imageColor: AppColors.primaryColor,
                     imageType: ImageType.svg,
                   )),
-                  const CommonText(
-                    text: AppString.otpDetails,
+                   CommonText(
+                    text: "Enter the OTC sent to your phone number".tr,
                     maxLines: 2,
                     fontWeight: FontWeight.w700,
                     color: AppColors.primaryColor,
@@ -103,7 +103,7 @@ class _VerifyUserState extends State<VerifyUser> {
                   ),
                   20.height,
                   CommonButton(
-                    titleText: AppString.signUp,
+                    titleText: "Register".tr,
                     isLoading: controller.isLoading,
                     onTap: () {
                       if (formKey.currentState!.validate()) {
@@ -112,16 +112,16 @@ class _VerifyUserState extends State<VerifyUser> {
                     },
                   ),
                   50.height,
-                  const CommonText(
-                    text: AppString.didNotReceivedTheCodeYet,
+                   CommonText(
+                    text:"Didn’t received the code yet?".tr,
                     fontWeight: FontWeight.w400,
                     color: AppColors.black,
                     bottom: 10,
                   ).center,
                   InkWell(
                     onTap: showBottomSheetModel,
-                    child: const CommonText(
-                      text: AppString.resend,
+                    child:  CommonText(
+                      text: "Resend".tr,
                       color: AppColors.primaryColor,
                     ).center,
                   )

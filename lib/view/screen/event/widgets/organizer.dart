@@ -18,7 +18,7 @@ class Organizer extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      width: 110,
+      width: 120,
       padding: const EdgeInsets.all(10),
       margin: const EdgeInsets.only(right: 12),
       decoration: BoxDecoration(

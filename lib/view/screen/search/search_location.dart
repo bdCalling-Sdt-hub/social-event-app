@@ -18,14 +18,14 @@ Widget searchLocation() {
       ],
     ),
     child: Padding(
-      padding: const EdgeInsets.all(8.0),
+      padding: const EdgeInsets.symmetric(vertical:  8.0,horizontal: 20),
       child: TextFormField(
         decoration: InputDecoration(
             filled: true,
             fillColor: const Color(0xffEEEEEE),
-            prefixIcon: const Icon(Icons.search_sharp),
-            hintText: AppString.searchLocation,
-            hintStyle: const TextStyle(color: Color(0xff909090)),
+            prefixIcon: const Icon(Icons.search_sharp,color: Color(0xff909090)),
+            hintText: "Search location".tr,
+            hintStyle: const TextStyle(color: Color(0xff909090),fontWeight: FontWeight.normal),
             suffixIcon: Padding(
               padding: const EdgeInsets.all(6.0),
               child: InkWell(
@@ -40,7 +40,8 @@ Widget searchLocation() {
               ),
             ),
             border: OutlineInputBorder(
-                borderRadius: BorderRadius.circular(10))),
+              borderSide: BorderSide.none,
+                borderRadius: BorderRadius.circular(16))),
       ),
     ),
   ) ;

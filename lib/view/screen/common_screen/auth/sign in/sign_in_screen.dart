@@ -42,17 +42,19 @@ class SignInScreen extends StatelessWidget {
                       imageColor: AppColors.primaryColor,
                       imageType: ImageType.svg,
                     )),
-                    const CommonText(
-                      text: AppString.logInToYourAccount,
+                    CommonText(
+                      text: "Log in to your account".tr,
                       fontSize: 24,
                       fontWeight: FontWeight.w700,
                       color: AppColors.primaryColor,
                       top: 30,
                       bottom: 50,
                     ).center,
-                    const CommonText(
-                      text: AppString.phoneNumber,
-                      bottom: 8,
+                    CommonText(
+                      text: "Phone Number".tr,
+                      bottom: 0,
+                      fontWeight: FontWeight.w700,
+                      fontSize: 12,
                     ),
                     CommonPhoneNumberTextFiled(
                       controller: controller.numberController,
@@ -60,7 +62,7 @@ class SignInScreen extends StatelessWidget {
                     ),
                     20.height,
                     CommonButton(
-                      titleText: AppString.continues,
+                      titleText: "Continue".tr,
                       isLoading: controller.isLoading,
                       onTap: () {
                         if (formKey.currentState!.validate()) {
@@ -68,15 +70,15 @@ class SignInScreen extends StatelessWidget {
                         }
                       },
                     ),
-                    30.height,
-                    const CommonText(
-                      text: AppString.doNotHaveAccountYet,
+                    90.height,
+                    CommonText(
+                      text: "Don't have an account yet?".tr,
                       fontWeight: FontWeight.w400,
                       color: AppColors.primaryColor,
                       bottom: 10,
                     ).center,
                     CommonButton(
-                      titleText: AppString.createAccount,
+                      titleText: "Create an account".tr,
                       buttonColor: AppColors.transparent,
                       titleColor: AppColors.primaryColor,
                       onTap: () => Get.toNamed(AppRoutes.signUp),

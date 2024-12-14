@@ -20,7 +20,7 @@ class _FiltersState extends State<Filters> {
 
   List seletedCategories = [];
 
-  List age = const [
+  List age =  [
     "1-3",
     "4-6",
     "7-12",
@@ -28,28 +28,28 @@ class _FiltersState extends State<Filters> {
     "18-35",
     "36-55",
     "56-70",
-    "All Ages",
+    "All Ages".tr,
   ];
 
-  List categories = const [
-    "Social ",
-    "Education",
-    "Entertain",
-    "Sports",
-    "Tech",
-    "Expo",
-    "Leisure",
-    "Brands",
+  List categories =  [
+    "Social".tr,
+    "Education".tr,
+    "Entertain".tr,
+    "Sports".tr,
+    "Tech".tr,
+    "Expo".tr,
+    "Leisure".tr,
+    "Brands".tr,
   ];
-  List distance = const [
-    "30m",
-    "40m",
-    "50m",
-    "60m",
-    "1km",
-    "2km",
-    "3km",
-    "5km",
+  List distance =  [
+    "50m".tr,
+    "100m".tr,
+    "200m".tr,
+    "500m".tr,
+    "1km".tr,
+    "2km".tr,
+    "3km".tr,
+    "5km".tr,
   ];
 
   RangeValues _currentRangeValues = const RangeValues(0, 100);
@@ -79,8 +79,8 @@ class _FiltersState extends State<Filters> {
     return Scaffold(
       appBar: AppBar(
         backgroundColor: AppColors.primaryColor,
-        title: const CommonText(
-          text: AppString.filters,
+        title:  CommonText(
+          text: "Filters".tr,
           fontSize: 24,
           fontWeight: FontWeight.bold,
           color: AppColors.white,
@@ -90,8 +90,8 @@ class _FiltersState extends State<Filters> {
         padding: const EdgeInsets.symmetric(horizontal: 20),
         child: Column(
           children: [
-            const CommonText(
-              text: AppString.ageGroup,
+             CommonText(
+              text: "Age Group".tr,
               fontWeight: FontWeight.w700,
               bottom: 10,
               top: 30,
@@ -129,8 +129,8 @@ class _FiltersState extends State<Filters> {
                 );
               },
             ),
-            const CommonText(
-              text: AppString.categories,
+             CommonText(
+              text: "Categories".tr,
               fontWeight: FontWeight.w700,
               bottom: 10,
               top: 30,
@@ -168,8 +168,8 @@ class _FiltersState extends State<Filters> {
                 );
               },
             ),
-            const CommonText(
-              text: AppString.pricing,
+             CommonText(
+              text: "Pricing".tr,
               top: 20,
             ).start,
             RangeSlider(
@@ -188,8 +188,8 @@ class _FiltersState extends State<Filters> {
                 });
               },
             ),
-            const CommonText(
-              text: AppString.distance,
+             CommonText(
+              text: "Distance".tr,
               top: 20,
               bottom: 12,
             ).start,
@@ -232,7 +232,7 @@ class _FiltersState extends State<Filters> {
                 Expanded(
                   child: CommonButton(
                     onTap: () => Get.back(),
-                    titleText: AppString.clearFilters,
+                    titleText: "Clear Filters".tr,
                     buttonHeight: 50,
                     buttonColor: AppColors.transparent,
                     titleColor: AppColors.primaryColor,
@@ -242,7 +242,7 @@ class _FiltersState extends State<Filters> {
                 Expanded(
                   child: CommonButton(
                     onTap: () => Get.back(),
-                    titleText: AppString.applyFilters,
+                    titleText: "Apply Filters".tr,
                     buttonHeight: 50,
                   ),
                 ),

@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
+import 'package:get/get_state_manager/src/simple/get_view.dart';
 import 'package:social_event/utils/app_colors.dart';
 import 'package:social_event/utils/app_images.dart';
 import 'package:social_event/utils/app_string.dart';
@@ -15,8 +17,8 @@ class SelectOrganizer extends StatelessWidget {
         backgroundColor: AppColors.primaryColor,
         centerTitle: true,
         iconTheme: const IconThemeData(color: AppColors.white),
-        title: const CommonText(
-          text: AppString.selectPeople,
+        title:  CommonText(
+          text:"Select People".tr,
           fontSize: 24,
           fontWeight: FontWeight.bold,
           color: AppColors.white,

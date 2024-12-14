@@ -49,13 +49,13 @@ class EventAllFiled extends StatelessWidget {
                     ),
                   ),
                   20.height,
-                  const CommonText(
-                    text: AppString.eventTitle,
+                   CommonText(
+                    text: "活动标题".tr,
                     fontSize: 14,
                     fontWeight: FontWeight.bold,
                   ).start,
                   CommonTextField(
-                    hintText: AppString.enterEventTitle,
+                    hintText: "Enter event title".tr,
                   ),
                   const CommonText(
                     text: AppString.eventLocation,
@@ -64,11 +64,11 @@ class EventAllFiled extends StatelessWidget {
                     top: 16,
                   ).start,
                   CommonTextField(
-                    hintText: AppString.enterEventLocation,
+                    hintText: "Enter event location".tr,
                     suffixIcon: const Icon(Icons.location_on_outlined),
                   ),
-                  const CommonText(
-                    text: AppString.eventEntry,
+                   CommonText(
+                    text: "Event Entry".tr,
                     fontSize: 14,
                     fontWeight: FontWeight.bold,
                     top: 20,
@@ -78,7 +78,7 @@ class EventAllFiled extends StatelessWidget {
                     children: [
                       Expanded(
                           child: CommonButton(
-                        titleText: AppString.free,
+                        titleText: "Free".tr,
                         buttonHeight: 32,
                         borderColor: controller.eventType == AppString.free
                             ? AppColors.transparent
@@ -94,7 +94,7 @@ class EventAllFiled extends StatelessWidget {
                       20.width,
                       Expanded(
                           child: CommonButton(
-                        titleText: AppString.fee,
+                        titleText:"Fee".tr,
                         buttonHeight: 32,
                         borderColor: controller.eventType == AppString.fee
                             ? AppColors.transparent
@@ -113,22 +113,22 @@ class EventAllFiled extends StatelessWidget {
                     Column(
                       children: [
                         12.height,
-                        const CommonText(
-                          text: AppString.eventFee,
+                         CommonText(
+                          text: "Event Fee".tr,
                           fontSize: 14,
                           fontWeight: FontWeight.bold,
                         ).start,
                         CommonTextField(
-                          hintText: AppString.eventFee,
+                          hintText: "Event Fee".tr,
                         ),
-                        const CommonText(
-                          text: AppString.promoCode,
+                         CommonText(
+                          text: "Promo Code".tr,
                           fontSize: 14,
                           fontWeight: FontWeight.bold,
                           top: 16,
                         ).start,
                         CommonTextField(
-                          hintText: AppString.promoCode,
+                          hintText:  "Promo Code".tr,
                         ),
                         16.height,
                         Row(
@@ -136,11 +136,11 @@ class EventAllFiled extends StatelessWidget {
                             Expanded(
                                 child: Column(
                               children: [
-                                const CommonText(text: AppString.discountType)
+                                 CommonText(text:"Discount Type".tr)
                                     .start,
                                 CommonTextField(
                                   controller: controller.discountTypeController,
-                                  hintText: AppString.discountType,
+                                  hintText:"Discount Type".tr,
                                   suffixIcon: PopUpMenu(
                                     items: controller.item,
                                     selectedItem: [
@@ -154,12 +154,12 @@ class EventAllFiled extends StatelessWidget {
                             Expanded(
                                 child: Column(
                               children: [
-                                const CommonText(text: AppString.discountValue)
+                                 CommonText(text: "Discount Value".tr)
                                     .start,
                                 CommonTextField(
                                   controller:
                                       controller.discountValueController,
-                                  hintText: AppString.discountValue,
+                                  hintText: "Discount Value".tr,
                                 )
                               ],
                             )),
@@ -168,8 +168,8 @@ class EventAllFiled extends StatelessWidget {
                       ],
                     ),
                   20.height,
-                  const CommonText(
-                    text: AppString.whoCanJoinTheEvent,
+                   CommonText(
+                    text: "Who can join the event?".tr,
                     fontWeight: FontWeight.bold,
                     fontSize: 14,
                     bottom: 10,
@@ -190,7 +190,7 @@ class EventAllFiled extends StatelessWidget {
                             borderRadius: BorderRadius.circular(20)),
                         child: InkWell(
                           child: CommonText(
-                            text: AppString.anyone,
+                            text: "Anyone".tr,
                             color: AppString.anyone == controller.joinEvent
                                 ? AppColors.white
                                 : AppColors.black,
@@ -213,7 +213,7 @@ class EventAllFiled extends StatelessWidget {
                             borderRadius: BorderRadius.circular(20)),
                         child: InkWell(
                           child: CommonText(
-                            text: AppString.friendsOnly,
+                            text: "Friends only".tr,
                             color: AppString.friendsOnly == controller.joinEvent
                                 ? AppColors.white
                                 : AppColors.black,
@@ -222,8 +222,8 @@ class EventAllFiled extends StatelessWidget {
                       )
                     ],
                   ),
-                  const CommonText(
-                    text: AppString.ageGroup,
+                   CommonText(
+                    text: "Age Group".tr,
                     fontWeight: FontWeight.w700,
                     bottom: 10,
                     top: 30,
@@ -262,8 +262,8 @@ class EventAllFiled extends StatelessWidget {
                       );
                     },
                   ),
-                  const CommonText(
-                    text: AppString.categories,
+                   CommonText(
+                    text: "Categories".tr,
                     fontWeight: FontWeight.w700,
                     bottom: 10,
                     top: 30,
@@ -309,10 +309,10 @@ class EventAllFiled extends StatelessWidget {
                       Expanded(
                           child: Column(
                         children: [
-                          const CommonText(text: AppString.date).start,
+                           CommonText(text: "date".tr).start,
                           CommonTextField(
                             controller: controller.dateController,
-                            hintText: AppString.date,
+                            hintText: "date".tr,
                             suffixIcon: InkWell(
                                 onTap: () => OtherHelper.datePicker(
                                     controller.dateController),
@@ -323,10 +323,11 @@ class EventAllFiled extends StatelessWidget {
                       Expanded(
                           child: Column(
                         children: [
-                          const CommonText(text: AppString.time).start,
+                           CommonText(text: "time".tr
+                           ).start,
                           CommonTextField(
                             controller: controller.timeController,
-                            hintText: AppString.time,
+                            hintText: "time".tr,
                             suffixIcon: InkWell(
                                 onTap: () => OtherHelper.openTimePicker(
                                     controller.timeController),
@@ -337,13 +338,13 @@ class EventAllFiled extends StatelessWidget {
                     ],
                   ),
                   12.height,
-                  const CommonText(
-                    text: AppString.description,
+                   CommonText(
+                    text: "Description".tr,
                     fontSize: 14,
                     fontWeight: FontWeight.bold,
                   ).start,
                   CommonTextField(
-                    hintText: AppString.typeHere,
+                    hintText: "Type here".tr,
                     maxLines: 4,
                     keyboardType: TextInputType.multiline,
                   ),
@@ -358,7 +359,7 @@ class EventAllFiled extends StatelessWidget {
                           return InkWell(
                             onTap: () => Get.toNamed(AppRoutes.selectOrganizer),
                             child: Container(
-                              child: const Column(
+                              child:  Column(
                                 mainAxisAlignment: MainAxisAlignment.center,
                                 crossAxisAlignment: CrossAxisAlignment.center,
                                 children: [
@@ -370,7 +371,7 @@ class EventAllFiled extends StatelessWidget {
                                     ),
                                   ),
                                   CommonText(
-                                    text: AppString.addOrganizer,
+                                    text: "Add organ".tr,
                                     color: AppColors.primaryColor,
                                     fontSize: 14,
                                     fontWeight: FontWeight.bold,
@@ -410,14 +411,14 @@ class EventAllFiled extends StatelessWidget {
                     CommonButton(
                       buttonColor: AppColors.transparent,
                       titleColor: AppColors.primaryColor,
-                      titleText: AppString.fransFerEvent,
+                      titleText: "Transfer Event".tr,
                       onTap: () => transferBottomSheetModel(context, isEdit),
                     ),
                   20.height,
                   CommonButton(
                     titleText: isEdit
-                        ? AppString.eventUpdated
-                        : AppString.eventCreated,
+                        ? "Event Updated".tr
+                        : "Event created".tr,
                     onTap: () => showBottomSheetModel(context, isEdit),
                   ),
                   20.height

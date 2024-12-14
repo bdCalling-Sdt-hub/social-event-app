@@ -65,7 +65,7 @@ class AppString {
   static const String logOut = "Log Out";
   static const String privacyPolicy = "Privacy Policy";
   static const String deleteAccount = "Delete account";
-  static const String termsOfServices = "Terms of Services";
+  static const String termsOfServices = "Terms of Service";
   static const String bubbly = "BUBBLY";
   static const String relievingSocialFun = "Relieving Social Fun";
   static const String english = "English";
@@ -316,8 +316,7 @@ class AppString {
   static const String searchImagesInChats = "Search Images in Chats";
   static const String searchImagesInChatsDetails =
       "After enabling, you can search for images in chats by entering images related information.";
-  static const String autoplayOnMobileData =
-      "Autoplay on Mobile Data";
+  static const String autoplayOnMobileData = "Autoplay on Mobile Data";
   static const String autoplayOnMobileDataDetails =
       "Moments videos will autoplay even when using mobile data";
   static const String useMobileDataForBetterVoiceCallQuality =
@@ -355,7 +354,8 @@ class AppString {
   static const String seeLessPostsLikeThis = "See Less Posts Like This";
   static const String blockUser = "Block John Doe";
   static const String block = "Block";
-  static const String blockUserDetails = "Are you sure you want to block John Doe?";
+  static const String blockUserDetails =
+      "Are you sure you want to block John Doe?";
   static const String fransFerEvent = "Transfer Event";
   static const String codeSent = "Code sent";
 }

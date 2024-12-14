@@ -20,7 +20,7 @@ Widget writeMessage() {
           onChanged: controller.changeMessage,
           decoration: InputDecoration(
               border: InputBorder.none,
-              hintText: AppString.writeMessage,
+              hintText: "Write a message".tr,
               hintStyle: TextStyle(color: AppColors.black.withOpacity(0.4)),
               prefixIcon: IconButton(
                   onPressed: controller.changeIsAdd,
@@ -86,9 +86,9 @@ Widget addOtherFile() {
             crossAxisAlignment: CrossAxisAlignment.center,
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
-              item(icon: Icons.location_on_outlined, title: AppString.location),
+              item(icon: Icons.location_on_outlined, title: "Location".tr),
               40.width,
-              item(icon: Icons.folder_open, title: AppString.files),
+              item(icon: Icons.folder_open, title: "Files".tr),
             ],
           ),
           20.height,
@@ -98,9 +98,9 @@ Widget addOtherFile() {
             children: [
               item(
                   icon: CupertinoIcons.chat_bubble_2,
-                  title: AppString.groupNote),
+                  title: "Group Note".tr),
               40.width,
-              item(icon: Icons.contacts_outlined, title: AppString.contactCard),
+              item(icon: Icons.contacts_outlined, title: "Contact Card".tr),
             ],
           ),
           20.height,

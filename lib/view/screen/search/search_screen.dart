@@ -46,13 +46,13 @@ class SearchScreen extends StatelessWidget {
           IconButton(
               onPressed: () => Get.toNamed(AppRoutes.scarchNotification),
               icon: const Icon(
-                Icons.notifications_rounded,
+                Icons.notifications_outlined,
                 color: AppColors.white,
               )),
           IconButton(
               onPressed: () => Get.toNamed(AppRoutes.profile),
               icon: const Icon(
-                Icons.settings,
+                Icons.settings_outlined,
                 color: AppColors.white,
               )),
         ],
@@ -64,7 +64,7 @@ class SearchScreen extends StatelessWidget {
             child: SingleChildScrollView(
               child: Column(
                 children: [
-                  20.height,
+                  10.height,
                   Container(
                     margin: const EdgeInsets.symmetric(horizontal: 10),
                     decoration:
@@ -75,15 +75,15 @@ class SearchScreen extends StatelessWidget {
                         Row(
                           mainAxisAlignment: MainAxisAlignment.spaceBetween,
                           children: [
-                            const CommonText(
-                              text: AppString.eventsNearYou,
+                             CommonText(
+                              text: "Events near you".tr,
                               fontWeight: FontWeight.w700,
                               fontSize: 20,
                             ),
                             InkWell(
                               onTap: () => Get.toNamed(AppRoutes.eventNear),
-                              child: const CommonText(
-                                text: AppString.viewAll,
+                              child:  CommonText(
+                                text: "View All".tr,
                                 fontWeight: FontWeight.w400,
                                 fontSize: 10,
                                 color: AppColors.primaryColor,
@@ -105,20 +105,19 @@ class SearchScreen extends StatelessWidget {
                     padding: const EdgeInsets.symmetric(horizontal: 10),
                     child: Column(
                       children: [
-                        20.height,
                         Row(
                           mainAxisAlignment: MainAxisAlignment.spaceBetween,
                           children: [
-                            const CommonText(
-                              text: AppString.featuredActivities,
+                             CommonText(
+                              text: "Featured activities".tr,
                               fontWeight: FontWeight.w700,
                               fontSize: 20,
                             ),
                             InkWell(
                               onTap: () =>
                                   Get.toNamed(AppRoutes.featuredActivities),
-                              child: const CommonText(
-                                text: AppString.viewAll,
+                              child:  CommonText(
+                                text:  "View All".tr,
                                 fontWeight: FontWeight.w400,
                                 fontSize: 10,
                                 color: AppColors.primaryColor,

@@ -12,7 +12,7 @@ class FavoriteItem extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      height: 110,
+      height: 105,
       width: double.infinity,
       margin: const EdgeInsets.only(top: 12),
       padding: const EdgeInsets.all(6),
@@ -36,56 +36,65 @@ class FavoriteItem extends StatelessWidget {
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
+                    5.height,
                     const CommonText(
                       text: "Event Name Here",
-                      fontSize: 14,
+                      fontSize: 13,
                       fontWeight: FontWeight.w700,
+                      color: AppColors.black,
                     ),
+                    5.height,
                     const Row(
                       children: [
                         Icon(
                           Icons.location_on_outlined,
                           size: 16,
+                          color: AppColors.black,
                         ),
                         Flexible(
                           child: CommonText(
-                              fontSize: 12,
+                              fontSize: 10,
                               fontWeight: FontWeight.w400,
+                              color: AppColors.black,
                               text:
                                   "105 Yandang Road, Huangpu District, Shanghai"),
                         ),
                       ],
                     ),
-                    4.height,
+                    5.height,
                     const Row(
                       children: [
                         Icon(
                           Icons.date_range,
                           size: 16,
+                          color: AppColors.black,
                         ),
                         Flexible(
                           child: CommonText(
                             text: "September 30, 2023",
-                            fontSize: 12,
+                            color: AppColors.black,
+                            fontSize: 10,
                             left: 6,
                             fontWeight: FontWeight.w400,
                           ),
                         ),
                       ],
                     ),
-                    4.height,
+                    5.height,
                     const Row(
                       children: [
                         Icon(
                           Icons.access_time,
                           size: 16,
+                          color: AppColors.black,
                         ),
                         Flexible(
                           child: CommonText(
                             text: "09:00 AM",
-                            fontSize: 12,
+                            fontSize: 10,
                             left: 6,
                             fontWeight: FontWeight.w400,
+                            color: AppColors.black,
                           ),
                         ),
                       ],
@@ -95,6 +104,7 @@ class FavoriteItem extends StatelessWidget {
               ),
               Column(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                crossAxisAlignment: CrossAxisAlignment.end,
                 children: [
                   const Row(
                     children: [
@@ -121,19 +131,22 @@ class FavoriteItem extends StatelessWidget {
                       ),
                     ],
                   ),
-                  30.height,
+                  40.height,
                   const Row(
                     mainAxisSize: MainAxisSize.min,
                     children: [
                       Icon(
                         Icons.near_me_outlined,
                         size: 16,
+                        color: AppColors.black,
                       ),
                       CommonText(
                         text: "40m",
-                        fontSize: 12,
+                        fontSize: 10,
                         fontWeight: FontWeight.w400,
-                        left: 8,
+                        color: AppColors.black,
+                        left: 2,
+                        right: 5,
                       ),
                     ],
                   ).end,

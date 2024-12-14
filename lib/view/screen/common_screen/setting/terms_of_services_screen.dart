@@ -1,7 +1,7 @@
-
 import 'package:flutter/material.dart';
 import 'package:flutter_html/flutter_html.dart';
 import 'package:get/get.dart';
+import 'package:social_event/utils/app_colors.dart';
 import '../../../../controllers/common_controller/setting/terms_of_services_controller.dart';
 import '../../../../models/api_response_model.dart';
 import '../../../../utils/app_string.dart';
@@ -16,28 +16,30 @@ class TermsOfServicesScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
         appBar: AppBar(
+          backgroundColor: AppColors.primaryColor,
           centerTitle: true,
           title: const CommonText(
             text: AppString.termsOfServices,
-            fontSize: 20,
-            fontWeight: FontWeight.w600,
+            fontSize: 18,
+            fontWeight: FontWeight.normal,
+            color: AppColors.white,
           ),
         ),
         body: GetBuilder<TermsOfServicesController>(
             builder: (controller) => switch (controller.status) {
-              Status.loading => const CommonLoader(),
-              Status.error => ErrorScreen(
-                  onTap: TermsOfServicesController.instance
-                      .geTermsOfServicesRepo()),
-              Status.completed => SingleChildScrollView(
-                padding: const EdgeInsets.symmetric(
-                    vertical: 24, horizontal: 20),
-                child: Column(
-                  children: [
-                    Html(data: controller.data.content),
-                  ],
-                ),
-              ),
-            }));
+                  Status.loading => const CommonLoader(),
+                  Status.error => ErrorScreen(
+                      onTap: TermsOfServicesController.instance
+                          .geTermsOfServicesRepo()),
+                  Status.completed => SingleChildScrollView(
+                      padding: const EdgeInsets.symmetric(
+                          vertical: 24, horizontal: 20),
+                      child: Column(
+                        children: [
+                          Html(data: controller.data.content),
+                        ],
+                      ),
+                    ),
+                }));
   }
 }

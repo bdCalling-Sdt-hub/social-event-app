@@ -21,8 +21,8 @@ class NotificationScreen extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         centerTitle: true,
-        title: const CommonText(
-          text: AppUrls.notifications,
+        title:  CommonText(
+          text: "dfkmj",
           fontWeight: FontWeight.w600,
           fontSize: 24,
         ),

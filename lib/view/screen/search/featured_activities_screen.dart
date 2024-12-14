@@ -16,9 +16,9 @@ class FeaturedActivitiesScreen extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         backgroundColor: AppColors.primaryColor,
-        title: const CommonText(
-          text: AppString.featuredActivities,
-          fontSize: 24,
+        title:  CommonText(
+          text: "Featured activities".tr,
+          fontSize: 20,
           fontWeight: FontWeight.bold,
           color: AppColors.white,
         ),
@@ -27,11 +27,15 @@ class FeaturedActivitiesScreen extends StatelessWidget {
         children: [
           searchLocation(),
           Expanded(
-            child: ListView.builder(
-              itemCount: 10,
-              itemBuilder: (context, index) => GestureDetector(
-                  onTap: () => Get.toNamed(AppRoutes.eventPage),
-                  child: const FavoriteItem()),
+            child: Container(
+                  margin: EdgeInsets.symmetric(horizontal: 20),
+
+              child: ListView.builder(
+                itemCount: 10,
+                itemBuilder: (context, index) => GestureDetector(
+                    onTap: () => Get.toNamed(AppRoutes.eventPage),
+                    child: const FavoriteItem()),
+              ),
             ),
           )
         ],

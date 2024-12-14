@@ -19,21 +19,19 @@ class CommonPhoneNumberTextFiled extends StatelessWidget {
       controller: controller,
       onCountryChanged: countryChange,
       initialCountryCode: "BD",
-      disableLengthCheck: false,
+      disableLengthCheck: true,
       style: const TextStyle(fontSize: 14),
       decoration: const InputDecoration(
         hintText: AppString.phoneNumber,
         contentPadding: EdgeInsets.symmetric(vertical: 8, horizontal: 16),
       ),
       dropdownIcon: const Icon(
-        Icons.arrow_drop_down,
+        Icons.keyboard_arrow_down,
         color: Colors.black,
       ),
       flagsButtonMargin: const EdgeInsets.only(right: 8),
-      // Adjust spacing between flag and text
       textAlignVertical: TextAlignVertical.center,
-      // Center text vertically
-      showDropdownIcon: true, // Ensures the dropdown icon is visible
+      showDropdownIcon: true,
     );
   }
 }

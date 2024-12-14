@@ -3,6 +3,7 @@ import 'dart:io';
 import 'package:flutter/material.dart';
 
 import 'package:get/get.dart';
+import 'package:social_event/utils/app_colors.dart';
 
 import '../../../../../../controllers/common_controller/profile/profile_controller.dart';
 
@@ -44,7 +45,10 @@ class ProfileImage extends StatelessWidget {
                           height: 130,
                           width: 130,
                         )
-                      : const Icon(Icons.camera_alt),
+                      : const Icon(
+                          Icons.camera_alt_outlined,
+                          color: Color.fromRGBO(83, 209, 185, 1),
+                        ),
                 ),
               ),
             ),
