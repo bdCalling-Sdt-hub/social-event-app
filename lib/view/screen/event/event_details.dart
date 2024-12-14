@@ -194,6 +194,7 @@ class EventDetails extends StatelessWidget {
                     CommonButton(
                       titleText: AppString.joinEvent,
                       onTap: () => Get.toNamed(AppRoutes.eventPage),
+
                     ),
                     30.height
                   ],
