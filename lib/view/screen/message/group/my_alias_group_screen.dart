@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 import 'package:social_event/helpers/my_extension.dart';
 import 'package:social_event/utils/app_images.dart';
 import 'package:social_event/view/component/image/common_image.dart';
@@ -15,8 +16,8 @@ class MyAliasGroupScreen extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         backgroundColor: AppColors.primaryColor,
-        title: const CommonText(
-          text: AppString.myAliasInGroup,
+        title:  CommonText(
+          text: "My Alias in Group".tr,
           fontSize: 24,
           fontWeight: FontWeight.bold,
           color: AppColors.white,
@@ -26,8 +27,8 @@ class MyAliasGroupScreen extends StatelessWidget {
         padding: const EdgeInsets.all(20),
         child: Column(
           children: [
-            const CommonText(
-              text: AppString.myAliasGroupDetails,
+             CommonText(
+              text: "Editing your aliasa only changes your name displayed in this group. It is visible to all group members.".tr,
               fontSize: 18,
               fontWeight: FontWeight.w400,
               maxLines: 3,

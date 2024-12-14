@@ -1,5 +1,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
+import 'package:get/get_navigation/src/nav2/get_router_delegate.dart';
 import 'package:social_event/helpers/my_extension.dart';
 import 'package:social_event/utils/app_colors.dart';
 import 'package:social_event/utils/app_images.dart';
@@ -27,8 +29,8 @@ class Contribution extends StatelessWidget {
           fontSize: 20,
           fontWeight: FontWeight.bold,
         ),
-        const CommonText(
-          text: "12 ${AppString.members}",
+         CommonText(
+          text: "12 ${"members".tr}",
           fontSize: 12,
           top: 10,
           bottom: 10,
@@ -40,7 +42,7 @@ class Contribution extends StatelessWidget {
             5,
             (index) {
               if (index == 0) {
-                return const SizedBox(
+                return  SizedBox(
                   height: 100,
                   width: 64,
                   child: Column(
@@ -53,7 +55,7 @@ class Contribution extends StatelessWidget {
                             color: AppColors.white,
                           )),
                       CommonText(
-                        text: AppString.addMember,
+                        text: "Add Member".tr,
                         fontSize: 12,
                         fontWeight: FontWeight.w400,
                         maxLines: 2,
@@ -64,7 +66,7 @@ class Contribution extends StatelessWidget {
                 );
               }
               if (index == 4) {
-                return const SizedBox(
+                return  SizedBox(
                   height: 80,
                   width: 64,
                   child: Column(
@@ -77,7 +79,7 @@ class Contribution extends StatelessWidget {
                             color: AppColors.primaryColor,
                           )),
                       CommonText(
-                        text: AppString.viewAll,
+                        text: "View All".tr,
                         fontSize: 12,
                         fontWeight: FontWeight.w400,
                         maxLines: 2,

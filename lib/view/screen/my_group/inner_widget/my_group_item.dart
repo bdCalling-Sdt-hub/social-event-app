@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 
 import 'package:social_event/utils/app_colors.dart';
 import 'package:social_event/utils/app_images.dart';
@@ -24,10 +25,10 @@ Widget myGroupItem() {
               imageSrc: AppImages.groupLogo),
         ),
 
-        const Column(
+         Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            CommonText(
+           const CommonText(
                 fontSize: 18,
                 fontWeight: FontWeight.w700,
                 text: "Group Name"),
@@ -35,7 +36,7 @@ Widget myGroupItem() {
             CommonText(
                 fontSize: 12,
                 fontWeight: FontWeight.w400,
-                text: "100 members"),
+                text: "100 ${"members".tr}"),
 
           ],
         )

@@ -23,10 +23,10 @@ class EventContribution extends StatelessWidget {
     return  Scaffold(
       appBar: AppBar(
         backgroundColor: AppColors.primaryColor,
-        title: const CommonText(
+        title:  CommonText(
             fontSize: 24,
             color: AppColors.white,
-            text: 'Event Contribution'),
+            text: 'Event Contribution'.tr),
       ),
       body: GetBuilder<PointAndOffersController>(
         builder: (controller) {
@@ -35,8 +35,8 @@ class EventContribution extends StatelessWidget {
               children: [
                 ContributionBasicInfo(
                     image: AppImages.eventContribution,
-                    title: AppString.eventContribution,
-                    members: "12 members"),
+                    title: 'Event Contribution'.tr,
+                    members: "12 ${"members".tr}"),
             
                 controller.selectedEvenIndex.value==3 || controller.selectedEvenIndex.value==4?
                 const SizedBox(
@@ -62,7 +62,7 @@ class EventContribution extends StatelessWidget {
                       borderColor: controller.selectedEvenIndex.value == 0
                           ? AppColors.transparent
                           : AppColors.black,
-                      title: AppString.contribute,
+                      title: "Contribute".tr,
                     ),
             
                     selectedButton(
@@ -76,7 +76,7 @@ class EventContribution extends StatelessWidget {
                       borderColor: controller.selectedEvenIndex.value == 1
                           ? AppColors.transparent
                           : AppColors.black,
-                      title: AppString.reviews,
+                      title: "Reviews".tr,
                     ),
             
                     selectedButton(
@@ -90,7 +90,7 @@ class EventContribution extends StatelessWidget {
                       borderColor: controller.selectedEvenIndex.value == 2
                           ? AppColors.transparent
                           : AppColors.black,
-                      title: AppString.photos,
+                      title: "Photos".tr,
                     ),
             
             

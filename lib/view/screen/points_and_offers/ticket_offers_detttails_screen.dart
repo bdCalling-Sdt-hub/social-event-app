@@ -17,90 +17,92 @@ class TicketOffersDetttailsScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: Column(
-        children: [
-          Stack(
-            children: [
-              CommonImage(
-                  width: double.infinity,
-                  height: 450,
-                  imageType: ImageType.png,
-                  imageSrc: AppImages.ticket_offers),
-              Positioned(
-                top: 30,
+      body: SingleChildScrollView(
+        child: Column(
+          children: [
+            Stack(
+              children: [
+                CommonImage(
+                    width: double.infinity,
+                    height: 450,
+                    imageType: ImageType.png,
+                    imageSrc: AppImages.ticket_offers),
+                Positioned(
+                  top: 30,
+                    left: 20,
+                    child: GestureDetector(
+                      onTap: (){
+                        Get.back();
+                      },
+                      child: Container(
+                          padding: const EdgeInsets.all(10),
+                          decoration: const BoxDecoration(
+                            shape: BoxShape.circle,
+                            color: AppColors.primaryColor,
+                          ),
+                          child: const Icon(
+                            Icons.arrow_back,
+                            color: AppColors.white,
+                          )),
+                    ))
+              ],
+            ),
+            10.height,
+            
+             Padding(
+              padding:  EdgeInsets.symmetric(horizontal: 20),
+              child: Row(
+                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                children: [
+                  CommonText(
+                      top: 25,
+                      fontSize: 18,
+        
+                      fontWeight: FontWeight.w700,
+                      text: "Ticket Offers".tr),
+        
+                  Icon(Icons.favorite_border, color:AppColors.primaryColor,),
+        
+                ],
+              ),
+            ),
+        
+        
+            30.height,
+            
+             Padding(
+              padding:  EdgeInsets.symmetric(horizontal: 20),
+              child: Row(
+                children: [
+                  CommonText(text: "${"Redeem Points".tr}:"),
+                  CommonText(text: "10000")
+                ],
+              ),
+            ),
+            
+            
+             Align(
+              alignment: Alignment.centerLeft,
+              child: CommonText(
+                  top: 30,
                   left: 20,
-                  child: GestureDetector(
-                    onTap: (){
-                      Get.back();
-                    },
-                    child: Container(
-                        padding: const EdgeInsets.all(10),
-                        decoration: const BoxDecoration(
-                          shape: BoxShape.circle,
-                          color: AppColors.primaryColor,
-                        ),
-                        child: const Icon(
-                          Icons.arrow_back,
-                          color: AppColors.white,
-                        )),
-                  ))
-            ],
-          ),
-          10.height,
-          
-          const Padding(
-            padding:  EdgeInsets.symmetric(horizontal: 20),
-            child: Row(
-              mainAxisAlignment: MainAxisAlignment.spaceBetween,
-              children: [
-                CommonText(
-                    top: 25,
-                    fontSize: 22,
-
-                    fontWeight: FontWeight.w700,
-                    text: AppString.ticketOffers),
-
-                Icon(Icons.favorite_border, color:AppColors.primaryColor,),
-
-              ],
+                  fontWeight: FontWeight.w700,
+                  fontSize: 20,
+        
+                  text: "Event Details".tr),
             ),
-          ),
-
-
-          30.height,
-          
-          const Padding(
-            padding:  EdgeInsets.symmetric(horizontal: 20),
-            child: Row(
-              children: [
-                CommonText(text: AppString.redemPoints),
-                CommonText(text: "10000")
-              ],
-            ),
-          ),
-          
-          
-          const Align(
-            alignment: Alignment.centerLeft,
-            child: CommonText(
-                top: 30,
-                left: 20,
-                fontWeight: FontWeight.w700,
-                fontSize: 20,
-
-                text: AppString.eventDetails),
-          ),
-
-          const Padding(
-            padding:  EdgeInsets.symmetric(horizontal: 20),
-            child: FavoriteItem(),
-          )
-
-          
-
-
-
-        ],
+        
+            const Padding(
+              padding:  EdgeInsets.symmetric(horizontal: 20),
+              child: FavoriteItem(),
+            )
+        
+            
+        
+        
+        
+          ],
+        ),
       ),
       bottomNavigationBar: Padding(
         padding:  const EdgeInsets.only(left: 20, right: 20, bottom: 30),
@@ -108,7 +110,7 @@ class TicketOffersDetttailsScreen extends StatelessWidget {
             onTap: (){
               Get.toNamed(AppRoutes.ticket_offers_cart);
             },
-            titleText: AppString.add),
+            titleText: "Add".tr),
       ),
     );
   }

@@ -30,24 +30,24 @@ class ContributeSection extends StatelessWidget {
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
-                  const CommonText(
+                   CommonText(
                       left: 15,
                       top: 15,
-                      fontSize: 20,
+                      fontSize: 15,
                       bottom: 25,
                       fontWeight: FontWeight.w600,
-                      text: AppString.addPhotoReviews),
+                      text: "Add photo & Reviews".tr),
                   Row(
                     mainAxisAlignment: MainAxisAlignment.spaceAround,
                     children: [
                       buttonWithIcon(
                           ontap: addPhotoOntap,
-                          title: AppString.photo,
+                          title: "photos".tr,
                           icon: Icons.photo_album),
                       buttonWithIcon(
                           ontap: addReviewsOntap,
-                          title: AppString.reviews,
-                          icon: Icons.reviews),
+                          title: "Reviews".tr,
+                          icon: Icons.reviews_outlined),
                     ],
                   ),
                 ],
@@ -56,11 +56,12 @@ class ContributeSection extends StatelessWidget {
             15.height,
             SizedBox(
               child: ListView.builder(
-                  itemCount: 3,
+                  itemCount: 4,
                   shrinkWrap: true,
                   physics: const NeverScrollableScrollPhysics(),
                   itemBuilder: (context, index) {
-                    return contributeReviewItem();
+                   return contributeReviewItem();
+
                   }),
             )
           ],
@@ -69,7 +70,7 @@ class ContributeSection extends StatelessWidget {
     );
   }
 
-  Widget buttonWithIcon({ontap, title, icon}) {
+  Widget buttonWithIcon({ontap, title,IconData? icon}) {
     return InkWell(
       onTap: ontap,
       child: Container(
@@ -88,7 +89,8 @@ class ContributeSection extends StatelessWidget {
               ),
               CommonText(
                   left: 5,
-                  fontSize: 20,
+                  fontSize: 10,
+                  fontWeight: FontWeight.w700,
                   color: AppColors.textFiledColor,
                   text: title),
             ],

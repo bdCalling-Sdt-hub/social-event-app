@@ -23,10 +23,10 @@ class GroupContribution extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         backgroundColor: AppColors.primaryColor,
-        title: const CommonText(
-            fontSize: 24,
+        title:  CommonText(
+            fontSize: 21,
             color: AppColors.white,
-            text: AppString.groupContribution),
+            text: "Group Contribution".tr),
       ),
       body: GetBuilder<PointAndOffersController>(builder: (controller) {
         return SizedBox(
@@ -37,8 +37,8 @@ class GroupContribution extends StatelessWidget {
                 20.height,
               ContributionBasicInfo(
                   image: AppImages.groupContribution,
-                  title: AppString.groupContribution,
-                  members: "12 members"),
+                  title: "Group Contribution".tr,
+                  members: "12 ${"members".tr}"),
 
                 controller.selectedGroupIndex.value==3 || controller.selectedGroupIndex.value==4?
                 const SizedBox(
@@ -64,7 +64,7 @@ class GroupContribution extends StatelessWidget {
                       borderColor: controller.selectedGroupIndex.value == 0
                           ? AppColors.transparent
                           : AppColors.black,
-                      title: AppString.contribute,
+                      title: "Contribute".tr,
                     ),
             
                     selectedButton(
@@ -78,7 +78,7 @@ class GroupContribution extends StatelessWidget {
                       borderColor: controller.selectedGroupIndex.value == 1
                           ? AppColors.transparent
                           : AppColors.black,
-                      title: AppString.reviews,
+                      title: "Reviews".tr,
                     ),
             
                     selectedButton(
@@ -92,7 +92,7 @@ class GroupContribution extends StatelessWidget {
                       borderColor: controller.selectedGroupIndex.value == 2
                           ? AppColors.transparent
                           : AppColors.black,
-                      title: AppString.photos,
+                      title:"Photos".tr,
                     ),
             
             

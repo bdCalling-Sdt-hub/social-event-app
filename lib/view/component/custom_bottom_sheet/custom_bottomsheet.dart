@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 import 'package:social_event/helpers/my_extension.dart';
 import 'package:social_event/utils/app_colors.dart';
 import 'package:social_event/view/component/button/common_button.dart';
@@ -41,7 +42,7 @@ import 'package:social_event/view/component/text/common_text.dart';
                 padding:  const EdgeInsets.only(left: 20, right: 20, bottom: 30),
                 child: InkWell(
                     onTap: ontap,
-                    child: const CommonButton(titleText: "Done")),
+                    child:  CommonButton(titleText: "Done".tr)),
               )
             
             ],

@@ -8,7 +8,7 @@ Widget ratingBar({itemSize=17, bool ignoreGesture=true}) {
     direction: Axis.horizontal,
     itemCount: 5,
     ignoreGestures: ignoreGesture,
-    itemSize:itemSize,
+    itemSize:itemSize.toDouble(),
     itemPadding: const EdgeInsets.symmetric(horizontal: 1),
     itemBuilder: (context, _) => const Icon(
       Icons.star,

@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 import 'package:qr_flutter/qr_flutter.dart';
 
 import '../../../../utils/app_colors.dart';
@@ -13,8 +14,8 @@ class GroupQrCode extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         backgroundColor: AppColors.primaryColor,
-        title: const CommonText(
-          text: AppString.groupQRCode,
+        title:  CommonText(
+          text: "Group QR Code".tr,
           fontSize: 24,
           fontWeight: FontWeight.bold,
           color: AppColors.white,
@@ -22,8 +23,8 @@ class GroupQrCode extends StatelessWidget {
       ),
       body: Column(
         children: [
-          const CommonText(
-            text: AppString.groupQrCodeDetails,
+           CommonText(
+            text: "Share this QR code with others, so that they can join the group".tr,
             fontSize: 16,
             fontWeight: FontWeight.bold,
             color: Colors.black,

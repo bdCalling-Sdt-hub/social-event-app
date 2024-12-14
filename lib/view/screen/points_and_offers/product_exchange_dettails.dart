@@ -54,13 +54,13 @@ class ProductExchangeDettails extends StatelessWidget {
                   text: "Product Name"),
 
 
-              const Row(
+               Row(
                 children: [
                   CommonText(
                       fontSize: 16,
                       fontWeight: FontWeight.w400,
-                      text: AppString.redemPoints),
-                  CommonText(
+                      text: "${"Redeem Points".tr}:"),
+                const  CommonText(
                       fontSize: 16,
                       fontWeight: FontWeight.w400,
                       text:"10000"),
@@ -89,7 +89,7 @@ class ProductExchangeDettails extends StatelessWidget {
             onTap: (){
               Get.toNamed(AppRoutes.product_exchange_cart);
             },
-            titleText: AppString.add),
+            titleText: "Add".tr),
       ),
     );
   }

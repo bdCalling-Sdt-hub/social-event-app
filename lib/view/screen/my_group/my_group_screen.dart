@@ -16,11 +16,11 @@ class MyGroupScreen extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         backgroundColor: AppColors.primaryColor,
-        title: const CommonText(
+        title:  CommonText(
             fontSize: 24,
             color: AppColors.white,
             fontWeight: FontWeight.w700,
-            text: AppString.myGroups),
+            text:"Groups".tr),
       ),
 
       body: SizedBox(
@@ -39,7 +39,7 @@ class MyGroupScreen extends StatelessWidget {
             onTap: (){
               Get.toNamed(AppRoutes.createNewGroup);
             },
-            titleText: AppString.createNewGroup),
+            titleText: "Create a new group".tr),
       ),
     );
   }

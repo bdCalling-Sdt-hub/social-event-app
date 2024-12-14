@@ -19,8 +19,8 @@ class GroupChatInfo extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         backgroundColor: AppColors.primaryColor,
-        title: const CommonText(
-          text: AppString.chatInfo,
+        title:  CommonText(
+          text: "Chat Info".tr,
           fontSize: 24,
           fontWeight: FontWeight.bold,
           color: AppColors.white,
@@ -30,7 +30,7 @@ class GroupChatInfo extends StatelessWidget {
         builder: (controller) => SingleChildScrollView(
           child: Column(
             children: [
-              const Contribution(),
+               Contribution(),
               Container(
                 height: 8,
                 margin: const EdgeInsets.only(top: 0),
@@ -38,17 +38,17 @@ class GroupChatInfo extends StatelessWidget {
                 color: const Color(0xffEEEEEE),
               ),
               10.height,
-              const Item(title: AppString.groupName),
+               Item(title: "Group Name".tr, subTitle: "Group Name".tr,),
               Item(
-                title: AppString.groupQRCode,
+                title: "Group QR Code".tr,
                 onTap: () => Get.toNamed(AppRoutes.groupQrCode),
               ),
-              const Item(
-                title: AppString.groupNote,
+               Item(
+                title: "Group Notice".tr,
                 onTap: groupNoteBottomSheet,
               ),
               Item(
-                title: AppString.groupRemark,
+                title: "Group Remark".tr,
                 onTap: () => Get.toNamed(AppRoutes.groupRemark),
               ),
               Container(
@@ -58,19 +58,19 @@ class GroupChatInfo extends StatelessWidget {
                 color: const Color(0xffEEEEEE),
               ),
               10.height,
-              const Item(title: AppString.searchChatHistory),
+               Item(title: "Search Chat History".tr),
               ItemWithSwitch(
-                title: AppString.muteNotifications,
+                title: "Mute Notifications".tr,
                 value: controller.isNotification,
                 onTap: controller.changeNotification,
               ),
               ItemWithSwitch(
-                title: AppString.stickyOnTop,
+                title: "Sticky on Top".tr,
                 value: controller.isSticky,
                 onTap: controller.changeSticky,
               ),
               ItemWithSwitch(
-                title: AppString.saveToContacts,
+                title: "Save to Contacts".tr,
                 value: controller.isSave,
                 onTap: controller.changeSave,
               ),
@@ -82,11 +82,11 @@ class GroupChatInfo extends StatelessWidget {
               ),
               10.height,
               Item(
-                title: AppString.myAliasInGroup,
+                title: "My Alias in Group".tr,
                 onTap: () => Get.toNamed(AppRoutes.myAliasGroup),
               ),
               ItemWithSwitch(
-                title: AppString.onScreenNames,
+                title: "On-Screen Name".tr,
                 value: controller.isOnScreen,
                 onTap: controller.changeOnScreen,
               ),
@@ -98,22 +98,22 @@ class GroupChatInfo extends StatelessWidget {
               ),
               10.height,
               Item(
-                title: AppString.background,
+                title: "Background".tr,
                 onTap: () => Get.toNamed(AppRoutes.setBackground),
               ),
               Item(
-                title: AppString.clearChatHistory,
+                title: "Clear Chat History".tr,
                 onTap: () => Get.toNamed(AppRoutes.clearChatHistory),
               ),
               Item(
-                title: AppString.report,
+                title: "Report".tr,
                 onTap: () => Get.toNamed(AppRoutes.report),
               ),
               Item(
-                title: AppString.leave,
+                title: "Leave".tr,
                 color: AppColors.primaryColor,
                 disableDivider: true,
-                onTap: () => leaveBottomSheet(AppString.leaveDetails),
+                onTap: () => leaveBottomSheet("Are you sure you want to leave this group chat?".tr),
               ),
             ],
           ),

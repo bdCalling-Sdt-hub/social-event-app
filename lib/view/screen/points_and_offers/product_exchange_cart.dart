@@ -21,169 +21,169 @@ class ProductExchangeCart extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         backgroundColor: AppColors.primaryColor,
-        title: const CommonText(
+        title:  CommonText(
             color: AppColors.white,
-            fontSize: 24,
-            text: AppString.cart),
+            fontSize: 18,
+            text: "Cart".tr),
       ),
-      body: Column(
-        crossAxisAlignment: CrossAxisAlignment.start,
-        children: [
-
-          Container(
-            margin: const EdgeInsets.symmetric(vertical: 5),
-            padding: const EdgeInsets.symmetric(vertical: 10, horizontal: 10),
-            height: 120,
-            width: double.infinity,
-            decoration: BoxDecoration(
-                color: AppColors.white,
-                boxShadow: [
-                  BoxShadow(
-                    color: Colors.black.withOpacity(0.2),
-                    offset: const Offset(0, 1),
-                    spreadRadius: 0,
-                  )
-                ]
-            ),
-
-            child: Row(
-              children: [
-
-                Container(
-                  decoration: BoxDecoration(
-                      borderRadius: BorderRadius.circular(12),
-                      border: Border.all(width: 1, color: Colors.black.withOpacity(0.2))
-                  ),
-                  child: CommonImage(
-                      height: 100,
-                      width: 100,
-                      imageType: ImageType.png,
-                      imageSrc: AppImages.exchange_product1),
-                ),
-
-                15.width,
-
-                Column(
-                  crossAxisAlignment: CrossAxisAlignment.start,
-                  children: [
-                    const CommonText(
-                        fontSize: 24,
-                        bottom: 8,
-                        fontWeight: FontWeight.w700,
-                        text: "Product Name"),
-
-                    const SizedBox(
-                      width: 280,
-                      child: CommonText(
-                          textAlign: TextAlign.start,
-                          maxLines: 1,
-
-                          fontSize: 20,
-                          bottom: 10,
-                          fontWeight: FontWeight.w400,
-                          color: AppColors.textFiledColor,
-                          text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit."),
+      body: SingleChildScrollView(
+        child: Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: [
+        
+            Container(
+              margin: const EdgeInsets.symmetric(vertical: 5),
+              padding: const EdgeInsets.symmetric(vertical: 10, horizontal: 10),
+              height: 110,
+              width: double.infinity,
+              decoration: BoxDecoration(
+                  color: AppColors.white,
+                  boxShadow: [
+                    BoxShadow(
+                      color: Colors.black.withOpacity(0.2),
+                      offset: const Offset(0, 1),
+                      spreadRadius: 0,
+                    )
+                  ]
+              ),
+        
+              child: Row(
+                children: [
+        
+                  Container(
+                    decoration: BoxDecoration(
+                        borderRadius: BorderRadius.circular(12),
+                        border: Border.all(width: 1, color: Colors.black.withOpacity(0.2))
                     ),
-                    8.height,
-
-                    const Row(
-                      children: [
-                        CommonText(
-                            fontSize:16,
-                            fontWeight: FontWeight.w400,
-                            text: AppString.redemPoints),
-                        CommonText(
+                    child: CommonImage(
+                        height: 80,
+                        width: 80,
+                        imageType: ImageType.png,
+                        imageSrc: AppImages.exchange_product1),
+                  ),
+        
+                  15.width,
+        
+                  Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: [
+                      const CommonText(
+                          fontSize: 18,
+                          bottom: 8,
+                          fontWeight: FontWeight.w700,
+                          text: "Product Name"),
+        
+                       SizedBox(
+                        width: 212,
+                        child: CommonText(
+                            textAlign: TextAlign.start,
+                            maxLines: 1,
                             fontSize: 16,
                             fontWeight: FontWeight.w400,
-                            text:"10000"),
-                      ],
-                    )
-                  ],
-                ),
-
-
-
-
-
-
-              ],
-            ),
-          ),
-          
-          
-          
-          Padding(
-            padding:  const EdgeInsets.symmetric(horizontal: 20),
-            child: Column(
-              crossAxisAlignment: CrossAxisAlignment.start,
-              children: [
-                const CommonText(
-                  top: 30,
-                    fontSize: 22,
-                    fontWeight: FontWeight.w700,
-                    text: AppString.addressDetails),
-
-                //=================================All Textfield===========================
-
-                const CommonText(
-                  top: 30,
-                    fontSize: 22,
-                    fontWeight: FontWeight.w700,
-                    text: AppString.streetAddress),
-
-                CommonTextField(
-                  hintText: AppString.enterStreetAddress,
-                ),
-
-                const CommonText(
-                  top: 20,
-                    fontSize: 22,
-                    fontWeight: FontWeight.w700,
-                    text: AppString.city),
-
-                CommonTextField(
-                  hintText: AppString.enterCity,
-                ),
-
-                const CommonText(
-                  top: 20,
-                    fontSize: 22,
-                    fontWeight: FontWeight.w700,
-                    text: AppString.stateProvince),
-
-                CommonTextField(
-                  hintText: AppString.enterStateProvince,
-                ),
-
-
-                const CommonText(
-                    top: 20,
-                    fontSize: 22,
-                    fontWeight: FontWeight.w700,
-                    text: AppString.country),
-
-                CommonTextField(
-                  hintText: AppString.enterCountry,
-                ),
-
-
-
-                const CommonText(
-                    top: 20,
-                    fontSize: 22,
-                    fontWeight: FontWeight.w700,
-                    text: AppString.postCode),
-
-                CommonTextField(
-                  hintText: AppString.enterPostCode,
-                ),
-              ],
-            ),
-          )
-
-        ],
+                            color: AppColors.textFiledColor,
+                            text: "Lorem ipsum dolor sit amet,."),
+                      ),
+                      8.height,
+        
+                       Row(
+                        children: [
+                          CommonText(
+                              fontSize:14,
+                              fontWeight: FontWeight.w400,
+                              text: AppString.redemPoints),
+                          CommonText(
+                              fontSize: 14,
+                              fontWeight: FontWeight.w400,
+                              text:"10000"),
+                        ],
+                      )
+                    ],
+                  ),
         
         
+        
+        
+        
+        
+                ],
+              ),
+            ),
+            
+            
+            
+            Padding(
+              padding:  EdgeInsets.symmetric(horizontal: 20),
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                   CommonText(
+                    top: 30,
+                      fontSize: 16,
+                      fontWeight: FontWeight.w700,
+                      text:"Address Details".tr),
+        
+                  //=================================All Textfield===========================
+        
+                   CommonText(
+                    top: 30,
+                      fontSize: 16,
+                      fontWeight: FontWeight.w700,
+                      text: "Street Address".tr),
+        
+                  CommonTextField(
+                    hintText: "Enter Street Address".tr,
+                  ),
+        
+                   CommonText(
+                    top: 20,
+                      fontSize: 16,
+                      fontWeight: FontWeight.w700,
+                      text: "City".tr),
+        
+                  CommonTextField(
+                    hintText: "Enter City".tr,
+                  ),
+        
+                   CommonText(
+                    top: 20,
+                      fontSize: 16,
+                      fontWeight: FontWeight.w700,
+                      text: "State / Province".tr),
+        
+                  CommonTextField(
+                    hintText: AppString.enterStateProvince,
+                  ),
+        
+        
+                  const CommonText(
+                      top: 20,
+                      fontSize: 16,
+                      fontWeight: FontWeight.w700,
+                      text: AppString.country),
+        
+                  CommonTextField(
+                    hintText: AppString.enterCountry,
+                  ),
+        
+        
+        
+                  const CommonText(
+                      top: 20,
+                      fontSize: 16,
+                      fontWeight: FontWeight.w700,
+                      text: AppString.postCode),
+        
+                  CommonTextField(
+                    hintText: AppString.enterPostCode,
+                  ),
+                ],
+              ),
+            )
+        
+          ],
+          
+          
+        ),
       ),
     
     bottomNavigationBar: Padding(

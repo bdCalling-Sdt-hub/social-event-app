@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 import 'package:social_event/helpers/my_extension.dart';
 import 'package:social_event/utils/app_images.dart';
 import 'package:social_event/view/component/image/common_image.dart';
@@ -16,8 +17,8 @@ class GroupRemarkScreen extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         backgroundColor: AppColors.primaryColor,
-        title: const CommonText(
-          text: AppString.groupRemark,
+        title:  CommonText(
+          text: "Group Remark".tr,
           fontSize: 24,
           fontWeight: FontWeight.bold,
           color: AppColors.white,
@@ -27,15 +28,15 @@ class GroupRemarkScreen extends StatelessWidget {
         padding: const EdgeInsets.all(20),
         child: Column(
           children: [
-            const CommonText(
-              text: AppString.groupRemarkDetails,
+             CommonText(
+              text: "The group name customized with your remark is only visible to you".tr,
               fontSize: 18,
               fontWeight: FontWeight.w400,
               maxLines: 3,
               bottom: 60,
             ),
             CommonTextField(
-              labelText: AppString.groupRemark,
+              labelText: "Group Remark".tr,
               prefixIcon: Padding(
                 padding: const EdgeInsets.all(8.0),
                 child: CommonImage(
@@ -44,8 +45,8 @@ class GroupRemarkScreen extends StatelessWidget {
                 ),
               ),
             ),
-            const CommonText(
-              text: AppString.groupNameWorkEnter,
+             CommonText(
+              text: "${"Group Name".tr}: Work Enter",
               fontSize: 18,
               top: 6,
               fontWeight: FontWeight.w400,

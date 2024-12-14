@@ -17,11 +17,11 @@ class PointAndOffers extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         backgroundColor: AppColors.primaryColor,
-        title: const CommonText(
+        title:  CommonText(
             fontSize: 24,
             fontWeight: FontWeight.w600,
             color: AppColors.white,
-            text: AppString.pointsOffers),
+            text: "Points & Offers".tr),
       ),
       body: SizedBox(
         width: double.infinity,
@@ -35,7 +35,7 @@ class PointAndOffers extends StatelessWidget {
               decoration: BoxDecoration(
                   borderRadius: BorderRadius.circular(12),
                   color: AppColors.normalTeal),
-              child: const Column(
+              child:  Column(
                 crossAxisAlignment: CrossAxisAlignment.center,
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
@@ -48,7 +48,7 @@ class PointAndOffers extends StatelessWidget {
                       fontSize: 15,
                       fontWeight: FontWeight.w700,
                       color: AppColors.primaryColor,
-                      text: "Your Points"),
+                      text: "Your Points".tr),
                 ],
               ),
             ),
@@ -57,7 +57,7 @@ class PointAndOffers extends StatelessWidget {
                 ontap: (){
                   Get.toNamed(AppRoutes.groupContribution);
                 },
-                title: AppString.groupContribution, subTitle: "+1,200"),
+                title: "Group Contributions".tr, subTitle: "+1,200"),
 
             itemButton(
 
@@ -65,18 +65,18 @@ class PointAndOffers extends StatelessWidget {
                   Get.toNamed(AppRoutes.eventContribution);
 
                 },
-                title: AppString.eventContribution, subTitle: "+3,200"),
+                title: "Event Contributions".tr, subTitle: "+3,200"),
 
             itemButton(
                 ontap: (){
                   Get.toNamed(AppRoutes.ticket_offers);
                 },
-                title: AppString.ticketOffers),
+                title: "Ticket Offers".tr),
             itemButton(
                 ontap: (){
                   Get.toNamed(AppRoutes.product_exchange_screen);
                 },
-                title: AppString.productExchange),
+                title: "Product Exchange".tr),
 
           ],
         ),

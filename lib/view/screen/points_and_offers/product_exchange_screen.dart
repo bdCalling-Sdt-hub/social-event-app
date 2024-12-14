@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 
 import 'package:social_event/utils/app_colors.dart';
 import 'package:social_event/utils/app_string.dart';
@@ -13,11 +14,11 @@ class ProductExchangeScreen extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         backgroundColor: AppColors.primaryColor,
-        title: const CommonText(
+        title:  CommonText(
             fontSize: 24,
             fontWeight: FontWeight.w700,
             color: AppColors.white,
-            text: AppString.productExchange),
+            text: "Product Exchange".tr),
 
       ),
 

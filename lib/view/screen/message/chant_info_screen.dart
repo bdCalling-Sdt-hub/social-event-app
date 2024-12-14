@@ -26,8 +26,8 @@ class _ChantInfoScreenState extends State<ChantInfoScreen> {
     return Scaffold(
       appBar: AppBar(
         backgroundColor: AppColors.primaryColor,
-        title: const CommonText(
-          text: AppString.chatInfo,
+        title:  CommonText(
+          text: "Chat Info".tr,
           fontSize: 24,
           fontWeight: FontWeight.bold,
           color: AppColors.white,
@@ -60,19 +60,19 @@ class _ChantInfoScreenState extends State<ChantInfoScreen> {
               color: const Color(0xffEEEEEE),
             ),
             20.height,
-            const Item(title: AppString.searchChatHistory),
+             Item(title: "Search Chat History".tr),
             ItemWithSwitch(
-              title: AppString.muteNotifications,
+              title: "Mute Notifications".tr,
               value: controller.isNotification,
               onTap: controller.changeNotification,
             ),
             ItemWithSwitch(
-              title: AppString.stickyOnTop,
+              title: "Sticky on Top".tr,
               value: controller.isSticky,
               onTap: controller.changeSticky,
             ),
             ItemWithSwitch(
-              title: AppString.alert,
+              title: "Alert".tr,
               value: controller.isAlert,
               onTap: controller.changeAlert,
               disableDivider: true,
@@ -85,15 +85,15 @@ class _ChantInfoScreenState extends State<ChantInfoScreen> {
             ),
             20.height,
             Item(
-              title: AppString.background,
+              title: "Background".tr,
               onTap: () => Get.toNamed(AppRoutes.setBackground),
             ),
             Item(
-              title: AppString.clearChatHistory,
+              title: "Clear Chat History".tr,
               onTap: () => Get.toNamed(AppRoutes.clearChatHistory),
             ),
             Item(
-              title: AppString.report,
+              title: "Report".tr,
               onTap: () => Get.toNamed(AppRoutes.report),
             ),
           ],

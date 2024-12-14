@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
+import 'package:get/get_common/get_reset.dart';
 import 'package:social_event/view/screen/message/widget/bottom_sheet.dart';
 
 import '../../../utils/app_colors.dart';
@@ -37,8 +39,8 @@ class _ReportScreenState extends State<ReportScreen> {
     return Scaffold(
       appBar: AppBar(
         backgroundColor: AppColors.primaryColor,
-        title: const CommonText(
-          text: AppString.clearChatHistory,
+        title:  CommonText(
+          text: "Report".tr,
           fontSize: 24,
           fontWeight: FontWeight.bold,
           color: AppColors.white,
@@ -70,8 +72,8 @@ class _ReportScreenState extends State<ReportScreen> {
       bottomNavigationBar: Padding(
         padding: const EdgeInsets.all(20),
         child: CommonButton(
-          titleText: AppString.clearChat,
-          onTap: () => successBottomSheet(AppString.reportSubmitted),
+          titleText: "Report".tr,
+          onTap: () => successBottomSheet("Report Submitted".tr),
         ),
       ),
     );

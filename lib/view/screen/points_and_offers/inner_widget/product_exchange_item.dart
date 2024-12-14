@@ -39,72 +39,78 @@ Widget productExchangeItem(){
               border: Border.all(width: 1, color: Colors.black.withOpacity(0.2))
             ),
             child: CommonImage(
-              height: 100,
-                width: 100,
+              height: 80,
+                width: 80,
                 imageType: ImageType.png,
                 imageSrc: AppImages.exchange_product1),
           ),
 
-          15.width,
+          8.width,
 
-          const Column(
-            crossAxisAlignment: CrossAxisAlignment.start,
-            children: [
-              CommonText(
-                  fontSize: 24,
-                  bottom: 8,
-                  fontWeight: FontWeight.w700,
-                  text: "Product Name"),
-
-              SizedBox(
-                width: 235,
-                child: CommonText(
-                  textAlign: TextAlign.start,
-                    maxLines: 3,
-
-                    fontSize: 15,
-                    bottom: 10,
-                    fontWeight: FontWeight.w400,
-                    text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit."),
-              ),
-
-              Row(
-                children: [
-                  CommonText(
-                      fontSize:16,
-                      fontWeight: FontWeight.w400,
-                      text: AppString.redemPoints),
-                  CommonText(
-                      fontSize: 16,
-                      fontWeight: FontWeight.w400,
-                      text:"10000"),
-                ],
-              )
-            ],
-          ),
-
-
-          Align(alignment: Alignment.bottomRight,
-            child: Container(
-              height: 35,
-              width: 65,
-              decoration: BoxDecoration(
-                borderRadius: BorderRadius.circular(12),
-                color: AppColors.primaryColor
-              ),
-
-              child: const Center(
-                child: CommonText(
-                    fontSize: 24,
+          Flexible(
+            child: Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                const CommonText(
+                    fontSize: 18,
+                    bottom: 8,
                     fontWeight: FontWeight.w700,
-                    color: AppColors.white,
-                    text: AppString.add),
-              ),
+                    text: "Product Name"),
+            
+                const SizedBox(
+                  width: 235,
+                  child: CommonText(
+                    textAlign: TextAlign.start,
+                      maxLines: 3,
+            
+                      fontSize: 12,
+                      bottom: 10,
+                      fontWeight: FontWeight.w400,
+                      text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit."),
+                ),
+            
+                Row(
+                  children: [
+                     CommonText(
+                        fontSize:12,
+                        fontWeight: FontWeight.w400,
+                        text: "Redeem Points".tr),
+                    const CommonText(
+                        fontSize: 12,
+                        fontWeight: FontWeight.w400,
+                        text:"10000"),
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+                  ],
+                )
+              ],
             ),
           ),
 
+          Container(
+            height: 27,
+            width: 60,
+            decoration: BoxDecoration(
+                borderRadius: BorderRadius.circular(12),
+                color: AppColors.primaryColor
+            ),
 
-
+            child:  Center(
+              child: CommonText(
+                  fontSize: 18,
+                  fontWeight: FontWeight.w700,
+                  color: AppColors.white,
+                  text: "Add".tr),
+            ),
+          ),
 
 
         ],

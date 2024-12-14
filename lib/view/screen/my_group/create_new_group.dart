@@ -25,14 +25,14 @@ class CreateNewGroup extends StatelessWidget {
       appBar: PreferredSize(
         preferredSize: const Size(double.infinity, 80),
         child: AppBar(
-          title: const Padding(
+          title:  Padding(
             padding: EdgeInsets.only(top: 18),
             child: CommonText(
                 color: AppColors.white,
                 fontWeight: FontWeight.w700,
                 fontSize: 20,
                 maxLines: 2,
-                text: "Create New or Add to \nGroup"),
+                text: "Create New or Add to Group".tr),
           ),
           backgroundColor: AppColors.primaryColor,
         ),
@@ -71,23 +71,23 @@ class CreateNewGroup extends StatelessWidget {
                 ),
 
                 //=========================Enter group name section==================
-                const CommonText(
+                 CommonText(
                     top: 20,
                     fontSize: 18,
                     fontWeight: FontWeight.w700,
-                    text: AppString.groupName),
+                    text: "Group Name".tr),
 
                 CommonTextField(
                   controller: controller.groupNameController,
-                  hintText: AppString.enterGroupName,
+                  hintText: "Enter group name".tr,
                 ),
 
                 20.height,
-                const CommonText(
+                 CommonText(
                     fontSize: 18,
                     bottom: 12,
                     fontWeight: FontWeight.w700,
-                    text: AppString.addIntoGroup),
+                    text: "Add Group Into".tr),
 
                 //===================3 button===========================
 
@@ -95,17 +95,17 @@ class CreateNewGroup extends StatelessWidget {
                   mainAxisAlignment: MainAxisAlignment.spaceAround,
                   children: [
                     intoItem(
-                        title: AppString.newEvent,
+                        title: "New Event".tr,
                         itemNumber: 0,
                         selectedButtonIndex:
                             controller.selectedButtonIndex.value),
                     intoItem(
-                        title: AppString.existingEvent,
+                        title: "Existing Event".tr,
                         itemNumber: 1,
                         selectedButtonIndex:
                             controller.selectedButtonIndex.value),
                     intoItem(
-                        title: AppString.chatOnly,
+                        title:"Chat Only".tr,
                         itemNumber: 2,
                         selectedButtonIndex:
                             controller.selectedButtonIndex.value),
@@ -114,17 +114,17 @@ class CreateNewGroup extends StatelessWidget {
 
                 //====================================Group members and search====================
 
-                const CommonText(
+                 CommonText(
                     fontSize: 18,
                     fontWeight: FontWeight.w700,
                     top: 20,
                     bottom: 10,
-                    text: AppString.groupMember),
+                    text: "Group members".tr),
 
                 CustomTextField(
                   controller: controller.searchPeopleController,
                   prefixIcon: const Icon(Icons.search),
-                  hindText: AppString.searchForPeopleAdd,
+                  hindText: "Search for people to add".tr,
                 ),
 
                 //=====================list view for people===============================
@@ -174,7 +174,7 @@ class CreateNewGroup extends StatelessWidget {
             onTap: () {
               Get.toNamed(AppRoutes.createEvent);
             },
-            titleText: AppString.continues),
+            titleText: "Continue".tr),
       ),
     );
   }

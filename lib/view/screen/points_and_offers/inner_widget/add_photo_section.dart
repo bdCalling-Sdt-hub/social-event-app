@@ -37,8 +37,8 @@ class AddPhotoSection extends StatelessWidget {
                       const Icon(Icons.videocam_outlined),
                     ],
                   ),
-                  const CommonText(
-                    text: AppString.addImageDetails,
+                   CommonText(
+                    text: "Add up to 6 images".tr,
                     color: Color(0xff909090),
                     fontSize: 12,
                     top: 12,
@@ -82,7 +82,7 @@ class AddPhotoSection extends StatelessWidget {
                     controller.selectGroupButton(0);
 
                   },
-                  titleText: AppString.post),
+                  titleText: "Post".tr),
             ),
 
             30.height,

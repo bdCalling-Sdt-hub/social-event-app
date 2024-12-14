@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 
 import 'package:social_event/helpers/my_extension.dart';
 import 'package:social_event/utils/app_colors.dart';
@@ -31,8 +32,8 @@ class ReviewsSection extends StatelessWidget {
 
   Widget reviewsItem(){
     return Container(
-      margin: const EdgeInsets.symmetric(horizontal: 20, vertical: 5),
-      padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 15),
+      margin: const EdgeInsets.symmetric(horizontal: 10, vertical: 5),
+      padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 10),
       width: double.infinity,
       decoration: BoxDecoration(
         color: AppColors.normalTeal,
@@ -51,19 +52,33 @@ class ReviewsSection extends StatelessWidget {
               10.width,
               
               Column(
+                mainAxisAlignment: MainAxisAlignment.start,
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
-                  const CommonText(
-                      fontSize: 24,
-                      fontWeight: FontWeight.w700,
-                      text: "John Doe"),
+                  Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                    children: [
+                       CommonText(
+                          fontSize: 16,
+                          fontWeight: FontWeight.w700,
+                          text: "John Doe".tr),
+
+                       CommonText(
+                          color: AppColors.textFiledColor,
+                          fontSize: 12,
+                       left: 90,
+                          fontWeight: FontWeight.w400,
+                          text: "2 ${"ago".tr}")
+                    ],
+                  ),
                   
                   Row(
                     children: [
-                      ratingBar(itemSize: 17, ignoreGesture: true),
+                      ratingBar(itemSize: 12, ignoreGesture: true),
                       
                       const CommonText(
                           left: 3,
+                          fontSize: 12,
                           fontWeight: FontWeight.w400,
                           text: "5.0")
                     ],
@@ -73,11 +88,7 @@ class ReviewsSection extends StatelessWidget {
               
               const Spacer(),
               
-              const CommonText(
-                  color: AppColors.textFiledColor,
-                  fontSize: 16,
-                  fontWeight: FontWeight.w500,
-                  text: "2 Days Ago")
+
             ],
           ),
 
@@ -85,8 +96,8 @@ class ReviewsSection extends StatelessWidget {
             top: 10,
               textAlign: TextAlign.start,
               maxLines: 3,
-              fontSize: 16,
-              fontWeight: FontWeight.w500,
+              fontSize: 12,
+              fontWeight: FontWeight.w400,
               text: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.")
         ],
       ),

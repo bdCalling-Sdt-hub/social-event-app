@@ -22,32 +22,33 @@ class AddReviewsSection extends StatelessWidget {
           return Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              const Align(
+               Align(
                 alignment: Alignment.center,
                 child: CommonText(
-                    fontSize: 22,
+                    fontSize: 20,
                     fontWeight: FontWeight.w700,
-                    text: AppString.pleaseShareYourFeedbackWithUs),
+                    text: "Please share your feedback with us".tr),
               ),
 
               40.height,
 
               Align(
                   alignment: Alignment.center,
-                  child: ratingBar(itemSize: 60, ignoreGesture: false)),
+                  child: ratingBar(itemSize: 48, ignoreGesture: false)),
 
 
-              const CommonText(
+               CommonText(
                 top: 35,
-                  fontSize: 20,
+                  fontSize: 13,
                   fontWeight: FontWeight.w700,
-                  text: "Write a review"),
+                  text: "Write a review".tr),
 
               5.height,
 
               CommonTextField(
-                hintText: "Type here...",
+                hintText: "Type here..".tr,
                 maxLines: 3,
+
               ),
 
               50.height,
@@ -57,7 +58,7 @@ class AddReviewsSection extends StatelessWidget {
                     controller.selectGroupButton(0);
 
                   },
-                  titleText: AppString.done)
+                  titleText: "Done".tr)
             ],
           );
         }

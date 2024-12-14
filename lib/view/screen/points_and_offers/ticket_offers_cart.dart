@@ -17,11 +17,11 @@ class TicketOffersCart extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const CommonText(
+        title:  CommonText(
             fontSize: 24,
             color: AppColors.white,
             fontWeight: FontWeight.w700,
-            text: AppString.cart),
+            text: "Cart".tr),
         backgroundColor: AppColors.primaryColor,
       ),
       body: Padding(
@@ -32,16 +32,16 @@ class TicketOffersCart extends StatelessWidget {
             const FavoriteItem(),
             20.height,
 
-            const Row(
+             Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
                 CommonText(
-                    fontSize: 20,
+                    fontSize: 13,
                     fontWeight: FontWeight.w700,
-                    text: AppString.redemPoints),
+                    text: "${"Redeem Points".tr}:"),
 
                 CommonText(
-                    fontSize: 20,
+                    fontSize: 13,
                     fontWeight: FontWeight.w700,
                     text: "10000"),
               ],
@@ -49,16 +49,16 @@ class TicketOffersCart extends StatelessWidget {
 
             20.height,
 
-            const Row(
+             Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
                 CommonText(
-                    fontSize: 20,
+                    fontSize: 13,
                     fontWeight: FontWeight.w700,
-                    text: AppString.yourPoints),
+                    text:"Your Points".tr),
 
                 CommonText(
-                    fontSize: 20,
+                    fontSize: 13,
                     fontWeight: FontWeight.w700,
                     text: "24,513"),
               ],
@@ -71,9 +71,9 @@ class TicketOffersCart extends StatelessWidget {
         padding:  const EdgeInsets.only(left: 20, right: 20, bottom: 30),
         child: CommonButton(
             onTap: (){
-              customBottomsheet(context, title: "Free Ticket Redeemed",ontap:()=> Get.toNamed(AppRoutes.pointAndOffers));
+              customBottomsheet(context, title: "Free Ticket Redeemed".tr,ontap:()=> Get.toNamed(AppRoutes.pointAndOffers));
             },
-            titleText: AppString.getFreeTicket),
+            titleText: "Get Free Ticket".tr),
       ),
     );
   }

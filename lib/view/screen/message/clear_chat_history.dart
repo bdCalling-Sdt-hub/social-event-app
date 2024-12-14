@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
+import 'package:get/get_common/get_reset.dart';
 import 'package:social_event/helpers/my_extension.dart';
 import 'package:social_event/utils/app_icons.dart';
 import 'package:social_event/view/component/button/common_button.dart';
@@ -17,8 +19,8 @@ class ClearChatHistory extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         backgroundColor: AppColors.primaryColor,
-        title: const CommonText(
-          text: AppString.clearChatHistory,
+        title:  CommonText(
+          text: "Clear Chat History".tr,
           fontSize: 24,
           fontWeight: FontWeight.bold,
           color: AppColors.white,
@@ -36,13 +38,13 @@ class ClearChatHistory extends StatelessWidget {
               height: 136,
               width: 150,
             ).center,
-            const CommonText(
-              text: AppString.clearChatHistory,
+             CommonText(
+              text: "Clear Chat History".tr,
               fontWeight: FontWeight.bold,
               fontSize: 24,
             ),
-            const CommonText(
-              text: AppString.clearChatDetails,
+             CommonText(
+              text: "Clearing this chat history will delete all the messages you have here".tr,
               fontWeight: FontWeight.w400,
               maxLines: 5,
               fontSize: 15,
@@ -53,8 +55,8 @@ class ClearChatHistory extends StatelessWidget {
       bottomNavigationBar: Padding(
         padding: const EdgeInsets.all(20),
         child: CommonButton(
-          titleText: AppString.clearChat,
-          onTap: () => successBottomSheet(AppString.chatHistoryCleared),
+          titleText: "Clear Chat".tr,
+          onTap: () => successBottomSheet("Chat History Cleared".tr),
         ),
       ),
     );

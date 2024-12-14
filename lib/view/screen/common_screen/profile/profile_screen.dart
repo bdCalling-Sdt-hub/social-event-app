@@ -115,39 +115,39 @@ class ProfileScreen extends StatelessWidget {
                 // ================================All Item section==================
                 Item(
                   icon: Icons.group,
-                  title: AppString.myGroups,
+                  title: "My Groups".tr,
                   onTap: () => Get.toNamed(AppRoutes.myGroup),
                 ),
                 Item(
                   icon: Icons.event,
-                  title: AppString.myFavouriteEvents,
+                  title: "My Favourite Events".tr,
                   onTap: () => Get.toNamed(AppRoutes.myFavoriteEvent),
                 ),
                 Item(
                   icon: Icons.article_outlined,
-                  title: AppString.myArticles,
+                  title: "My Articles".tr,
                   onTap: () => Get.toNamed(AppRoutes.editProfile),
                 ),
                 Item(
                   icon: Icons.shopping_cart,
-                  title: AppString.pointsOffers,
+                  title: "Points & Offers".tr,
                   onTap: () => Get.toNamed(AppRoutes.pointAndOffers),
                 ),
                 Item(
                   icon: Icons.emoji_emotions,
-                  title: AppString.stickerGallery,
+                  title: "Sticker Gallery".tr,
                   onTap: () => Get.toNamed(AppRoutes.editProfile),
                 ),
 
                 Item(
                   icon: Icons.settings,
-                  title: AppString.settings,
+                  title: "Settings".tr,
                   onTap: () => Get.toNamed(AppRoutes.setting_screen),
                 ),
 
                 Item(
                   icon: Icons.logout,
-                  title: AppString.logOut,
+                  title: "Logout".tr,
                   onTap: () => logOutPopUp(),
                 ),
               ],

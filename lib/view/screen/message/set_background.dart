@@ -1,5 +1,7 @@
 import 'package:dotted_border/dotted_border.dart';
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
+import 'package:get/get_common/get_reset.dart';
 
 import 'package:social_event/helpers/my_extension.dart';
 import 'package:social_event/helpers/other_helper.dart';
@@ -38,17 +40,17 @@ class _SetBackgroundState extends State<SetBackground> {
     return Scaffold(
       appBar: AppBar(
         backgroundColor: AppColors.primaryColor,
-        title: const CommonText(
-          text: AppString.background,
+        title: CommonText(
+          text: "Background".tr,
           fontSize: 24,
           fontWeight: FontWeight.bold,
           color: AppColors.white,
         ),
       ),
       body: GridView.builder(
-        padding: const EdgeInsets.all(20),
+        padding:  EdgeInsets.all(20),
         itemCount: backgroundList.length + 1,
-        gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
+        gridDelegate:  SliverGridDelegateWithFixedCrossAxisCount(
             crossAxisCount: 2,
             mainAxisExtent: 300,
             crossAxisSpacing: 12,
@@ -56,18 +58,32 @@ class _SetBackgroundState extends State<SetBackground> {
         itemBuilder: (context, index) {
           if (index == 0) {
             return Container(
-              margin: const EdgeInsets.only(bottom: 60),
-              child: DottedBorder(
-                color: AppColors.primaryColor,
-                strokeWidth: 1,
-                borderType: BorderType.RRect,
-                radius: const Radius.circular(12),
-                padding: const EdgeInsets.all(6),
-                dashPattern: const [8],
-                child: const IconButton(
-                        onPressed: OtherHelper.openGallery,
-                        icon: Icon(Icons.camera_alt_outlined))
-                    .center,
+              margin:  EdgeInsets.only(bottom: 60),
+              child: Column(
+                children: [
+                  SizedBox(
+                    height: 210,
+                    child: DottedBorder(
+
+                      color: AppColors.primaryColor,
+                      strokeWidth: 1,
+                      borderType: BorderType.RRect,
+                      radius: const Radius.circular(12),
+                      padding: const EdgeInsets.all(6),
+                      dashPattern: const [8],
+                      child: const IconButton(
+                              onPressed: OtherHelper.openGallery,
+                              icon: Icon(Icons.camera_alt_outlined))
+                          .center,
+                    ),
+                  ),
+                  CommonText(
+                    text: "Custom".tr,
+                    fontSize: 15,
+                    top: 8,
+                    fontWeight: FontWeight.w400,
+                  )
+                ],
               ),
             );
           }
@@ -94,8 +110,8 @@ class _SetBackgroundState extends State<SetBackground> {
                   ),
                   CommonText(
                     text: index == 1
-                        ? AppString.defaul
-                        : "${AppString.background} ${index + 2}",
+                        ? "Default".tr
+                        : "${"Background".tr} ${index + 2}",
                     fontSize: 15,
                     top: 8,
                     fontWeight: FontWeight.w400,

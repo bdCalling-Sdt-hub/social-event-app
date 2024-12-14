@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
+import 'package:get/get_common/get_reset.dart';
 
 import 'package:social_event/helpers/my_extension.dart';
 import 'package:social_event/utils/app_colors.dart';
@@ -20,8 +22,8 @@ Widget contributeReviewItem(){
     child: Row(
       children: [
         CommonImage(
-          width: 130,
-            height: 130,
+          width: 100,
+            height: 100,
             imageType: ImageType.png,
             imageSrc: AppImages.event1),
         
@@ -31,27 +33,28 @@ Widget contributeReviewItem(){
           mainAxisAlignment: MainAxisAlignment.center,
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            const CommonText(
-                fontSize: 20,
+             CommonText(
+                fontSize: 16,
                 bottom: 10,
                 fontWeight: FontWeight.w700,
-                text: "Group Discussions"),
+                text: "Group Discussions".tr),
 
-            const CommonText(
-                fontSize: 16,
+             CommonText(
+                fontSize: 12,
                 bottom: 10,
                 color: AppColors.textFiledColor,
                 fontWeight: FontWeight.w400,
-                text: "You visited 3 days ago"),
+                text: "You visited 3 days ago".tr),
 
             Row(
 
               children: [
-              ratingBar(itemSize: 17, ignoreGesture: true),
+              ratingBar(itemSize: 13, ignoreGesture: true),
                 
                 const CommonText(
 
                   left: 3,
+                  fontSize: 12,
                   fontWeight: FontWeight.w400,
                     text: '5.0')
               ],
@@ -64,8 +67,8 @@ Widget contributeReviewItem(){
 
           ],
         ),
-        
-        const Spacer(),
+      Spacer(),
+
 
       popupMenu()
         
@@ -83,7 +86,7 @@ Widget popupMenu(){
 
     },
       itemBuilder: (context)=>[
-        const PopupMenuItem(
+         PopupMenuItem(
             value: 1,
             child: Row(
               children: [
@@ -93,12 +96,12 @@ Widget popupMenu(){
                 
                 CommonText(
                     left: 5,
-                    text: "Delete")
+                    text: "Delete".tr)
               ],
             )),
 
 
-        const PopupMenuItem(
+         PopupMenuItem(
             value: 2,
             child: Row(
               children: [
@@ -108,7 +111,7 @@ Widget popupMenu(){
 
                 CommonText(
                     left: 5,
-                    text: "Edit")
+                    text: "Edit".tr)
               ],
             )),
       ]);

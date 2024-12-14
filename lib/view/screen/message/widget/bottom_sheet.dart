@@ -39,7 +39,7 @@ void successBottomSheet(String message) {
             ),
             16.height,
             CommonButton(
-                titleText: AppString.done,
+                titleText: "Done".tr,
                 onTap: () {
                   Get.back();
                   Get.back();
@@ -87,7 +87,7 @@ void leaveBottomSheet(String message) {
               children: [
                 Expanded(
                   child: CommonButton(
-                      titleText: AppString.cancel,
+                      titleText: "Cancel".tr,
                       buttonColor: AppColors.transparent,
                       titleColor: AppColors.primaryColor,
                       onTap: () {
@@ -97,7 +97,7 @@ void leaveBottomSheet(String message) {
                 20.width,
                 Expanded(
                   child: CommonButton(
-                      titleText: AppString.done,
+                      titleText: "Done".tr,
                       onTap: () {
                         Get.back();
                       }),
@@ -136,15 +136,15 @@ void groupNoteBottomSheet() {
               width: 75,
             ),
             16.height,
-            const CommonText(
-              text: AppString.groupNoticeDetails,
+             CommonText(
+              text: "Only the group owner and  admin can edit group notice".tr,
               maxLines: 3,
               fontSize: 15,
               fontWeight: FontWeight.bold,
             ),
             16.height,
             CommonButton(
-                titleText: AppString.done,
+                titleText:"Ok".tr,
                 onTap: () {
                   Get.back();
                 }),
