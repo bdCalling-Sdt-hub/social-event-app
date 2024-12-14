@@ -36,7 +36,7 @@ class _AlertSoundScreenState extends State<AlertSoundScreen> {
     return Scaffold(
       appBar: AppBar(
         backgroundColor: AppColors.primaryColor,
-        title: const CommonText(
+        title: CommonText(
           text: AppString.alertSound,
           fontSize: 24,
           fontWeight: FontWeight.bold,

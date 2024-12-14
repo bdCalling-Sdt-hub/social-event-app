@@ -18,7 +18,7 @@ class MessageNotificationScreen extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         backgroundColor: AppColors.primaryColor,
-        title: const CommonText(
+        title: CommonText(
             fontSize: 24,
             fontWeight: FontWeight.w700,
             color: AppColors.white,
@@ -43,10 +43,10 @@ class MessageNotificationScreen extends StatelessWidget {
               value: controller.isNotification,
               onTap: controller.changeNotification,
             ),
-            const Item(
+            Item(
               title: AppString.ringtoneForIncomingCalls,
             ),
-            const Item(
+            Item(
                 onTap: OtherHelper.openSystemSetting,
                 title: AppString.deviceSettings,
                 subTitle: AppString.goToSettings),

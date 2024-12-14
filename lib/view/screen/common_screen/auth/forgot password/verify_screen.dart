@@ -29,7 +29,7 @@ class _VerifyScreenState extends State<VerifyScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const CommonText(
+        title:  CommonText(
           text: AppString.forgotPassword,
           fontWeight: FontWeight.w700,
           fontSize: 24,

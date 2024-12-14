@@ -16,7 +16,7 @@ class MyFavoriteEventScreen extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         backgroundColor: AppColors.primaryColor,
-        title: const CommonText(
+        title:  CommonText(
             fontSize: 28,
             fontWeight: FontWeight.w700,
             color: AppColors.white,

@@ -54,13 +54,13 @@ class ProductExchangeDettails extends StatelessWidget {
                   text: "Product Name"),
 
 
-              const Row(
+              Row(
                 children: [
                   CommonText(
                       fontSize: 16,
                       fontWeight: FontWeight.w400,
                       text: AppString.redemPoints),
-                  CommonText(
+                  const CommonText(
                       fontSize: 16,
                       fontWeight: FontWeight.w400,
                       text:"10000"),

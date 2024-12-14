@@ -21,9 +21,9 @@ void moreBottomSheet() {
           mainAxisSize: MainAxisSize.min,
           children: [
             20.height,
-            const Row(
+             Row(
               children: [
-                Icon(Icons.arrow_circle_up),
+                const Icon(Icons.arrow_circle_up),
                 CommonText(
                   text: AppString.seeMorePostsLikeThis,
                   fontSize: 15,
@@ -34,9 +34,9 @@ void moreBottomSheet() {
             6.height,
             const Divider(),
             6.height,
-            const Row(
+             Row(
               children: [
-                Icon(Icons.arrow_circle_down),
+                const Icon(Icons.arrow_circle_down),
                 CommonText(
                   text: AppString.seeLessPostsLikeThis,
                   fontSize: 15,
@@ -52,9 +52,9 @@ void moreBottomSheet() {
                 Get.back();
                 blockUserBottomSheet();
               },
-              child: const Row(
+              child:  Row(
                 children: [
-                  Icon(
+                  const Icon(
                     Icons.block,
                     color: AppColors.primaryColor,
                   ),
@@ -101,7 +101,7 @@ void blockUserBottomSheet() {
                 size: 60,
               ),
             ),
-            const CommonText(
+             CommonText(
               text: AppString.blockUserDetails,
               fontSize: 24,
               top: 30,

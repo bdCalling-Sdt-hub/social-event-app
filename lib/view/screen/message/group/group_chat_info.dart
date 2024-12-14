@@ -19,7 +19,7 @@ class GroupChatInfo extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         backgroundColor: AppColors.primaryColor,
-        title: const CommonText(
+        title: CommonText(
           text: AppString.chatInfo,
           fontSize: 24,
           fontWeight: FontWeight.bold,
@@ -38,12 +38,12 @@ class GroupChatInfo extends StatelessWidget {
                 color: const Color(0xffEEEEEE),
               ),
               10.height,
-              const Item(title: AppString.groupName),
+              Item(title: AppString.groupName),
               Item(
                 title: AppString.groupQRCode,
                 onTap: () => Get.toNamed(AppRoutes.groupQrCode),
               ),
-              const Item(
+              Item(
                 title: AppString.groupNote,
                 onTap: groupNoteBottomSheet,
               ),
@@ -58,7 +58,7 @@ class GroupChatInfo extends StatelessWidget {
                 color: const Color(0xffEEEEEE),
               ),
               10.height,
-              const Item(title: AppString.searchChatHistory),
+              Item(title: AppString.searchChatHistory),
               ItemWithSwitch(
                 title: AppString.muteNotifications,
                 value: controller.isNotification,

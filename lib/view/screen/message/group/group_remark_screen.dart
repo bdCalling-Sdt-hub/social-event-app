@@ -16,7 +16,7 @@ class GroupRemarkScreen extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         backgroundColor: AppColors.primaryColor,
-        title: const CommonText(
+        title: CommonText(
           text: AppString.groupRemark,
           fontSize: 24,
           fontWeight: FontWeight.bold,
@@ -27,7 +27,7 @@ class GroupRemarkScreen extends StatelessWidget {
         padding: const EdgeInsets.all(20),
         child: Column(
           children: [
-            const CommonText(
+            CommonText(
               text: AppString.groupRemarkDetails,
               fontSize: 18,
               fontWeight: FontWeight.w400,
@@ -44,7 +44,7 @@ class GroupRemarkScreen extends StatelessWidget {
                 ),
               ),
             ),
-            const CommonText(
+            CommonText(
               text: AppString.groupNameWorkEnter,
               fontSize: 18,
               top: 6,

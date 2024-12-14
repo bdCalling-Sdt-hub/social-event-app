@@ -79,7 +79,7 @@ class _FiltersState extends State<Filters> {
     return Scaffold(
       appBar: AppBar(
         backgroundColor: AppColors.primaryColor,
-        title: const CommonText(
+        title: CommonText(
           text: AppString.filters,
           fontSize: 24,
           fontWeight: FontWeight.bold,
@@ -90,7 +90,7 @@ class _FiltersState extends State<Filters> {
         padding: const EdgeInsets.symmetric(horizontal: 20),
         child: Column(
           children: [
-            const CommonText(
+            CommonText(
               text: AppString.ageGroup,
               fontWeight: FontWeight.w700,
               bottom: 10,
@@ -130,7 +130,7 @@ class _FiltersState extends State<Filters> {
                 );
               },
             ),
-            const CommonText(
+            CommonText(
               text: AppString.categories,
               fontWeight: FontWeight.w700,
               bottom: 10,
@@ -170,7 +170,7 @@ class _FiltersState extends State<Filters> {
                 );
               },
             ),
-            const CommonText(
+            CommonText(
               text: AppString.pricing,
               top: 20,
             ).start,
@@ -190,7 +190,7 @@ class _FiltersState extends State<Filters> {
                 });
               },
             ),
-            const CommonText(
+            CommonText(
               text: AppString.distance,
               top: 20,
               bottom: 12,

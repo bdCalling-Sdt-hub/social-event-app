@@ -14,7 +14,7 @@ class TicketOffersScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const CommonText(
+        title: CommonText(
              fontSize: 24,
             color: AppColors.white,
             text: AppString.ticketOffers),

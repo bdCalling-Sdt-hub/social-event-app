@@ -19,7 +19,7 @@ class ChatBackground extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         backgroundColor: AppColors.primaryColor,
-        title: const CommonText(
+        title: CommonText(
             fontSize: 24,
             fontWeight: FontWeight.w700,
             color: AppColors.white,
@@ -33,15 +33,15 @@ class ChatBackground extends StatelessWidget {
               title: AppString.chooseWallpaper,
               onTap: () => Get.toNamed(AppRoutes.wallpaper),
             ),
-            const Item(
+            Item(
               title: AppString.choosePhoto,
               onTap: OtherHelper.openGallery,
             ),
-            const Item(
+            Item(
               title: AppString.takePhoto,
               onTap: OtherHelper.openCamera,
             ),
-            const Item(
+            Item(
               title: AppString.applyToAllChats,
               onTap: applyBottomSheetModel,
             ),

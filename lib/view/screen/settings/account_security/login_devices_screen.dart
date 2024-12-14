@@ -15,7 +15,7 @@ class LoginDevicesScreen extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         backgroundColor: AppColors.primaryColor,
-        title: const CommonText(
+        title: CommonText(
             fontSize: 24,
             fontWeight: FontWeight.w700,
             color: AppColors.white,
@@ -31,14 +31,14 @@ class LoginDevicesScreen extends StatelessWidget {
               height: 76,
               width: 150,
             ).center,
-            const CommonText(
+            CommonText(
               text: AppString.loginDevices,
               fontSize: 24,
               top: 20,
               bottom: 20,
               fontWeight: FontWeight.bold,
             ).center,
-            const CommonText(
+            CommonText(
               text: AppString.loginDevicesDetails,
               fontSize: 15,
               maxLines: 5,
@@ -62,7 +62,7 @@ class LoginDevicesScreen extends StatelessWidget {
                         crossAxisAlignment: CrossAxisAlignment.start,
                         mainAxisAlignment: MainAxisAlignment.start,
                         children: [
-                          const CommonText(
+                          CommonText(
                             text: AppString.deviceName,
                             fontSize: 16,
                             fontWeight: FontWeight.w700,
@@ -81,7 +81,7 @@ class LoginDevicesScreen extends StatelessWidget {
                       if (index != 0)
                         TextButton(
                             onPressed: () {},
-                            child: const CommonText(
+                            child: CommonText(
                               text: AppString.logOut,
                               fontSize: 13,
                               fontWeight: FontWeight.bold,

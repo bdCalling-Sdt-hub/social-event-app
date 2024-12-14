@@ -30,7 +30,7 @@ class HomeScreen extends StatelessWidget {
                 children: [
                   Row(
                     children: [
-                      const CommonText(
+                       CommonText(
                         text: AppString.joinList,
                         fontSize: 20,
                         fontWeight: FontWeight.w700,
@@ -87,7 +87,7 @@ class HomeScreen extends StatelessWidget {
                 children: [
                   Row(
                     children: [
-                      const CommonText(
+                      CommonText(
                         text: AppString.favoriteList,
                         fontSize: 20,
                         fontWeight: FontWeight.w700,

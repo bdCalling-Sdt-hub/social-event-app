@@ -17,7 +17,7 @@ class EasyModeScreen extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         backgroundColor: AppColors.primaryColor,
-        title: const CommonText(
+        title: CommonText(
             fontSize: 24,
             fontWeight: FontWeight.w700,
             color: AppColors.white,
@@ -34,14 +34,14 @@ class EasyModeScreen extends StatelessWidget {
               height: 150,
               width: 150,
             ).center,
-            const CommonText(
+            CommonText(
               text: AppString.easyMode,
               fontSize: 24,
               top: 20,
               bottom: 20,
               fontWeight: FontWeight.bold,
             ),
-            const CommonText(
+            CommonText(
               text: AppString.easyModeDetails,
               fontSize: 15,
               bottom: 20,

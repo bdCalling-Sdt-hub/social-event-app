@@ -17,9 +17,9 @@ class ErrorScreen extends StatelessWidget {
           const SizedBox(
             height: 20,
           ),
-          const Text(
+           Text(
             AppString.someThingWrong,
-            style: TextStyle(
+            style: const TextStyle(
                 fontWeight: FontWeight.w500,
                 fontSize: 16,
                 color: AppColors.white),
@@ -37,9 +37,9 @@ class ErrorScreen extends StatelessWidget {
                   topRight: Radius.circular(32),
                   bottomLeft: Radius.circular(32),
                 ))),
-            child: const Text(
+            child:  Text(
               AppString.tryAgain,
-              style: TextStyle(
+              style: const TextStyle(
                   fontSize: 18,
                   fontWeight: FontWeight.w500,
                   color: Colors.white),

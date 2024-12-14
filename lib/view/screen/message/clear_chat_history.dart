@@ -17,7 +17,7 @@ class ClearChatHistory extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         backgroundColor: AppColors.primaryColor,
-        title: const CommonText(
+        title: CommonText(
           text: AppString.clearChatHistory,
           fontSize: 24,
           fontWeight: FontWeight.bold,
@@ -36,12 +36,12 @@ class ClearChatHistory extends StatelessWidget {
               height: 136,
               width: 150,
             ).center,
-            const CommonText(
+            CommonText(
               text: AppString.clearChatHistory,
               fontWeight: FontWeight.bold,
               fontSize: 24,
             ),
-            const CommonText(
+            CommonText(
               text: AppString.clearChatDetails,
               fontWeight: FontWeight.w400,
               maxLines: 5,

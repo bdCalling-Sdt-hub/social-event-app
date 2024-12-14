@@ -16,7 +16,7 @@ class FeaturedActivitiesScreen extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         backgroundColor: AppColors.primaryColor,
-        title: const CommonText(
+        title: CommonText(
           text: AppString.featuredActivities,
           fontSize: 24,
           fontWeight: FontWeight.bold,

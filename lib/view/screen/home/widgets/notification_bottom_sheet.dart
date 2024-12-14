@@ -33,13 +33,13 @@ void notificationBottomSheet() {
               color: Colors.teal,
             ),
             16.height,
-            const CommonText(
+             CommonText(
               text: AppString.notifyEventAttendees,
               fontSize: 24,
               fontWeight: FontWeight.bold,
             ),
             16.height,
-            const CommonText(
+            CommonText(
               text: AppString.enterCustomMessage,
               fontSize: 14,
               fontWeight: FontWeight.bold,

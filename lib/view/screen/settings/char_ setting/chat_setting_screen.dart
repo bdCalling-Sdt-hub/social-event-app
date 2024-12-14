@@ -17,7 +17,7 @@ class ChatSettingScreen extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         backgroundColor: AppColors.primaryColor,
-        title: const CommonText(
+        title: CommonText(
             fontSize: 24,
             fontWeight: FontWeight.w700,
             color: AppColors.white,
@@ -42,10 +42,10 @@ class ChatSettingScreen extends StatelessWidget {
               subTitle: AppString.defaul,
               onTap: () => Get.toNamed(AppRoutes.chatBackground),
             ),
-            const Item(
+            Item(
               title: AppString.myStickers,
             ),
-            const Item(
+            Item(
                 // onTap: () => Get.toNamed(AppRoutes.alertSound),
                 title: AppString.chatHistoryBackup,
                 subTitle: AppString.daily),

@@ -68,7 +68,7 @@ void transferBottomSheetModel(BuildContext context, bool isEdit) {
               color: Colors.teal,
             ),
             16.height,
-            const CommonText(
+            CommonText(
               text: AppString.eventTransferred,
               fontSize: 20,
               fontWeight: FontWeight.bold,

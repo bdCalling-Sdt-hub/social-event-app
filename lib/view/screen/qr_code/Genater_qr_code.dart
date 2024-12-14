@@ -13,7 +13,7 @@ class GenarateQRCode extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         backgroundColor: AppColors.primaryColor,
-        title: const CommonText(
+        title:  CommonText(
           text: AppString.eventQRCode,
           fontSize: 24,
           fontWeight: FontWeight.bold,
@@ -22,7 +22,7 @@ class GenarateQRCode extends StatelessWidget {
       ),
       body: Column(
         children: [
-          const CommonText(
+          CommonText(
             text: AppString.qrCodeDetails,
             fontSize: 16,
             fontWeight: FontWeight.bold,

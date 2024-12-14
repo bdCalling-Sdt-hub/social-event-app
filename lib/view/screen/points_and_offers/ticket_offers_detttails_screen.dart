@@ -48,8 +48,8 @@ class TicketOffersDetttailsScreen extends StatelessWidget {
           ),
           10.height,
           
-          const Padding(
-            padding:  EdgeInsets.symmetric(horizontal: 20),
+          Padding(
+            padding:  const EdgeInsets.symmetric(horizontal: 20),
             child: Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
@@ -60,7 +60,7 @@ class TicketOffersDetttailsScreen extends StatelessWidget {
                     fontWeight: FontWeight.w700,
                     text: AppString.ticketOffers),
 
-                Icon(Icons.favorite_border, color:AppColors.primaryColor,),
+                const Icon(Icons.favorite_border, color:AppColors.primaryColor,),
 
               ],
             ),
@@ -69,18 +69,18 @@ class TicketOffersDetttailsScreen extends StatelessWidget {
 
           30.height,
           
-          const Padding(
-            padding:  EdgeInsets.symmetric(horizontal: 20),
+          Padding(
+            padding:  const EdgeInsets.symmetric(horizontal: 20),
             child: Row(
               children: [
                 CommonText(text: AppString.redemPoints),
-                CommonText(text: "10000")
+                const CommonText(text: "10000")
               ],
             ),
           ),
           
           
-          const Align(
+          Align(
             alignment: Alignment.centerLeft,
             child: CommonText(
                 top: 30,

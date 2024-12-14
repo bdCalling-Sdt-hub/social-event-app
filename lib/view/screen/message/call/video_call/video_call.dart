@@ -121,7 +121,7 @@ class VideoCall extends StatelessWidget {
                                         Icons.call_outlined,
                                         color: AppColors.white,
                                       )),
-                                  const CommonText(
+                                  CommonText(
                                     text: AppString.accept,
                                     color: AppColors.white,
                                   ),
@@ -139,7 +139,7 @@ class VideoCall extends StatelessWidget {
                                         imageSrc: AppIcons.decline,
                                         imageType: ImageType.svg,
                                       )),
-                                  const CommonText(
+                                  CommonText(
                                     text: AppString.reject,
                                     color: AppColors.white,
                                   ),

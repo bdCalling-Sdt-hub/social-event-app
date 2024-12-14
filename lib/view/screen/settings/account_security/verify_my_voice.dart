@@ -14,7 +14,7 @@ class VerifyMyVoice extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         backgroundColor: AppColors.primaryColor,
-        title: const CommonText(
+        title:  CommonText(
             fontSize: 24,
             fontWeight: FontWeight.w700,
             color: AppColors.white,
@@ -28,7 +28,7 @@ class VerifyMyVoice extends StatelessWidget {
 
           children: [
             20.height,
-            const CommonText(
+            CommonText(
                 maxLines: 2,
                 fontSize: 18,
                 fontWeight: FontWeight.w600,
@@ -44,7 +44,7 @@ class VerifyMyVoice extends StatelessWidget {
             
             450.height,
             
-            const CommonText(
+            CommonText(
 
               fontSize: 17,
                 bottom: 10,

@@ -19,7 +19,7 @@ class NoData extends StatelessWidget {
             height: 70,
             width: 70,
           ),
-          const CommonText(
+           CommonText(
             text: AppString.noData,
             fontSize: 16,
             top: 8,

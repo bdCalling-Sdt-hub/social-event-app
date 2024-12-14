@@ -27,7 +27,7 @@ class _CreateArticleScreenState extends State<CreateArticleScreen> {
     return Scaffold(
       appBar: AppBar(
         backgroundColor: AppColors.primaryColor,
-        title: const CommonText(
+        title:  CommonText(
             fontSize: 24,
             color: AppColors.white,
             maxLines: 2,
@@ -45,7 +45,7 @@ class _CreateArticleScreenState extends State<CreateArticleScreen> {
                 maxLines: 3,
                 keyboardType: TextInputType.multiline,
               ),
-              const CommonText(
+               CommonText(
                 text: AppString.connectEvent,
                 fontSize: 13,
                 top: 10,

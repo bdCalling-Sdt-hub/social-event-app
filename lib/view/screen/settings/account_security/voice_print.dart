@@ -21,7 +21,7 @@ class VoicePrint extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         backgroundColor: AppColors.primaryColor,
-        title: const CommonText(
+        title:  CommonText(
             fontSize: 24,
             fontWeight: FontWeight.w700,
             color: AppColors.white,
@@ -43,7 +43,7 @@ class VoicePrint extends StatelessWidget {
                 imageType: ImageType.png,
                 imageSrc: AppImages.voice_print),
             
-            const CommonText(
+            CommonText(
                 top: 20,
                 fontWeight: FontWeight.w700,
                 fontSize: 26,

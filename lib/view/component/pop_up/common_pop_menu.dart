@@ -103,7 +103,7 @@ logOutPopUp() {
           borderRadius: BorderRadius.circular(20),
         ),
         contentPadding: const EdgeInsets.all(12),
-        title: const CommonText(
+        title:  CommonText(
           text: AppString.youSureWantToLogout,
           maxLines: 2,
           fontWeight: FontWeight.w600,
@@ -154,7 +154,7 @@ deletePopUp(
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              const Center(
+               Center(
                 child: CommonText(
                   text: AppString.areYouSure,
                   fontSize: 20,
@@ -164,7 +164,7 @@ deletePopUp(
                   bottom: 24,
                 ),
               ),
-              const CommonText(
+               CommonText(
                 text: AppString.deleteDetails,
                 fontSize: 16,
                 fontWeight: FontWeight.w500,

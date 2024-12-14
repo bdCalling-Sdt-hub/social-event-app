@@ -75,14 +75,14 @@ class SearchScreen extends StatelessWidget {
                         Row(
                           mainAxisAlignment: MainAxisAlignment.spaceBetween,
                           children: [
-                            const CommonText(
+                            CommonText(
                               text: AppString.eventsNearYou,
                               fontWeight: FontWeight.w700,
                               fontSize: 20,
                             ),
                             InkWell(
                               onTap: () => Get.toNamed(AppRoutes.eventNear),
-                              child: const CommonText(
+                              child: CommonText(
                                 text: AppString.viewAll,
                                 fontWeight: FontWeight.w400,
                                 fontSize: 10,
@@ -109,7 +109,7 @@ class SearchScreen extends StatelessWidget {
                         Row(
                           mainAxisAlignment: MainAxisAlignment.spaceBetween,
                           children: [
-                            const CommonText(
+                            CommonText(
                               text: AppString.featuredActivities,
                               fontWeight: FontWeight.w700,
                               fontSize: 20,
@@ -117,7 +117,7 @@ class SearchScreen extends StatelessWidget {
                             InkWell(
                               onTap: () =>
                                   Get.toNamed(AppRoutes.featuredActivities),
-                              child: const CommonText(
+                              child: CommonText(
                                 text: AppString.viewAll,
                                 fontWeight: FontWeight.w400,
                                 fontSize: 10,

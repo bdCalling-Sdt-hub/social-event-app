@@ -14,7 +14,7 @@ class CollectedPersonalInfomationScreen extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         backgroundColor: AppColors.primaryColor,
-        title: const CommonText(
+        title: CommonText(
             fontSize: 24,
             color: AppColors.white,
             maxLines: 2,
@@ -25,7 +25,7 @@ class CollectedPersonalInfomationScreen extends StatelessWidget {
         child: Column(
           children: <Widget>[
             10.height,
-            const Item(title: AppString.downloadMyInformation),
+            Item(title: AppString.downloadMyInformation),
           ],
         ),
       ),

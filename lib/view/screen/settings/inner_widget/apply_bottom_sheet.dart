@@ -30,7 +30,7 @@ void applyBottomSheetModel() {
               color: Colors.teal,
             ),
             16.height,
-            const CommonText(
+            CommonText(
               text: AppString.applyToAllChats,
               fontSize: 20,
               fontWeight: FontWeight.bold,

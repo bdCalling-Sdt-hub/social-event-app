@@ -30,7 +30,7 @@ class _CommentScreenState extends State<CommentScreen> {
     return Scaffold(
       appBar: AppBar(
         backgroundColor: AppColors.primaryColor,
-        title: const CommonText(
+        title: CommonText(
             fontSize: 24,
             fontWeight: FontWeight.w700,
             color: AppColors.white,
@@ -38,7 +38,7 @@ class _CommentScreenState extends State<CommentScreen> {
       ),
       body: Column(
         children: [
-          const CommonText(
+          CommonText(
             text: AppString.preApproval,
             fontSize: 15,
             left: 20,

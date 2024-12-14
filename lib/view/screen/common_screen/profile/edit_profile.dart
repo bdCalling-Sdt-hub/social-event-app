@@ -23,7 +23,7 @@ class EditProfile extends StatelessWidget {
         return Scaffold(
           appBar: AppBar(
             centerTitle: true,
-            title: const CommonText(
+            title:  CommonText(
               text: AppString.profile,
               fontSize: 20,
               fontWeight: FontWeight.w600,

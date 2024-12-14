@@ -37,9 +37,9 @@ class AddPhotoSection extends StatelessWidget {
                       const Icon(Icons.videocam_outlined),
                     ],
                   ),
-                  const CommonText(
+                  CommonText(
                     text: AppString.addImageDetails,
-                    color: Color(0xff909090),
+                    color: const Color(0xff909090),
                     fontSize: 12,
                     top: 12,
                   ),

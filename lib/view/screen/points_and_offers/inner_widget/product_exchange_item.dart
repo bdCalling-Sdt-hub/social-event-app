@@ -47,16 +47,16 @@ Widget productExchangeItem(){
 
           15.width,
 
-          const Column(
+          Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              CommonText(
+              const CommonText(
                   fontSize: 24,
                   bottom: 8,
                   fontWeight: FontWeight.w700,
                   text: "Product Name"),
 
-              SizedBox(
+              const SizedBox(
                 width: 235,
                 child: CommonText(
                   textAlign: TextAlign.start,
@@ -74,7 +74,7 @@ Widget productExchangeItem(){
                       fontSize:16,
                       fontWeight: FontWeight.w400,
                       text: AppString.redemPoints),
-                  CommonText(
+                  const CommonText(
                       fontSize: 16,
                       fontWeight: FontWeight.w400,
                       text:"10000"),
@@ -93,7 +93,7 @@ Widget productExchangeItem(){
                 color: AppColors.primaryColor
               ),
 
-              child: const Center(
+              child: Center(
                 child: CommonText(
                     fontSize: 24,
                     fontWeight: FontWeight.w700,

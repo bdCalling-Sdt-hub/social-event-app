@@ -21,7 +21,7 @@ class ProductExchangeCart extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         backgroundColor: AppColors.primaryColor,
-        title: const CommonText(
+        title: CommonText(
             color: AppColors.white,
             fontSize: 24,
             text: AppString.cart),
@@ -86,13 +86,13 @@ class ProductExchangeCart extends StatelessWidget {
                     ),
                     8.height,
 
-                    const Row(
+                    Row(
                       children: [
                         CommonText(
                             fontSize:16,
                             fontWeight: FontWeight.w400,
                             text: AppString.redemPoints),
-                        CommonText(
+                        const CommonText(
                             fontSize: 16,
                             fontWeight: FontWeight.w400,
                             text:"10000"),
@@ -117,7 +117,7 @@ class ProductExchangeCart extends StatelessWidget {
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
-                const CommonText(
+                CommonText(
                   top: 30,
                     fontSize: 22,
                     fontWeight: FontWeight.w700,
@@ -125,7 +125,7 @@ class ProductExchangeCart extends StatelessWidget {
 
                 //=================================All Textfield===========================
 
-                const CommonText(
+                CommonText(
                   top: 30,
                     fontSize: 22,
                     fontWeight: FontWeight.w700,
@@ -135,7 +135,7 @@ class ProductExchangeCart extends StatelessWidget {
                   hintText: AppString.enterStreetAddress,
                 ),
 
-                const CommonText(
+                CommonText(
                   top: 20,
                     fontSize: 22,
                     fontWeight: FontWeight.w700,
@@ -145,7 +145,7 @@ class ProductExchangeCart extends StatelessWidget {
                   hintText: AppString.enterCity,
                 ),
 
-                const CommonText(
+                CommonText(
                   top: 20,
                     fontSize: 22,
                     fontWeight: FontWeight.w700,
@@ -156,7 +156,7 @@ class ProductExchangeCart extends StatelessWidget {
                 ),
 
 
-                const CommonText(
+                CommonText(
                     top: 20,
                     fontSize: 22,
                     fontWeight: FontWeight.w700,
@@ -168,7 +168,7 @@ class ProductExchangeCart extends StatelessWidget {
 
 
 
-                const CommonText(
+                CommonText(
                     top: 20,
                     fontSize: 22,
                     fontWeight: FontWeight.w700,

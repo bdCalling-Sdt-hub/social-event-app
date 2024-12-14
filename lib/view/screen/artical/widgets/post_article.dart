@@ -26,12 +26,12 @@ Widget postArticle() {
               height: 48,
               width: 50,
             ),
-            const CommonText(
+             CommonText(
               text: AppString.sharePost,
               fontSize: 15,
               left: 10,
               fontWeight: FontWeight.w400,
-              color: Color(0xff909090),
+              color: const Color(0xff909090),
             )
           ],
         ),
@@ -46,11 +46,11 @@ Widget postArticle() {
                   decoration: BoxDecoration(
                       color: AppColors.white,
                       borderRadius: BorderRadius.circular(16)),
-                  child: const Row(
+                  child:  Row(
                     crossAxisAlignment: CrossAxisAlignment.center,
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
-                      Icon(Icons.image_outlined),
+                      const Icon(Icons.image_outlined),
                       CommonText(text: AppString.photo)
                     ],
                   ),
@@ -66,11 +66,11 @@ Widget postArticle() {
                   decoration: BoxDecoration(
                       color: AppColors.white,
                       borderRadius: BorderRadius.circular(16)),
-                  child: const Row(
+                  child:  Row(
                     crossAxisAlignment: CrossAxisAlignment.center,
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
-                      Icon(Icons.videocam_outlined),
+                      const Icon(Icons.videocam_outlined),
                       CommonText(text: AppString.video)
                     ],
                   ),

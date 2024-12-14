@@ -38,7 +38,7 @@ class _SetBackgroundState extends State<SetBackground> {
     return Scaffold(
       appBar: AppBar(
         backgroundColor: AppColors.primaryColor,
-        title: const CommonText(
+        title: CommonText(
           text: AppString.background,
           fontSize: 24,
           fontWeight: FontWeight.bold,

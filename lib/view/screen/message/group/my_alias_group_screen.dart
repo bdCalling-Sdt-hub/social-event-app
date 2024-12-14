@@ -15,7 +15,7 @@ class MyAliasGroupScreen extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         backgroundColor: AppColors.primaryColor,
-        title: const CommonText(
+        title: CommonText(
           text: AppString.myAliasInGroup,
           fontSize: 24,
           fontWeight: FontWeight.bold,
@@ -26,7 +26,7 @@ class MyAliasGroupScreen extends StatelessWidget {
         padding: const EdgeInsets.all(20),
         child: Column(
           children: [
-            const CommonText(
+            CommonText(
               text: AppString.myAliasGroupDetails,
               fontSize: 18,
               fontWeight: FontWeight.w400,

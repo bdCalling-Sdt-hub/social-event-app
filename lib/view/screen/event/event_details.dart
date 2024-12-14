@@ -24,7 +24,7 @@ class EventDetails extends StatelessWidget {
       appBar: AppBar(
         leading: back(),
         centerTitle: true,
-        title: const CommonText(
+        title: CommonText(
           text: AppString.eventInformation,
           fontSize: 24,
           fontWeight: FontWeight.bold,
@@ -99,7 +99,7 @@ class EventDetails extends StatelessWidget {
                           Icons.circle,
                           size: 8,
                         ),
-                        const CommonText(
+                        CommonText(
                           text: AppString.ageGroup,
                           fontSize: 13,
                           right: 70,
@@ -119,7 +119,7 @@ class EventDetails extends StatelessWidget {
                           Icons.circle,
                           size: 8,
                         ),
-                        const CommonText(
+                        CommonText(
                           text: AppString.category,
                           fontSize: 13,
                           right: 80,
@@ -149,7 +149,7 @@ class EventDetails extends StatelessWidget {
                           ),
                           InkWell(
                             onTap: () => Get.toNamed(AppRoutes.buyTicket),
-                            child: const CommonButton(
+                            child: CommonButton(
                               titleText: AppString.buyTicket,
                               buttonWidth: 150,
                               buttonHeight: 42,
@@ -158,7 +158,7 @@ class EventDetails extends StatelessWidget {
                         ],
                       ),
                     ),
-                    const CommonText(
+                    CommonText(
                       text: AppString.description,
                       fontWeight: FontWeight.w700,
                       top: 20,
@@ -171,7 +171,7 @@ class EventDetails extends StatelessWidget {
                       color: AppColors.black.withOpacity(0.5),
                       fontWeight: FontWeight.w400,
                     ),
-                    const CommonText(
+                    CommonText(
                       text: AppString.eventOrganizers,
                       fontWeight: FontWeight.bold,
                       top: 20,
@@ -180,6 +180,7 @@ class EventDetails extends StatelessWidget {
                     GridView.builder(
                       physics: const NeverScrollableScrollPhysics(),
                       shrinkWrap: true,
+                      itemCount: 3,
                       gridDelegate:
                           const SliverGridDelegateWithFixedCrossAxisCount(
                               crossAxisCount: 3),

@@ -84,14 +84,14 @@ class _NotificationItemState extends State<NotificationItem> {
                   if (isShow)
                     Row(
                       children: [
-                        const Expanded(
+                        Expanded(
                             child: CommonButton(
                           titleText: AppString.accept,
                           buttonHeight: 35,
                           buttonWidth: 100,
                         )),
                         20.width,
-                        const Expanded(
+                        Expanded(
                             child: CommonButton(
                           titleText: AppString.cancel,
                           buttonHeight: 35,

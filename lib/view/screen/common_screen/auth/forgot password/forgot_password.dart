@@ -19,7 +19,7 @@ class ForgotPasswordScreen extends StatelessWidget {
     return GetBuilder<ForgetPasswordController>(
       builder: (controller) => Scaffold(
         appBar: AppBar(
-          title: const CommonText(
+          title:  CommonText(
             text: AppString.forgotPassword,
             fontWeight: FontWeight.w700,
             fontSize: 24,
@@ -32,7 +32,7 @@ class ForgotPasswordScreen extends StatelessWidget {
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
-                const CommonText(
+                 CommonText(
                   text: AppString.email,
                   bottom: 8,
                   top: 80,

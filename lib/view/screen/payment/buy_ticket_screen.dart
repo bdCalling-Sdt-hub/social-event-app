@@ -17,7 +17,7 @@ class BuyTicketScreen extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         backgroundColor: AppColors.primaryColor,
-        title: const CommonText(
+        title: CommonText(
           text: AppString.buyTicket,
           fontSize: 24,
           fontWeight: FontWeight.bold,
@@ -30,22 +30,22 @@ class BuyTicketScreen extends StatelessWidget {
           child: Column(
             children: [
               22.height,
-              const Row(
+              Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
                   CommonText(
                     text: AppString.choosePaymentMethod,
-                    color: Color(0xff292D32),
+                    color: const Color(0xff292D32),
                     fontSize: 16,
                     fontWeight: FontWeight.w400,
                   ),
                   Row(
                     children: [
-                      Icon(Icons.add),
+                      const Icon(Icons.add),
                       CommonText(
                         text: AppString.addCard,
                         fontSize: 14,
-                        color: Color(0xff6D6D6D),
+                        color: const Color(0xff6D6D6D),
                       ),
                     ],
                   ),

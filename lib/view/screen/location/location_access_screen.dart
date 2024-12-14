@@ -26,14 +26,14 @@ class LocationAccessScreen extends StatelessWidget {
               width: 220,
               height: 220,
             ).center,
-            const CommonText(
+            CommonText(
               text: AppString.findNearbyActivities,
               fontSize: 24,
               fontWeight: FontWeight.w700,
               color: AppColors.primaryColor,
               top: 50,
             ),
-            const CommonText(
+            CommonText(
               text: AppString.locationDetails,
               fontWeight: FontWeight.w400,
               top: 50,

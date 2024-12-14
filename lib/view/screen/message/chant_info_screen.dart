@@ -26,7 +26,7 @@ class _ChantInfoScreenState extends State<ChantInfoScreen> {
     return Scaffold(
       appBar: AppBar(
         backgroundColor: AppColors.primaryColor,
-        title: const CommonText(
+        title: CommonText(
           text: AppString.chatInfo,
           fontSize: 24,
           fontWeight: FontWeight.bold,
@@ -60,7 +60,7 @@ class _ChantInfoScreenState extends State<ChantInfoScreen> {
               color: const Color(0xffEEEEEE),
             ),
             20.height,
-            const Item(title: AppString.searchChatHistory),
+            Item(title: AppString.searchChatHistory),
             ItemWithSwitch(
               title: AppString.muteNotifications,
               value: controller.isNotification,

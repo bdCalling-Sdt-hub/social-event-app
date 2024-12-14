@@ -15,7 +15,7 @@ class SelectOrganizer extends StatelessWidget {
         backgroundColor: AppColors.primaryColor,
         centerTitle: true,
         iconTheme: const IconThemeData(color: AppColors.white),
-        title: const CommonText(
+        title: CommonText(
           text: AppString.selectPeople,
           fontSize: 24,
           fontWeight: FontWeight.bold,

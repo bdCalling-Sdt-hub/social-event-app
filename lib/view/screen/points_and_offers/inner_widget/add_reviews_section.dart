@@ -22,7 +22,7 @@ class AddReviewsSection extends StatelessWidget {
           return Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              const Align(
+              Align(
                 alignment: Alignment.center,
                 child: CommonText(
                     fontSize: 22,

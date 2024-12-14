@@ -21,7 +21,7 @@ class PasswordScreen extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         backgroundColor: AppColors.primaryColor,
-        title: const CommonText(
+        title:  CommonText(
             fontSize: 24,
             fontWeight: FontWeight.w700,
             color: AppColors.white,
@@ -35,7 +35,7 @@ class PasswordScreen extends StatelessWidget {
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               20.height,
-              const CommonText(
+              CommonText(
                   fontSize: 22,
                   bottom: 2,
                   fontWeight: FontWeight.w700,
@@ -49,7 +49,7 @@ class PasswordScreen extends StatelessWidget {
               ),
 
 
-              const CommonText(
+              CommonText(
                 top: 15,
                   fontSize: 22,
                   bottom: 2,
@@ -64,7 +64,7 @@ class PasswordScreen extends StatelessWidget {
               ),
 
 
-              const CommonText(
+              CommonText(
                 top: 15,
                   fontSize: 22,
                   bottom: 2,

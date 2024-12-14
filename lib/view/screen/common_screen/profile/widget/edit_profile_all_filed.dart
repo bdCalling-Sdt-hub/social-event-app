@@ -22,7 +22,7 @@ class EditProfileAllFiled extends StatelessWidget {
         return Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            const CommonText(
+             CommonText(
               text: AppString.fullName,
               fontWeight: FontWeight.w700,
               fontSize: 20,
@@ -37,7 +37,7 @@ class EditProfileAllFiled extends StatelessWidget {
               borderColor: AppColors.black,
               fillColor: AppColors.transparent,
             ),
-            const CommonText(
+            CommonText(
               text: AppString.contact,
               fontSize: 20,
               fontWeight: FontWeight.w700,
@@ -59,7 +59,7 @@ class EditProfileAllFiled extends StatelessWidget {
                     child: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
-                    const CommonText(
+                    CommonText(
                       text: AppString.dateOfBirth,
                       fontSize: 20,
                       fontWeight: FontWeight.w700,
@@ -83,7 +83,7 @@ class EditProfileAllFiled extends StatelessWidget {
                     child: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
-                    const CommonText(
+                    CommonText(
                       text: AppString.age,
                       fontSize: 20,
                       fontWeight: FontWeight.w700,
@@ -101,7 +101,7 @@ class EditProfileAllFiled extends StatelessWidget {
                 )),
               ],
             ),
-            const CommonText(
+            CommonText(
               text: AppString.aboutMe,
               fontSize: 20,
               fontWeight: FontWeight.w700,
@@ -119,7 +119,7 @@ class EditProfileAllFiled extends StatelessWidget {
             Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
-                const CommonText(
+                CommonText(
                   text: AppString.gender,
                   fontWeight: FontWeight.w700,
                   fontSize: 18,

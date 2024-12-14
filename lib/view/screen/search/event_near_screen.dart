@@ -14,7 +14,7 @@ class EventNearScreen extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         backgroundColor: AppColors.primaryColor,
-        title: const CommonText(
+        title: CommonText(
           text: AppString.eventsNearYou,
           fontSize: 24,
           fontWeight: FontWeight.bold,

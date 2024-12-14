@@ -56,7 +56,7 @@ class _VerifyUserState extends State<VerifyUser> {
                     imageColor: AppColors.primaryColor,
                     imageType: ImageType.svg,
                   )),
-                  const CommonText(
+                   CommonText(
                     text: AppString.otpDetails,
                     maxLines: 2,
                     fontWeight: FontWeight.w700,
@@ -112,7 +112,7 @@ class _VerifyUserState extends State<VerifyUser> {
                     },
                   ),
                   50.height,
-                  const CommonText(
+                   CommonText(
                     text: AppString.didNotReceivedTheCodeYet,
                     fontWeight: FontWeight.w400,
                     color: AppColors.black,
@@ -120,7 +120,7 @@ class _VerifyUserState extends State<VerifyUser> {
                   ).center,
                   InkWell(
                     onTap: showBottomSheetModel,
-                    child: const CommonText(
+                    child:  CommonText(
                       text: AppString.resend,
                       color: AppColors.primaryColor,
                     ).center,

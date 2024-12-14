@@ -17,7 +17,7 @@ class TicketOffersCart extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const CommonText(
+        title: CommonText(
             fontSize: 24,
             color: AppColors.white,
             fontWeight: FontWeight.w700,
@@ -32,7 +32,7 @@ class TicketOffersCart extends StatelessWidget {
             const FavoriteItem(),
             20.height,
 
-            const Row(
+            Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
                 CommonText(
@@ -40,7 +40,7 @@ class TicketOffersCart extends StatelessWidget {
                     fontWeight: FontWeight.w700,
                     text: AppString.redemPoints),
 
-                CommonText(
+                const CommonText(
                     fontSize: 20,
                     fontWeight: FontWeight.w700,
                     text: "10000"),
@@ -49,7 +49,7 @@ class TicketOffersCart extends StatelessWidget {
 
             20.height,
 
-            const Row(
+            Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
                 CommonText(
@@ -57,7 +57,7 @@ class TicketOffersCart extends StatelessWidget {
                     fontWeight: FontWeight.w700,
                     text: AppString.yourPoints),
 
-                CommonText(
+                const CommonText(
                     fontSize: 20,
                     fontWeight: FontWeight.w700,
                     text: "24,513"),

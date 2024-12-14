@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:social_event/utils/app_colors.dart';
 import 'package:social_event/utils/app_icons.dart';
-import 'package:social_event/utils/app_string.dart';
 import 'package:social_event/view/component/text/common_text.dart';
 import '../../../../helpers/my_extension.dart';
 
@@ -62,7 +61,7 @@ class _SplashScreenState extends State<SplashScreen> {
                   fontSize: 64,
                   style: true,
                   top: 80,
-                  color: Color(0xff08A496),
+                  color: const Color(0xff08A496),
                 ).center,
               ],
             ),

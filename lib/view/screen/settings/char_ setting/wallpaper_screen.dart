@@ -16,7 +16,7 @@ class WallpaperScreen extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         backgroundColor: AppColors.primaryColor,
-        title: const CommonText(
+        title: CommonText(
             fontSize: 24,
             fontWeight: FontWeight.w700,
             color: AppColors.white,
@@ -57,7 +57,7 @@ class WallpaperScreen extends StatelessWidget {
                                   Icons.done,
                                   color: AppColors.white,
                                 )
-                              : const CommonText(
+                              : CommonText(
                                   text: AppString.get,
                                   color: AppColors.white,
                                   fontSize: 10,

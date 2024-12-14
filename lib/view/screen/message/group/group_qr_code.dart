@@ -13,7 +13,7 @@ class GroupQrCode extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         backgroundColor: AppColors.primaryColor,
-        title: const CommonText(
+        title: CommonText(
           text: AppString.groupQRCode,
           fontSize: 24,
           fontWeight: FontWeight.bold,
@@ -22,7 +22,7 @@ class GroupQrCode extends StatelessWidget {
       ),
       body: Column(
         children: [
-          const CommonText(
+          CommonText(
             text: AppString.groupQrCodeDetails,
             fontSize: 16,
             fontWeight: FontWeight.bold,

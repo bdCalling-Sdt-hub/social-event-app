@@ -42,7 +42,7 @@ class SignInScreen extends StatelessWidget {
                       imageColor: AppColors.primaryColor,
                       imageType: ImageType.svg,
                     )),
-                    const CommonText(
+                     CommonText(
                       text: AppString.logInToYourAccount,
                       fontSize: 24,
                       fontWeight: FontWeight.w700,
@@ -50,7 +50,7 @@ class SignInScreen extends StatelessWidget {
                       top: 30,
                       bottom: 50,
                     ).center,
-                    const CommonText(
+                     CommonText(
                       text: AppString.phoneNumber,
                       bottom: 8,
                     ),
@@ -69,7 +69,7 @@ class SignInScreen extends StatelessWidget {
                       },
                     ),
                     30.height,
-                    const CommonText(
+                     CommonText(
                       text: AppString.doNotHaveAccountYet,
                       fontWeight: FontWeight.w400,
                       color: AppColors.primaryColor,

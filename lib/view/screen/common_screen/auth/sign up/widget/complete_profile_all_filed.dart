@@ -26,7 +26,7 @@ class CompleteProfileAllFiled extends StatelessWidget {
                   mainAxisAlignment: MainAxisAlignment.start,
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
-                    const CommonText(text: AppString.firstName),
+                     CommonText(text: AppString.firstName),
                     CommonTextField(
                       hintText: AppString.firstName,
                     )
@@ -39,7 +39,7 @@ class CompleteProfileAllFiled extends StatelessWidget {
                   mainAxisAlignment: MainAxisAlignment.start,
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
-                    const CommonText(text: AppString.firstName),
+                     CommonText(text: AppString.firstName),
                     CommonTextField(
                       hintText: AppString.firstName,
                     )
@@ -48,7 +48,7 @@ class CompleteProfileAllFiled extends StatelessWidget {
               ),
             ],
           ),
-          const CommonText(
+           CommonText(
             text: AppString.gender,
             top: 12,
           ),
@@ -68,7 +68,7 @@ class CompleteProfileAllFiled extends StatelessWidget {
               selectedItem: [controller.genderController.text],
             ),
           ),
-          const CommonText(
+           CommonText(
             text: AppString.ageGroup,
             fontWeight: FontWeight.w700,
             bottom: 10,
@@ -109,7 +109,7 @@ class CompleteProfileAllFiled extends StatelessWidget {
               );
             },
           ),
-          const CommonText(
+           CommonText(
             text: AppString.categories,
             fontWeight: FontWeight.w700,
             bottom: 10,

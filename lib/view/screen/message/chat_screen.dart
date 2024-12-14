@@ -38,7 +38,7 @@ class ChatListScreen extends StatelessWidget {
                         Row(
                           mainAxisAlignment: MainAxisAlignment.spaceBetween,
                           children: [
-                            const CommonText(
+                            CommonText(
                               text: AppString.chats,
                               fontSize: 24,
                               fontWeight: FontWeight.w700,
@@ -97,7 +97,7 @@ class ChatListScreen extends StatelessWidget {
                           Row(
                             mainAxisAlignment: MainAxisAlignment.spaceBetween,
                             children: [
-                              const CommonText(
+                               CommonText(
                                 text: AppString.groups,
                                 fontSize: 24,
                                 fontWeight: FontWeight.w700,

@@ -14,8 +14,8 @@ class PrefsHelper extends GetxController {
   static String myEmail = "";
   static String myRole = "";
   static String mySubscription = "shopping";
-  static String localizationLanguageCode = 'en';
-  static String localizationCountryCode = 'US';
+  static String localizationLanguageCode = 'zh-cn';
+  static String localizationCountryCode = 'CN';
 
 
   ///<<<======================== Get All Data Form Shared Preference ==============>

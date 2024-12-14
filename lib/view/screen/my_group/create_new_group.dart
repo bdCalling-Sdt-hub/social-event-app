@@ -71,7 +71,7 @@ class CreateNewGroup extends StatelessWidget {
                 ),
 
                 //=========================Enter group name section==================
-                const CommonText(
+                 CommonText(
                     top: 20,
                     fontSize: 18,
                     fontWeight: FontWeight.w700,
@@ -83,7 +83,7 @@ class CreateNewGroup extends StatelessWidget {
                 ),
 
                 20.height,
-                const CommonText(
+                CommonText(
                     fontSize: 18,
                     bottom: 12,
                     fontWeight: FontWeight.w700,
@@ -114,7 +114,7 @@ class CreateNewGroup extends StatelessWidget {
 
                 //====================================Group members and search====================
 
-                const CommonText(
+                CommonText(
                     fontSize: 18,
                     fontWeight: FontWeight.w700,
                     top: 20,

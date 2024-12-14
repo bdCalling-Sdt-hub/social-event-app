@@ -24,7 +24,7 @@ class _SignUpAllFieldState extends State<SignUpAllField> {
         return Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            const CommonText(
+             CommonText(
               text: AppString.fullName,
               bottom: 8,
               top: 12,
@@ -37,7 +37,7 @@ class _SignUpAllFieldState extends State<SignUpAllField> {
               controller: controller.nameController,
               validator: OtherHelper.validator,
             ),
-            const CommonText(
+             CommonText(
               text: AppString.email,
               bottom: 8,
               top: 12,
@@ -48,7 +48,7 @@ class _SignUpAllFieldState extends State<SignUpAllField> {
               hintText: AppString.email,
               validator: OtherHelper.emailValidator,
             ),
-            const CommonText(
+             CommonText(
               text: AppString.password,
               bottom: 8,
               top: 12,
@@ -60,7 +60,7 @@ class _SignUpAllFieldState extends State<SignUpAllField> {
               hintText: AppString.password,
               validator: OtherHelper.passwordValidator,
             ),
-            const CommonText(
+             CommonText(
               text: AppString.confirmPassword,
               bottom: 8,
               top: 12,
@@ -73,7 +73,7 @@ class _SignUpAllFieldState extends State<SignUpAllField> {
               validator: (value) => OtherHelper.confirmPasswordValidator(
                   value, controller.passwordController),
             ),
-            const CommonText(
+            CommonText(
               text: AppString.phoneNumber,
               bottom: 8,
               top: 12,

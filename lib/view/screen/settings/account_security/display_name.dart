@@ -16,7 +16,7 @@ class DisplayName extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         backgroundColor: AppColors.primaryColor,
-        title: const CommonText(text: AppString.displayName, color: AppColors.white, fontSize: 24, fontWeight: FontWeight.w700,),
+        title:  CommonText(text: AppString.displayName, color: AppColors.white, fontSize: 24, fontWeight: FontWeight.w700,),
       ),
 
       body: Padding(
@@ -26,7 +26,7 @@ class DisplayName extends StatelessWidget {
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             25.height,
-            const CommonText(
+            CommonText(
                 fontSize: 24,
                 fontWeight: FontWeight.w700,
                 text: AppString.displayName),

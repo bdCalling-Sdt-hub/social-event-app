@@ -20,7 +20,7 @@ class CompleteProfile extends StatelessWidget {
       appBar: AppBar(
         automaticallyImplyLeading: false,
         centerTitle: true,
-        title: const CommonText(
+        title:  CommonText(
           text: AppString.completeYourProfile,
           fontSize: 24,
           fontWeight: FontWeight.bold,

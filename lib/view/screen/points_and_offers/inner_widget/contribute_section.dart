@@ -30,7 +30,7 @@ class ContributeSection extends StatelessWidget {
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
-                  const CommonText(
+                  CommonText(
                       left: 15,
                       top: 15,
                       fontSize: 20,

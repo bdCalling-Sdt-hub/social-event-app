@@ -136,7 +136,7 @@ void groupNoteBottomSheet() {
               width: 75,
             ),
             16.height,
-            const CommonText(
+            CommonText(
               text: AppString.groupNoticeDetails,
               maxLines: 3,
               fontSize: 15,

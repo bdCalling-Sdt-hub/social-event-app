@@ -45,7 +45,7 @@ class OtpVerification extends StatelessWidget {
                       imageColor: AppColors.primaryColor,
                       imageType: ImageType.svg,
                     )),
-                    const CommonText(
+                     CommonText(
                       text: AppString.otpDetails,
                       maxLines: 2,
                       fontWeight: FontWeight.w700,
@@ -98,7 +98,7 @@ class OtpVerification extends StatelessWidget {
                       },
                     ),
                     60.height,
-                    const CommonText(
+                     CommonText(
                       text: AppString.didNotReceivedTheCodeYet,
                       fontWeight: FontWeight.w400,
                       color: AppColors.black,
@@ -106,7 +106,7 @@ class OtpVerification extends StatelessWidget {
                     ).center,
                     InkWell(
                       onTap: showBottomSheetModel,
-                      child: const CommonText(
+                      child:  CommonText(
                         text: AppString.resend,
                         color: AppColors.primaryColor,
                       ).center,

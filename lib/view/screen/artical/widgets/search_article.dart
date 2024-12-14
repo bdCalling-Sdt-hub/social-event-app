@@ -41,7 +41,7 @@ Widget searchArticle() {
                         borderRadius: BorderRadius.circular(30)),
                     child: Align(
                         alignment: Alignment.centerRight,
-                        child: const CommonText(
+                        child:  CommonText(
                           text: AppString.search,
                           color: AppColors.white,
                         ).center),

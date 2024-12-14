@@ -13,7 +13,7 @@ class NoInternet extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text(AppString.noInternet),
+        title:  Text(AppString.noInternet),
       ),
       body: Padding(
         padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 24),
@@ -26,12 +26,12 @@ class NoInternet extends StatelessWidget {
               Icons.wifi_off,
               size: 100,
             )),
-            const CommonText(
+             CommonText(
               text: AppString.noInternet,
               fontSize: 18,
               top: 16,
             ),
-            const CommonText(
+             CommonText(
               text: AppString.checkInternet,
               top: 8,
               bottom: 20,

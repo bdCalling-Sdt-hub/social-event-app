@@ -16,7 +16,7 @@ class ReviewPostScreen extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         backgroundColor: AppColors.primaryColor,
-        title: const CommonText(
+        title:  CommonText(
             fontSize: 24,
             color: AppColors.white,
             maxLines: 2,

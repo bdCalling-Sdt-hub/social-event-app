@@ -30,7 +30,7 @@ class _ParentalControlModeState extends State<ParentalControlMode> {
     return Scaffold(
       appBar: AppBar(
         backgroundColor: AppColors.primaryColor,
-        title: const CommonText(
+        title: CommonText(
             fontSize: 24,
             fontWeight: FontWeight.w700,
             color: AppColors.white,
@@ -47,14 +47,14 @@ class _ParentalControlModeState extends State<ParentalControlMode> {
               height: 150,
               width: 150,
             ).center,
-            const CommonText(
+            CommonText(
               text: AppString.parentalControlMode,
               fontSize: 24,
               top: 20,
               bottom: 20,
               fontWeight: FontWeight.bold,
             ),
-            const CommonText(
+            CommonText(
               text: AppString.parentalControlModeDetails,
               fontSize: 15,
               bottom: 20,

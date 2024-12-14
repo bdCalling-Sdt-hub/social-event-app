@@ -20,7 +20,7 @@ class ChangePasswordScreen extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         centerTitle: true,
-        title: const CommonText(
+        title:  CommonText(
           text: AppString.changePassword,
           fontSize: 20,
           fontWeight: FontWeight.w600,
@@ -36,7 +36,7 @@ class ChangePasswordScreen extends StatelessWidget {
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
                   70.height,
-                  const CommonText(
+                   CommonText(
                     text: AppString.currentPassword,
                     bottom: 8,
                   ),
@@ -50,7 +50,7 @@ class ChangePasswordScreen extends StatelessWidget {
                       size: 20,
                     ),
                   ),
-                  const CommonText(
+                   CommonText(
                     text: AppString.newPassword,
                     bottom: 8,
                     top: 16,
@@ -65,7 +65,7 @@ class ChangePasswordScreen extends StatelessWidget {
                       size: 20,
                     ),
                   ),
-                  const CommonText(
+                   CommonText(
                     text: AppString.confirmPassword,
                     bottom: 8,
                     top: 16,
@@ -85,7 +85,7 @@ class ChangePasswordScreen extends StatelessWidget {
                     alignment: Alignment.centerLeft,
                     child: GestureDetector(
                       onTap: () => Get.toNamed(AppRoutes.forgotPassword),
-                      child: const CommonText(
+                      child:  CommonText(
                         text: AppString.forgotPassword,
                         color: AppColors.primaryColor,
                         fontWeight: FontWeight.w600,

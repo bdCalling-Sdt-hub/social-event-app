@@ -20,7 +20,7 @@ class PrivacyPolicyScreen extends StatelessWidget {
         appBar: AppBar(
           backgroundColor: AppColors.primaryColor,
           centerTitle: true,
-          title: const CommonText(
+          title: CommonText(
             text: AppString.privacyPolicy,
             fontSize: 20,
             fontWeight: FontWeight.w600,

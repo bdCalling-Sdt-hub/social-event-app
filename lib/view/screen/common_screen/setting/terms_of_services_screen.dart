@@ -19,7 +19,7 @@ class TermsOfServicesScreen extends StatelessWidget {
         appBar: AppBar(
           backgroundColor: AppColors.primaryColor,
           centerTitle: true,
-          title: const CommonText(
+          title: CommonText(
             text: AppString.termsOfServices,
             fontSize: 20,
             fontWeight: FontWeight.w600,

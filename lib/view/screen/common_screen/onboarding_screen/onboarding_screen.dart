@@ -21,8 +21,6 @@ class OnboardingScreen extends StatefulWidget {
 
 class _OnboardingScreenState extends State<OnboardingScreen>
     with SingleTickerProviderStateMixin {
-
-
   late AnimationController _animationController;
   late Animation<Offset> _logoAnimation;
 
@@ -60,138 +58,131 @@ class _OnboardingScreenState extends State<OnboardingScreen>
         position: _logoAnimation,
         child: SingleChildScrollView(
           padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 24),
-          child: GetBuilder<LanguageController>(
-            builder: (languageController) {
-              return Column(
-                children: [
-                  40.height,
-                  Center(
-                      child: CommonImage(
-                    imageSrc: AppIcons.logo,
-                    height: 240,
-                    width: 160,
-                    imageType: ImageType.svg,
-                  )),
-                   CommonText(
-                    text: "BUBBLY".tr,
-                    fontSize: 64,
-                    top: 40,
-                    style: true,
-                    color: AppColors.white,
-                  ).center,
-                   CommonText(
-                    text: "Relieving Social Fun".tr,
-                    fontSize: 20,
-                    fontWeight: FontWeight.w600,
-                    color: AppColors.white,
-                  ).center,
-                  50.height,
-                  Row(
-                    crossAxisAlignment: CrossAxisAlignment.center,
-                    mainAxisAlignment: MainAxisAlignment.center,
-                    children: [
-                      GestureDetector(
-                        onTap: () {
-
-
-                          LanguageController.instance.titleText.value ="US";
-                          LanguageController.instance.languageCode = 'en';
-
-                          PrefsHelper.localizationCountryCode = "US";
-                          PrefsHelper.localizationLanguageCode ='en';
-                          Get.updateLocale( Locale("en", "US"));
-                          PrefsHelper.setString("localizationLanguageCode", PrefsHelper.localizationLanguageCode);
-                          PrefsHelper.setString("localizationCountryCode", PrefsHelper.localizationCountryCode);
-
-                        },
-                        child: Container(
-                          padding: const EdgeInsets.all(6),
-                          decoration: BoxDecoration(
-                              borderRadius: BorderRadius.circular(8),
-                              border: Border.all(
-                                  color:PrefsHelper.localizationCountryCode=="US"
-                                      ? AppColors.white
-                                      : AppColors.transparent)),
-                          margin: const EdgeInsets.only(right: 12),
-                          child: Column(
-                            children: [
-                              CommonImage(
-                                imageSrc: AppIcons.usFlags,
-                                imageType: ImageType.svg,
-                                width: 42,
-                                height: 30,
-                              ),
-                              const CommonText(
-                                text: AppString.english,
-                                fontSize: 10,
-                                fontWeight: FontWeight.w400,
-                                color: AppColors.white,
-                                top: 6,
-                              )
-                            ],
-                          ),
+          child: GetBuilder<LanguageController>(builder: (languageController) {
+            return Column(
+              children: [
+                40.height,
+                Center(
+                    child: CommonImage(
+                  imageSrc: AppIcons.logo,
+                  height: 240,
+                  width: 160,
+                  imageType: ImageType.svg,
+                )),
+                CommonText(
+                  text: "BUBBLY".tr,
+                  fontSize: 64,
+                  top: 40,
+                  style: true,
+                  color: AppColors.white,
+                ).center,
+                CommonText(
+                  text: "Relieving Social Fun".tr,
+                  fontSize: 20,
+                  fontWeight: FontWeight.w600,
+                  color: AppColors.white,
+                ).center,
+                50.height,
+                Row(
+                  crossAxisAlignment: CrossAxisAlignment.center,
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  children: [
+                    GestureDetector(
+                      onTap: () {
+                        PrefsHelper.localizationCountryCode = "US";
+                        PrefsHelper.localizationLanguageCode = 'en';
+                        Get.updateLocale(const Locale("en", "US"));
+                        PrefsHelper.setString("localizationLanguageCode",
+                            PrefsHelper.localizationLanguageCode);
+                        PrefsHelper.setString("localizationCountryCode",
+                            PrefsHelper.localizationCountryCode);
+                      },
+                      child: Container(
+                        padding: const EdgeInsets.all(6),
+                        decoration: BoxDecoration(
+                            borderRadius: BorderRadius.circular(8),
+                            border: Border.all(
+                                color:
+                                    PrefsHelper.localizationCountryCode == "US"
+                                        ? AppColors.white
+                                        : AppColors.transparent)),
+                        margin: const EdgeInsets.only(right: 12),
+                        child: Column(
+                          children: [
+                            CommonImage(
+                              imageSrc: AppIcons.usFlags,
+                              imageType: ImageType.svg,
+                              width: 42,
+                              height: 30,
+                            ),
+                            CommonText(
+                              text: AppString.english,
+                              fontSize: 10,
+                              fontWeight: FontWeight.w400,
+                              color: AppColors.white,
+                              top: 6,
+                            )
+                          ],
                         ),
                       ),
-                      GestureDetector(
-                        onTap: () {
-
-                          LanguageController.instance.titleText.value ="CN";
-                          LanguageController.instance.languageCode = 'zh-cn';
-
-                          PrefsHelper.localizationCountryCode = "CN";
-                          PrefsHelper.localizationLanguageCode ='zh-cn';
-                          Get.updateLocale(  Locale("zh-cn", "CN"));
-                          PrefsHelper.setString("localizationLanguageCode", PrefsHelper.localizationLanguageCode);
-                          PrefsHelper.setString("localizationCountryCode", PrefsHelper.localizationCountryCode);
-
-                        },
-                        child: Container(
-                          padding: const EdgeInsets.all(6),
-                          decoration: BoxDecoration(
-                              borderRadius: BorderRadius.circular(8),
-                              border: Border.all(
-                                  color: PrefsHelper.localizationCountryCode=="CN"
-                                      ? AppColors.white
-                                      : AppColors.transparent)),
-                          child: Column(
-                            children: [
-                              CommonImage(
-                                imageSrc: AppIcons.chinaFlags,
-                                imageType: ImageType.svg,
-                                width: 42,
-                                height: 30,
-                              ),
-                               CommonText(
-                                text: "chinese".tr,
-                                fontSize: 10,
-                                fontWeight: FontWeight.w400,
-                                color: AppColors.white,
-                                top: 6,
-                              )
-                            ],
-                          ),
+                    ),
+                    GestureDetector(
+                      onTap: () {
+                        PrefsHelper.localizationCountryCode = "CN";
+                        PrefsHelper.localizationLanguageCode = 'zh-cn';
+                        Get.updateLocale(const Locale("zh-cn", "CN"));
+                        PrefsHelper.setString("localizationLanguageCode",
+                            PrefsHelper.localizationLanguageCode);
+                        PrefsHelper.setString("localizationCountryCode",
+                            PrefsHelper.localizationCountryCode);
+                      },
+                      child: Container(
+                        padding: const EdgeInsets.all(6),
+                        decoration: BoxDecoration(
+                            borderRadius: BorderRadius.circular(8),
+                            border: Border.all(
+                                color:
+                                    PrefsHelper.localizationCountryCode == "CN"
+                                        ? AppColors.white
+                                        : AppColors.transparent)),
+                        child: Column(
+                          children: [
+                            CommonImage(
+                              imageSrc: AppIcons.chinaFlags,
+                              imageType: ImageType.svg,
+                              width: 42,
+                              height: 30,
+                            ),
+                            CommonText(
+                              text: "chinese".tr,
+                              fontSize: 10,
+                              fontWeight: FontWeight.w400,
+                              color: AppColors.white,
+                              top: 6,
+                            )
+                          ],
                         ),
                       ),
-                    ],
-                  ),
-                  30.height,
-                  CommonButton(
-                    titleText: "Register".tr,
-                    buttonColor: AppColors.white,
-                    titleColor: AppColors.primaryColor,
-                    onTap: () => Get.toNamed(AppRoutes.marketingScreen),
-                  ),
-                  24.height,
-                  CommonButton(
-                    titleText:"Login".tr,
-                    borderColor: AppColors.white,
-                    titleColor: AppColors.white,
-                    onTap: () => Get.toNamed(AppRoutes.signIn),
-                  ),
-                ],
-              );
-            }
-          ),
+                    ),
+                  ],
+                ),
+                30.height,
+                CommonButton(
+                  titleText: "Register".tr,
+                  buttonColor: AppColors.white,
+                  titleColor: AppColors.primaryColor,
+                  onTap: () => Get.toNamed(AppRoutes.marketingScreen),
+                ),
+                24.height,
+                CommonButton(
+                  titleText: "Login".tr,
+                  borderColor: AppColors.white,
+                  titleColor: AppColors.white,
+                  onTap: () => Get.toNamed(AppRoutes.signIn),
+                ),
+              ],
+            );
+          }),
         ),
       ),
     );

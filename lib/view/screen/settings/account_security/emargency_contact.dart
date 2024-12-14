@@ -19,7 +19,7 @@ class EmargencyContact extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         backgroundColor: AppColors.primaryColor,
-        title: const CommonText(
+        title:  CommonText(
           text: AppString.emergencyContacts,
           color: AppColors.white,
           fontSize: 24,
@@ -38,12 +38,12 @@ class EmargencyContact extends StatelessWidget {
                   imageType: ImageType.png,
                   imageSrc: AppImages.emergency_contact),
           
-              const CommonText(
+              CommonText(
                   fontSize: 30,
                   top: 20,
                   text: AppString.emergencyContacts),
           
-              const CommonText(
+              CommonText(
                 left: 30,
                 right: 30,
                 maxLines: 3,
@@ -90,7 +90,7 @@ class EmargencyContact extends StatelessWidget {
                               child: const Icon(Icons.manage_accounts, size: 40,color: AppColors.white,),
                             ),
 
-                            const CommonText(
+                            CommonText(
                               top: 10,
                               fontSize: 24,
                               fontWeight: FontWeight.w700,

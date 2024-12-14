@@ -37,7 +37,7 @@ class _ReportScreenState extends State<ReportScreen> {
     return Scaffold(
       appBar: AppBar(
         backgroundColor: AppColors.primaryColor,
-        title: const CommonText(
+        title: CommonText(
           text: AppString.clearChatHistory,
           fontSize: 24,
           fontWeight: FontWeight.bold,

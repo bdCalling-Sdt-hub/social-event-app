@@ -27,7 +27,7 @@ class Contribution extends StatelessWidget {
           fontSize: 20,
           fontWeight: FontWeight.bold,
         ),
-        const CommonText(
+         CommonText(
           text: "12 ${AppString.members}",
           fontSize: 12,
           top: 10,
@@ -40,12 +40,12 @@ class Contribution extends StatelessWidget {
             5,
             (index) {
               if (index == 0) {
-                return const SizedBox(
+                return SizedBox(
                   height: 100,
                   width: 64,
                   child: Column(
                     children: [
-                      CircleAvatar(
+                      const CircleAvatar(
                           backgroundColor: AppColors.primaryColor,
                           radius: 24,
                           child: Icon(
@@ -64,12 +64,12 @@ class Contribution extends StatelessWidget {
                 );
               }
               if (index == 4) {
-                return const SizedBox(
+                return SizedBox(
                   height: 80,
                   width: 64,
                   child: Column(
                     children: [
-                      CircleAvatar(
+                      const CircleAvatar(
                           backgroundColor: Color(0xffE4F7F3),
                           radius: 24,
                           child: Icon(

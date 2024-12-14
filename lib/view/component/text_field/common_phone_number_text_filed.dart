@@ -21,9 +21,9 @@ class CommonPhoneNumberTextFiled extends StatelessWidget {
       initialCountryCode: "BD",
       disableLengthCheck: false,
       style: const TextStyle(fontSize: 14),
-      decoration: const InputDecoration(
+      decoration:  InputDecoration(
         hintText: AppString.phoneNumber,
-        contentPadding: EdgeInsets.symmetric(vertical: 8, horizontal: 16),
+        contentPadding: const EdgeInsets.symmetric(vertical: 8, horizontal: 16),
       ),
       dropdownIcon: const Icon(
         Icons.arrow_drop_down,

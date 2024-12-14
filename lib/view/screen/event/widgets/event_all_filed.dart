@@ -49,7 +49,7 @@ class EventAllFiled extends StatelessWidget {
                     ),
                   ),
                   20.height,
-                  const CommonText(
+                  CommonText(
                     text: AppString.eventTitle,
                     fontSize: 14,
                     fontWeight: FontWeight.bold,
@@ -57,7 +57,7 @@ class EventAllFiled extends StatelessWidget {
                   CommonTextField(
                     hintText: AppString.enterEventTitle,
                   ),
-                  const CommonText(
+                  CommonText(
                     text: AppString.eventLocation,
                     fontSize: 14,
                     fontWeight: FontWeight.bold,
@@ -67,7 +67,7 @@ class EventAllFiled extends StatelessWidget {
                     hintText: AppString.enterEventLocation,
                     suffixIcon: const Icon(Icons.location_on_outlined),
                   ),
-                  const CommonText(
+                  CommonText(
                     text: AppString.eventEntry,
                     fontSize: 14,
                     fontWeight: FontWeight.bold,
@@ -113,7 +113,7 @@ class EventAllFiled extends StatelessWidget {
                     Column(
                       children: [
                         12.height,
-                        const CommonText(
+                        CommonText(
                           text: AppString.eventFee,
                           fontSize: 14,
                           fontWeight: FontWeight.bold,
@@ -121,7 +121,7 @@ class EventAllFiled extends StatelessWidget {
                         CommonTextField(
                           hintText: AppString.eventFee,
                         ),
-                        const CommonText(
+                        CommonText(
                           text: AppString.promoCode,
                           fontSize: 14,
                           fontWeight: FontWeight.bold,
@@ -136,7 +136,7 @@ class EventAllFiled extends StatelessWidget {
                             Expanded(
                                 child: Column(
                               children: [
-                                const CommonText(text: AppString.discountType)
+                                CommonText(text: AppString.discountType)
                                     .start,
                                 CommonTextField(
                                   controller: controller.discountTypeController,
@@ -154,7 +154,7 @@ class EventAllFiled extends StatelessWidget {
                             Expanded(
                                 child: Column(
                               children: [
-                                const CommonText(text: AppString.discountValue)
+                                CommonText(text: AppString.discountValue)
                                     .start,
                                 CommonTextField(
                                   controller:
@@ -168,7 +168,7 @@ class EventAllFiled extends StatelessWidget {
                       ],
                     ),
                   20.height,
-                  const CommonText(
+                  CommonText(
                     text: AppString.whoCanJoinTheEvent,
                     fontWeight: FontWeight.bold,
                     fontSize: 14,
@@ -222,7 +222,7 @@ class EventAllFiled extends StatelessWidget {
                       )
                     ],
                   ),
-                  const CommonText(
+                  CommonText(
                     text: AppString.ageGroup,
                     fontWeight: FontWeight.w700,
                     bottom: 10,
@@ -262,7 +262,7 @@ class EventAllFiled extends StatelessWidget {
                       );
                     },
                   ),
-                  const CommonText(
+                  CommonText(
                     text: AppString.categories,
                     fontWeight: FontWeight.w700,
                     bottom: 10,
@@ -309,7 +309,7 @@ class EventAllFiled extends StatelessWidget {
                       Expanded(
                           child: Column(
                         children: [
-                          const CommonText(text: AppString.date).start,
+                          CommonText(text: AppString.date).start,
                           CommonTextField(
                             controller: controller.dateController,
                             hintText: AppString.date,
@@ -323,7 +323,7 @@ class EventAllFiled extends StatelessWidget {
                       Expanded(
                           child: Column(
                         children: [
-                          const CommonText(text: AppString.time).start,
+                          CommonText(text: AppString.time).start,
                           CommonTextField(
                             controller: controller.timeController,
                             hintText: AppString.time,
@@ -337,7 +337,7 @@ class EventAllFiled extends StatelessWidget {
                     ],
                   ),
                   12.height,
-                  const CommonText(
+                  CommonText(
                     text: AppString.description,
                     fontSize: 14,
                     fontWeight: FontWeight.bold,
@@ -358,11 +358,11 @@ class EventAllFiled extends StatelessWidget {
                           return InkWell(
                             onTap: () => Get.toNamed(AppRoutes.selectOrganizer),
                             child: Container(
-                              child: const Column(
+                              child: Column(
                                 mainAxisAlignment: MainAxisAlignment.center,
                                 crossAxisAlignment: CrossAxisAlignment.center,
                                 children: [
-                                  CircleAvatar(
+                                  const CircleAvatar(
                                     backgroundColor: AppColors.primaryColor,
                                     child: Icon(
                                       Icons.person_add_alt_1,

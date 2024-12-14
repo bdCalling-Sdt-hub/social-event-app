@@ -15,7 +15,7 @@ class MyInformationScreen extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         backgroundColor: AppColors.primaryColor,
-        title: const CommonText(
+        title: CommonText(
             fontSize: 18,
             color: AppColors.white,
             maxLines: 2,
@@ -26,17 +26,17 @@ class MyInformationScreen extends StatelessWidget {
         child: Column(
           children: <Widget>[
             10.height,
-            const Item(
+            Item(
               title: AppString.systemPermissions,
               onTap: OtherHelper.openSystemSetting,
             ),
-            const Item(
+            Item(
               title: AppString.authorization,
             ),
-            const Item(
+            Item(
               title: AppString.personalizedAdvertising,
             ),
-            const Item(
+            Item(
               title: AppString.viewAndExportMyInformation,
             ),
           ],

@@ -44,14 +44,14 @@ class CreatePassword extends StatelessWidget {
                       width: 297,
                     ),
                   ),
-                  const CommonText(
+                   CommonText(
                     text: AppString.createYourNewPassword,
                     fontSize: 18,
                     textAlign: TextAlign.start,
                     top: 64,
                     bottom: 24,
                   ),
-                  const CommonText(
+                   CommonText(
                     text: AppString.password,
                     bottom: 8,
                   ),
@@ -62,8 +62,8 @@ class CreatePassword extends StatelessWidget {
                     isPassword: true,
                     validator: OtherHelper.passwordValidator,
                   ),
-                  const CommonText(
-                    text: AppString.password,
+                   CommonText(
+                    text:AppString.password,
                     bottom: 8,
                     top: 12,
                   ),

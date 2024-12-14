@@ -16,7 +16,7 @@ class BlockListScreen extends StatelessWidget {
         backgroundColor: AppColors.primaryColor,
         centerTitle: true,
         iconTheme: const IconThemeData(color: AppColors.white),
-        title: const CommonText(
+        title: CommonText(
           text: AppString.blockedList,
           fontSize: 24,
           fontWeight: FontWeight.bold,
@@ -41,7 +41,7 @@ class BlockListScreen extends StatelessWidget {
                   left: 12,
                 ),
                 const Spacer(),
-                const CommonText(
+                CommonText(
                   text: AppString.unblock,
                   fontSize: 13,
                   fontWeight: FontWeight.bold,

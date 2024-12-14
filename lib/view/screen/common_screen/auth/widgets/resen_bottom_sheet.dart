@@ -29,7 +29,7 @@ void showBottomSheetModel() {
               color: Colors.teal,
             ),
             16.height,
-            const CommonText(
+            CommonText(
               text: AppString.codeSent,
               fontSize: 20,
               fontWeight: FontWeight.bold,
